@@ -1,0 +1,836 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\services\\user\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\services\\user\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\services\\school\\schoolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\services\\school\\schoolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\services\\school\\ischoolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\services\\school\\ischoolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\controllers\\schoolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\controllers\\schoolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\services\\section\\sectionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\services\\section\\sectionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\services\\section\\dto\\studentmasterlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\services\\section\\dto\\studentmasterlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\controllers\\sectioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\controllers\\sectioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\services\\section\\isectionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\services\\section\\isectionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\services\\section\\dto\\studentcount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\services\\section\\dto\\studentcount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\services\\section\\dto\\studentbylevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\services\\section\\dto\\studentbylevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\services\\section\\dto\\studentbysection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\services\\section\\dto\\studentbysection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\services\\student\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\services\\student\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\services\\schoolyear\\schoolyearservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\services\\schoolyear\\schoolyearservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\services\\section\\dto\\schoolsectiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\services\\section\\dto\\schoolsectiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\controllers\\schoolyearcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\controllers\\schoolyearcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\services\\student\\dto\\studentreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\services\\student\\dto\\studentreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\services\\student\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\services\\student\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\services\\schoolyear\\ischoolyearservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\services\\schoolyear\\ischoolyearservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\services\\student\\dto\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\services\\student\\dto\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\services\\student\\dto\\studentforenroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\services\\student\\dto\\studentforenroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\services\\email\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\services\\email\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\services\\email\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\services\\email\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\models\\school.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\models\\school.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\models\\studentsection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\models\\studentsection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\services\\student\\dto\\enrollstudentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\services\\student\\dto\\enrollstudentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\models\\track.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\models\\track.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\context\\paryollcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\context\\paryollcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\controllers\\appsettingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\controllers\\appsettingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\models\\schoolyear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\models\\schoolyear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\enums\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\enums\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\models\\semester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\models\\semester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\services\\user\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\services\\user\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\models\\usertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\models\\usertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\models\\enrollstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\models\\enrollstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\shareddto\\callresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\shareddto\\callresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\services\\section\\dto\\stranddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\services\\section\\dto\\stranddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\services\\user\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\services\\user\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\services\\user\\dto\\adduserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\services\\user\\dto\\adduserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\ars.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\ars.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\services\\user\\dto\\edituserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\services\\user\\dto\\edituserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\services\\user\\dto\\schooldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\services\\user\\dto\\schooldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\payroll.api\\payroll.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|Payroll.API\\ARS.API.csproj|solutionrelative:payroll.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SectionService.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\SectionService.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Services\\Section\\SectionService.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\SectionService.cs",
+              "RelativeToolTip": "Payroll.API\\Services\\Section\\SectionService.cs",
+              "ViewState": "AQIAAL4BAAAAAAAAAAAMwM0BAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T06:26:03.345Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SchoolController.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Controllers\\SchoolController.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Controllers\\SchoolController.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Controllers\\SchoolController.cs",
+              "RelativeToolTip": "Payroll.API\\Controllers\\SchoolController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBAAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T02:05:57.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ISchoolService.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\School\\ISchoolService.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Services\\School\\ISchoolService.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\School\\ISchoolService.cs",
+              "RelativeToolTip": "Payroll.API\\Services\\School\\ISchoolService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T02:09:39.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SchoolService.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\School\\SchoolService.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Services\\School\\SchoolService.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\School\\SchoolService.cs",
+              "RelativeToolTip": "Payroll.API\\Services\\School\\SchoolService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T02:06:23.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Payroll.API\\Controllers\\UserController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwCwAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T08:59:32.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\User\\UserService.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Services\\User\\UserService.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\User\\UserService.cs",
+              "RelativeToolTip": "Payroll.API\\Services\\User\\UserService.cs",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAWwHkAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T08:57:41.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StudentMasterlist.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\Dto\\StudentMasterlist.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Services\\Section\\Dto\\StudentMasterlist.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\Dto\\StudentMasterlist.cs",
+              "RelativeToolTip": "Payroll.API\\Services\\Section\\Dto\\StudentMasterlist.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T02:50:34.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "StudentByLevel.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\Dto\\StudentByLevel.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Services\\Section\\Dto\\StudentByLevel.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\Dto\\StudentByLevel.cs",
+              "RelativeToolTip": "Payroll.API\\Services\\Section\\Dto\\StudentByLevel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T02:21:51.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SectionController.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Controllers\\SectionController.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Controllers\\SectionController.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Controllers\\SectionController.cs",
+              "RelativeToolTip": "Payroll.API\\Controllers\\SectionController.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAuwF0AAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T06:23:43.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "Payroll.API\\Controllers\\StudentController.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAmwFgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T16:11:46.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ISectionService.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\ISectionService.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Services\\Section\\ISectionService.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\ISectionService.cs",
+              "RelativeToolTip": "Payroll.API\\Services\\Section\\ISectionService.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBMAAACBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T06:26:11.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StudentCount.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\Dto\\StudentCount.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Services\\Section\\Dto\\StudentCount.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\Dto\\StudentCount.cs",
+              "RelativeToolTip": "Payroll.API\\Services\\Section\\Dto\\StudentCount.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T01:18:16.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StudentBySection.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\Dto\\StudentBySection.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Services\\Section\\Dto\\StudentBySection.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\Dto\\StudentBySection.cs",
+              "RelativeToolTip": "Payroll.API\\Services\\Section\\Dto\\StudentBySection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T01:14:03.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SchoolYearService.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\SchoolYear\\SchoolYearService.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Services\\SchoolYear\\SchoolYearService.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\SchoolYear\\SchoolYearService.cs",
+              "RelativeToolTip": "Payroll.API\\Services\\SchoolYear\\SchoolYearService.cs",
+              "ViewState": "AQIAAOEAAAAAAAAAAAAewK0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T13:42:15.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Student\\StudentService.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Services\\Student\\StudentService.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Student\\StudentService.cs",
+              "RelativeToolTip": "Payroll.API\\Services\\Student\\StudentService.cs",
+              "ViewState": "AQIAAJsAAAAAAAAAAAAewBMAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T15:28:00.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SchoolYearController.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Controllers\\SchoolYearController.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Controllers\\SchoolYearController.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Controllers\\SchoolYearController.cs",
+              "RelativeToolTip": "Payroll.API\\Controllers\\SchoolYearController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T13:51:50.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SchoolSectionDto.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\Dto\\SchoolSectionDto.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Services\\Section\\Dto\\SchoolSectionDto.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\Dto\\SchoolSectionDto.cs",
+              "RelativeToolTip": "Payroll.API\\Services\\Section\\Dto\\SchoolSectionDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T06:44:51.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "StudentReport.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Student\\Dto\\StudentReport.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Services\\Student\\Dto\\StudentReport.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Student\\Dto\\StudentReport.cs",
+              "RelativeToolTip": "Payroll.API\\Services\\Student\\Dto\\StudentReport.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T10:28:29.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IStudentService.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Student\\IStudentService.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Services\\Student\\IStudentService.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Student\\IStudentService.cs",
+              "RelativeToolTip": "Payroll.API\\Services\\Student\\IStudentService.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAQwBEAAACEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T15:28:13.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Models\\Student.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Models\\Student.cs",
+              "RelativeToolTip": "Payroll.API\\Models\\Student.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAswCgAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T14:17:56.065Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "StudentForEnroll.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Student\\Dto\\StudentForEnroll.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Services\\Student\\Dto\\StudentForEnroll.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Student\\Dto\\StudentForEnroll.cs",
+              "RelativeToolTip": "Payroll.API\\Services\\Student\\Dto\\StudentForEnroll.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T13:19:01.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ISchoolYearService.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\SchoolYear\\ISchoolYearService.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Services\\SchoolYear\\ISchoolYearService.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\SchoolYear\\ISchoolYearService.cs",
+              "RelativeToolTip": "Payroll.API\\Services\\SchoolYear\\ISchoolYearService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T13:42:30.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "StudentDto.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Student\\Dto\\StudentDto.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Services\\Student\\Dto\\StudentDto.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Student\\Dto\\StudentDto.cs",
+              "RelativeToolTip": "Payroll.API\\Services\\Student\\Dto\\StudentDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T15:26:02.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IEmailService.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Email\\IEmailService.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Services\\Email\\IEmailService.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Email\\IEmailService.cs",
+              "RelativeToolTip": "Payroll.API\\Services\\Email\\IEmailService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAQAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T07:40:15.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Program.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Program.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Program.cs",
+              "RelativeToolTip": "Payroll.API\\Program.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAwwC0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T09:05:13.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Payroll.API\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\appsettings.Development.json",
+              "RelativeToolTip": "Payroll.API\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-30T01:09:04.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Email\\EmailService.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Services\\Email\\EmailService.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Email\\EmailService.cs",
+              "RelativeToolTip": "Payroll.API\\Services\\Email\\EmailService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T07:40:03.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "StudentSection.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Models\\StudentSection.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Models\\StudentSection.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Models\\StudentSection.cs",
+              "RelativeToolTip": "Payroll.API\\Models\\StudentSection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T14:17:40.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "School.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Models\\School.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Models\\School.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Models\\School.cs",
+              "RelativeToolTip": "Payroll.API\\Models\\School.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T07:14:43.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Models\\User.cs",
+              "RelativeToolTip": "Payroll.API\\Models\\User.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAwCAAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T15:30:58.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "EnrollStudentDto.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Student\\Dto\\EnrollStudentDto.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Services\\Student\\Dto\\EnrollStudentDto.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Student\\Dto\\EnrollStudentDto.cs",
+              "RelativeToolTip": "Payroll.API\\Services\\Student\\Dto\\EnrollStudentDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T10:36:47.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Track.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Models\\Track.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Models\\Track.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Models\\Track.cs",
+              "RelativeToolTip": "Payroll.API\\Models\\Track.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T15:02:35.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Models\\Employee.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Models\\Employee.cs",
+              "RelativeToolTip": "Payroll.API\\Models\\Employee.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T15:40:09.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ParyollContext.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Context\\ParyollContext.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Context\\ParyollContext.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Context\\ParyollContext.cs",
+              "RelativeToolTip": "Payroll.API\\Context\\ParyollContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T02:10:37.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "AppSettingsController.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Controllers\\AppSettingsController.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Controllers\\AppSettingsController.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Controllers\\AppSettingsController.cs",
+              "RelativeToolTip": "Payroll.API\\Controllers\\AppSettingsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T08:58:35.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "SchoolYear.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Models\\SchoolYear.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Models\\SchoolYear.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Models\\SchoolYear.cs",
+              "RelativeToolTip": "Payroll.API\\Models\\SchoolYear.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T14:41:43.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Semester.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Models\\Semester.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Models\\Semester.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Models\\Semester.cs",
+              "RelativeToolTip": "Payroll.API\\Models\\Semester.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T14:17:25.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Gender.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Enums\\Gender.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Enums\\Gender.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Enums\\Gender.cs",
+              "RelativeToolTip": "Payroll.API\\Enums\\Gender.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T13:40:33.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\User\\Dto\\UserDto.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Services\\User\\Dto\\UserDto.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\User\\Dto\\UserDto.cs",
+              "RelativeToolTip": "Payroll.API\\Services\\User\\Dto\\UserDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T09:03:32.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "UserType.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Models\\UserType.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Models\\UserType.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Models\\UserType.cs",
+              "RelativeToolTip": "Payroll.API\\Models\\UserType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T15:31:33.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "EnrollStudent.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Models\\EnrollStudent.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Models\\EnrollStudent.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Models\\EnrollStudent.cs",
+              "RelativeToolTip": "Payroll.API\\Models\\EnrollStudent.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T14:17:00.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "CallResultDto.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\SharedDto\\CallResultDto.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\SharedDto\\CallResultDto.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\SharedDto\\CallResultDto.cs",
+              "RelativeToolTip": "Payroll.API\\SharedDto\\CallResultDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T07:20:00.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "StrandDto.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\Dto\\StrandDto.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Services\\Section\\Dto\\StrandDto.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\Dto\\StrandDto.cs",
+              "RelativeToolTip": "Payroll.API\\Services\\Section\\Dto\\StrandDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T06:52:16.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\User\\IUserService.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Services\\User\\IUserService.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\User\\IUserService.cs",
+              "RelativeToolTip": "Payroll.API\\Services\\User\\IUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAsAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T09:03:58.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "AddUserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\User\\Dto\\AddUserDTO.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Services\\User\\Dto\\AddUserDTO.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\User\\Dto\\AddUserDTO.cs",
+              "RelativeToolTip": "Payroll.API\\Services\\User\\Dto\\AddUserDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T02:04:52.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ARS.API.csproj",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\ARS.API.csproj",
+              "RelativeDocumentMoniker": "Payroll.API\\ARS.API.csproj",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\ARS.API.csproj",
+              "RelativeToolTip": "Payroll.API\\ARS.API.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-30T08:58:24.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Payroll.API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Payroll.API\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-30T09:13:49.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "EditUserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\User\\Dto\\EditUserDTO.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Services\\User\\Dto\\EditUserDTO.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\User\\Dto\\EditUserDTO.cs",
+              "RelativeToolTip": "Payroll.API\\Services\\User\\Dto\\EditUserDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T04:49:24.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "SchoolDto.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\User\\Dto\\SchoolDto.cs",
+              "RelativeDocumentMoniker": "Payroll.API\\Services\\User\\Dto\\SchoolDto.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\User\\Dto\\SchoolDto.cs",
+              "RelativeToolTip": "Payroll.API\\Services\\User\\Dto\\SchoolDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T01:41:29.662Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Payroll.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\appsettings.json",
+              "RelativeToolTip": "Payroll.API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-30T01:09:06.391Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Payroll.API",
+    "\\Payroll.API\\Services",
+    "\\Payroll.API\\Services\\User"
+  ],
+  "SelectedNode": "\\Payroll.API\\Services\\User\\UserService.cs",
+  "PreviewInSolutionExplorer": false
+}
