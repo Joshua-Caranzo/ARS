@@ -40,6 +40,9 @@ async function waitForLogin(): Promise<void> {
 {/if}
 
 <div class="main has-background-white">
+
+	<!-- <slot /> -->
+
 	{#if $loggedInUser || !needsLogin}
 		<slot />
 	{:else}
