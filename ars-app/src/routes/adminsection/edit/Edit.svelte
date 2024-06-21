@@ -41,9 +41,6 @@
     let successMessage: string | undefined;
 
     let result: CallResultDto<SchoolSection>;
-    
-
-    let assignedId: number = 0;
 
     onMount(async () => {
         try {

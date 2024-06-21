@@ -3,10 +3,12 @@
     import Icon from "$lib/components/Icon.svelte";
     import { faEdit } from "@fortawesome/free-solid-svg-icons";
     import Notification from "$lib/components/Notification.svelte";
+	import IconButton from "$lib/components/IconButton.svelte";
 
     export let schoolyears: SchoolYear[] = [];
     export let message: string | undefined;
     export let isSuccess: boolean;
+    export let goEdit: (user: SchoolYear) => void;
 </script>
 
 <div style="overflow: auto;">
@@ -26,10 +28,7 @@
                 <td class="has-text-black">{school.toSchoolTerm}</td>
                 <td class="has-text-black">{school.isActive}</td>
                 <td class="has-text-centered has-text-black">
-                    <a class="button is-link" href={`/schoolterm/edit/${school.id}`}>
-                        <Icon icon={faEdit} className="mr-2"/>
-                        Edit
-                    </a>
+                    <IconButton icon={faEdit} on:click={() => goEdit(school)} label="Edit"/>
                 </td>
             </tr>
             {/each}

@@ -7,12 +7,15 @@
     import { getSchoolYearList } from "./repo";
     import SchoolYearListTable from "./SchoolYearListTable.svelte";
 	import IconButton from "$lib/components/IconButton.svelte";
+	import Edit from "./edit/Edit.svelte";
 
     let errorMessage: string | undefined;
     let searchQuery: string = "";
     let currentPage: number = 1;
     let rowsPerPage: number = 10;
     let totalCount: number | null = 0;
+    let gotoEdit: boolean = false;
+    let s: SchoolYear;
 
     let schoolYearListCallResult: CallResultDto<SchoolYear[]> = {
         message: "",
@@ -49,32 +52,47 @@
         currentPage = page;
         fetchSchoolList();
     }
+
+    function goEdit(schoolYear: SchoolYear) {
+        s = schoolYear;
+        gotoEdit = true;
+    }
+
+    function handleClose() {
+        gotoEdit = false;
+        console.log(gotoEdit)
+    }
+
 </script>
 
-<h1 class="subtitle has-text-black">School Term List</h1>
+{#if gotoEdit}
+    <Edit {s} on:close={handleClose} ></Edit>
+{:else}
+    <h1 class="subtitle has-text-black">School Term List</h1>
 
-<div class="field is-flex">
-    <div class="control" style="flex: 1;">
-        <input class="input has-background-white has-text-black" type="text" placeholder="Search..." bind:value={searchQuery} on:input={handleSearch} />
+    <div class="field is-flex">
+        <div class="control" style="flex: 1;">
+            <input class="input has-background-white has-text-black" type="text" placeholder="Search..." bind:value={searchQuery} on:input={handleSearch} />
+        </div>
+
+        <a class="button is-link mb-2 ml-4" href="/schoolterm/add">
+            <Icon icon={faPlus} className="mr-2" />
+            Add School Term
+        </a>
     </div>
 
-    <a class="button is-link mb-2 ml-4" href="/schoolterm/add">
-        <Icon icon={faPlus} className="mr-2" />
-        Add School Term
-    </a>
-</div>
+    <SchoolYearListTable schoolyears = {schoolyears} message={errorMessage} isSuccess={schoolYearListCallResult.isSuccess} {goEdit}/>
 
-<SchoolYearListTable schoolyears = {schoolyears} message={errorMessage} isSuccess={schoolYearListCallResult.isSuccess} />
-
-<div class="pagination">
-    <IconButton class="is-ghost" icon={faChevronLeft} on:click={() => changePage(currentPage - 1)} disabled={currentPage === 1} />
-    {#if totalCount !== null}
-        <span class="mx-4 has-text-black">{currentPage} / {Math.ceil(totalCount / rowsPerPage)}</span>
-    {:else}
-        <span>No data available.</span>
-    {/if}
-    <IconButton class="is-ghost" icon={faChevronRight} on:click={() => changePage(currentPage + 1)} disabled={totalCount === null || currentPage === Math.ceil(totalCount / rowsPerPage)} />
-</div>
+    <div class="pagination">
+        <IconButton class="is-ghost" icon={faChevronLeft} on:click={() => changePage(currentPage - 1)} disabled={currentPage === 1} />
+        {#if totalCount !== null}
+            <span class="mx-4 has-text-black">{currentPage} / {Math.ceil(totalCount / rowsPerPage)}</span>
+        {:else}
+            <span>No data available.</span>
+        {/if}
+        <IconButton class="is-ghost" icon={faChevronRight} on:click={() => changePage(currentPage + 1)} disabled={totalCount === null || currentPage === Math.ceil(totalCount / rowsPerPage)} />
+    </div>
+{/if}
 
 <style>
     .pagination button {
