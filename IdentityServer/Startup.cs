@@ -62,6 +62,7 @@ namespace Identity.Api
             services.AddMvc().AddControllersAsServices();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<ISecurityService, SecurityService>();
+            services.AddScoped<IEmailService, EmailService>();
             services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddCors();
 

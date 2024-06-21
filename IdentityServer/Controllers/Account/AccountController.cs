@@ -7,6 +7,7 @@ using DeviceDetectorNET.Parser;
 using Google.Authenticator;
 using Identity.API.Helper;
 using Identity.API.Interfaces;
+using Identity.API.Services;
 using IdentityModel;
 using IdentityServer4;
 using IdentityServer4.Events;
@@ -19,11 +20,13 @@ using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Identity.API.Controllers.Account
@@ -45,6 +48,7 @@ namespace Identity.API.Controllers.Account
         private readonly IConfiguration _configuration;
         private readonly ISecurityService _securityService;
         private readonly IMemoryCache _cache;
+        private readonly IEmailService _emailService;
 
         public AccountController(
             IIdentityServerInteractionService interaction,
@@ -55,7 +59,8 @@ namespace Identity.API.Controllers.Account
             IConfiguration configuration,
             IConfiguration iconfiguration,
             ISecurityService securityService,
-             IMemoryCache cache
+             IMemoryCache cache, 
+             IEmailService emailService
             )
         {
             // if the TestUserStore is not in DI, then we'll just use the global users collection
@@ -69,6 +74,7 @@ namespace Identity.API.Controllers.Account
             _configuration = iconfiguration;
             _securityService = securityService;
             _cache = cache;
+            _emailService = emailService;
         }
 
         /// <summary>
@@ -421,5 +427,101 @@ namespace Identity.API.Controllers.Account
         {
             return View();
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ForgottenPassword(ForgotPasswordViewModel model, CancellationToken cancellationToken)
+        {
+            if (ModelState.IsValid)
+            {
+                // Check if the email exists in the user database
+                var user = await _userService.FindByEmailAsync(model.Email);
+                if (user == null)
+                {
+                    ModelState.AddModelError("Email", "Email address not found.");
+                    return View(model);
+                }
+
+                try
+                {
+                    string subject = "Password Reset Request";
+                    string callbackUrl = Url.Action("ResetPassword", "Account", new { email = model.Email }, Request.Scheme);
+                    string body = $@"<h1>Password Reset Request</h1>
+                            <p>Hello,</p>
+                            <p>You have requested to reset your password. Please click the link below to proceed:</p>
+                            <a href=""{callbackUrl}"">Reset Password</a>";
+
+                    // Send email
+                    await _emailService.SendEmailAsync(model.Email, subject, body, cancellationToken);
+
+                    ModelState.AddModelError("Email", "Successfully sent an email request. Please Check your Gmail");
+                    return View(model);
+                }
+                catch (Exception ex)
+                {
+                    // Log the exception or handle it appropriately
+                    ModelState.AddModelError(string.Empty, "An error occurred while processing your request.");
+                }
+            }
+
+            // If we reach here, something went wrong, redisplay form with errors
+            return View(model);
+        }
+
+        [AllowAnonymous]
+        public IActionResult ResetPassword(string email)
+        {
+            // Typically, you would validate the email parameter here to ensure it's valid
+            // and belongs to a registered user. For simplicity, I'm assuming it's valid.
+
+            var model = new ResetPasswordViewModel
+            {
+                Email = email
+            };
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ResetPassword(ResetPasswordViewModel model, CancellationToken cancellationToken)
+        {
+            if (ModelState.IsValid)
+            {
+                // Find the user by email
+                var user = await _userService.FindByEmailAsync(model.Email);
+                if (user == null)
+                {
+                    ModelState.AddModelError(string.Empty, "Invalid email address.");
+                    return View(model);
+                }
+
+                // Reset the password
+                try
+                {
+                    var resetResult = await _userService.ResetPassword(user, model.Password1, cancellationToken);
+                    if (resetResult.Succeeded)
+                    {
+                        model.Message = "Password has been reset successfully. Go Back and Try to Log In now!";
+                        return View(model);
+                    }
+                    else
+                    {
+                        foreach (var error in resetResult.Errors)
+                        {
+                            ModelState.AddModelError(string.Empty, error.Description);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Log the exception (use your preferred logging framework)
+                    ModelState.AddModelError(string.Empty, "An error occurred while resetting the password.");
+                }
+            }
+
+            // If we got this far, something failed; redisplay the form
+            return View(model);
+        }
+
     }
 }

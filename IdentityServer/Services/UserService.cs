@@ -3,9 +3,12 @@ using Identity.API.Entities;
 using Identity.API.Helper;
 using Identity.API.Interfaces;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
+using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Identity.API.Services
@@ -248,6 +251,23 @@ namespace Identity.API.Services
                 }
             }
             return isLockedOut;
+        }
+
+        public async Task<User> FindByEmailAsync(string email)
+        {
+            return await _dbContext.User.FirstOrDefaultAsync(u => u.Email == email);
+        }
+
+        public async Task<IdentityResult> ResetPassword(User user, string password, CancellationToken ct) 
+        {
+            var passwordBytes = Encoding.UTF8.GetBytes(password);
+
+            var hashedPassword = BCrypt.Net.BCrypt.HashPassword(password);
+
+            user.Password = passwordBytes;
+            user.EncryptedPassword = hashedPassword;
+            await _dbContext.SaveChangesAsync(ct);
+            return IdentityResult.Success;
         }
     }
 }
