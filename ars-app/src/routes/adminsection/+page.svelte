@@ -56,8 +56,8 @@
         fetchSectionList();
     }
 
-    function goEdit(user: SchoolSectionDto) {
-        s = user;
+    function goEdit(schoolSectionDto: SchoolSectionDto) {
+        s = schoolSectionDto;
         gotoEdit = true;
     }
 

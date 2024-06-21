@@ -53,8 +53,8 @@
         fetchSchoolList();
     }
 
-    function goEdit(schoolYear: School) {
-        s = schoolYear;
+    function goEdit(school: School) {
+        s = school;
         gotoEdit = true;
     }
 

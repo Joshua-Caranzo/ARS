@@ -53,8 +53,8 @@
         fetchUserList();
     }
 
-    function goEdit(schoolYear: UserDTO) {
-        u = schoolYear;
+    function goEdit(user: UserDTO) {
+        u = user;
         gotoEdit = true;
     }
 
