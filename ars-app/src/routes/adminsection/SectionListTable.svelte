@@ -3,11 +3,12 @@
 	import { faEdit } from "@fortawesome/free-solid-svg-icons";
 	import Notification from "$lib/components/Notification.svelte";
 	import type { SchoolSectionDto } from "./type";
+	import IconButton from "$lib/components/IconButton.svelte";
 
     export let sections:SchoolSectionDto[] = [];
     export let message:string | undefined;
     export let isSuccess:boolean;
-
+    export let goEdit: (user: SchoolSectionDto) => void;
 </script>
 
 <div style="overflow: auto;">
@@ -27,10 +28,7 @@
                     <td>{section.sectionName}</td>
                     <td>{section.strandName || "Not Applicable"}</td>
                     <td class="has-text-centered">
-                        <a class="button is-link" href={`/adminsection/edit/${section.id}`}>
-                            <Icon icon={faEdit} className="mr-2"/>
-                            Edit
-                        </a>
+                        <IconButton icon={faEdit} on:click={() => goEdit(section)} label="Edit"/>
                     </td>
                 </tr>
             {/each}    

@@ -386,3 +386,5 @@ FodyWeavers.xsd
 # JetBrains Rider
 .idea/
 *.sln.iml
+/IdentityServer/appsettings.Development.json
+/ARS.API/ARS.API/appsettings.Development.json

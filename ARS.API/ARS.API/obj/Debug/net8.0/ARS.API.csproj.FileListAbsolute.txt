@@ -77,3 +77,43 @@ C:\Users\Joshua\Documents\ARS\ArsSystem\ARS\ARS.API\ARS.API\obj\Debug\net8.0\ref
 C:\Users\Joshua\Documents\ARS\ArsSystem\ARS\ARS.API\ARS.API\obj\Debug\net8.0\ARS.API.pdb
 C:\Users\Joshua\Documents\ARS\ArsSystem\ARS\ARS.API\ARS.API\obj\Debug\net8.0\ARS.API.genruntimeconfig.cache
 C:\Users\Joshua\Documents\ARS\ArsSystem\ARS\ARS.API\ARS.API\obj\Debug\net8.0\ref\ARS.API.dll
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\bin\Debug\net8.0\appsettings.json
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\bin\Debug\net8.0\appsettings.Development.json
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\bin\Debug\net8.0\ARS.API.exe
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\bin\Debug\net8.0\ARS.API.deps.json
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\bin\Debug\net8.0\ARS.API.runtimeconfig.json
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\bin\Debug\net8.0\ARS.API.dll
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\bin\Debug\net8.0\ARS.API.pdb
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\bin\Debug\net8.0\Dapper.dll
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\bin\Debug\net8.0\MySqlConnector.dll
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\obj\Debug\net8.0\ARS.API.csproj.AssemblyReference.cache
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\obj\Debug\net8.0\ARS.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\obj\Debug\net8.0\ARS.API.AssemblyInfoInputs.cache
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\obj\Debug\net8.0\ARS.API.AssemblyInfo.cs
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\obj\Debug\net8.0\ARS.API.csproj.CoreCompileInputs.cache
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\obj\Debug\net8.0\ARS.API.MvcApplicationPartsAssemblyInfo.cs
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\obj\Debug\net8.0\ARS.API.MvcApplicationPartsAssemblyInfo.cache
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\obj\Debug\net8.0\ARS.API.sourcelink.json
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\obj\Debug\net8.0\staticwebassets.build.json
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\obj\Debug\net8.0\staticwebassets.development.json
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\obj\Debug\net8.0\staticwebassets\msbuild.ARS.API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\obj\Debug\net8.0\staticwebassets\msbuild.build.ARS.API.props
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ARS.API.props
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ARS.API.props
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\obj\Debug\net8.0\staticwebassets.pack.json
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\obj\Debug\net8.0\scopedcss\bundle\ARS.API.styles.css
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\obj\Debug\net8.0\ARS.API.csproj.Up2Date
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\obj\Debug\net8.0\ARS.API.dll
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\obj\Debug\net8.0\refint\ARS.API.dll
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\obj\Debug\net8.0\ARS.API.pdb
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\obj\Debug\net8.0\ARS.API.genruntimeconfig.cache
+C:\work files\ars - parent\ARS\ARS.API\ARS.API\obj\Debug\net8.0\ref\ARS.API.dll
