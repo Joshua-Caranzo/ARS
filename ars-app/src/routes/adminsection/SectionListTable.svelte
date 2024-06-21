@@ -7,7 +7,7 @@
     export let sections:SchoolSectionDto[] = [];
     export let message:string | undefined;
     export let isSuccess:boolean;
-    export let goEdit: (user: SchoolSectionDto) => void;
+    export let goEdit: (schoolSection: SchoolSectionDto) => void;
 </script>
 
 <div style="overflow: auto;">

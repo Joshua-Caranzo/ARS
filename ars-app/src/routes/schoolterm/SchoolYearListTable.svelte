@@ -7,7 +7,7 @@
     export let schoolyears: SchoolYear[] = [];
     export let message: string | undefined;
     export let isSuccess: boolean;
-    export let goEdit: (user: SchoolYear) => void;
+    export let goEdit: (schoolYear: SchoolYear) => void;
 </script>
 
 <div style="overflow: auto;">
