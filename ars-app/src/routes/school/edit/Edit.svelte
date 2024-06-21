@@ -1,15 +1,14 @@
 <script lang="ts">
-	import type { CallResultDto } from "../../../../types/types";
+	import type { CallResultDto } from "../../../types/types";
 	import Icon from "$lib/components/Icon.svelte";
 	import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-	import { onMount } from "svelte";
+	import { createEventDispatcher, onMount } from "svelte";
 	import Notification from "$lib/components/Notification.svelte";
-	import type { School } from "../../type";
-	import { editSchool, getSchoolById } from "../../repo";
+	import type { School } from "../type";
+	import { editSchool, getSchoolById } from "../repo";
 
-    export let data: {   
-        id:number
-    };
+    export let s: School;
+    const dispatch = createEventDispatcher();
 
     let errorMessage:string | undefined;
     let successMessage:string | undefined;
@@ -27,11 +26,11 @@
 
     onMount(async () => {
         try {
-            result = await getSchoolById(data.id);
+            result = await getSchoolById(s.id);
             
             schools = {
                 ...result.data,
-                id: data.id,
+                id: s.id,
             };
             if(!result.isSuccess){
                 errorMessage = result.message;
@@ -43,7 +42,7 @@
 
     async function handleSubmit(e:Event){
         e.preventDefault();
-        schools = {...schools,id: data.id};
+        schools = {...schools,id: s.id};
         try {
             const callResult:CallResultDto<object> = await editSchool(schools);
 
@@ -60,14 +59,18 @@
         } 
     }
 
+    function handleClose() {
+        dispatch('close');
+    }
+
 </script>
 
 <div class="container is-narrow">
     {#if result?.isSuccess}
         <div class="is-flex is-align-items-center mb-3">
-            <a class="button is-link" href="/school">
+            <button class="button is-link" on:click={handleClose}>
                 <Icon icon={faArrowLeft}/>
-            </a>
+            </button>
             <h1 class="subtitle ml-2 has-text-black">Edit School</h1>        
         </div>
 

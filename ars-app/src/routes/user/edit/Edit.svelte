@@ -1,15 +1,15 @@
 <script lang="ts">
-	import type { CallResultDto } from "../../../../types/types";
-	import type { EditUserDTO, SchoolDto, UserDTO, UserTypeDTO } from "../../type";
+	import type { CallResultDto } from "../../../types/types";
+	import type { EditUserDTO, SchoolDto, UserDTO, UserTypeDTO } from "../type";
 	import Icon from "$lib/components/Icon.svelte";
 	import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-    import { editUser,getSchool,getUserById, getUserType } from '../../repo';
-	import { onMount } from "svelte";
+    import { editUser,getSchool,getUserById, getUserType } from '../repo';
+	import { createEventDispatcher, onMount } from "svelte";
 	import Notification from "$lib/components/Notification.svelte";
 
-    export let data: {   
-        id:number
-    };
+    export let u: UserDTO;
+
+    const dispatch = createEventDispatcher();
 
     let errorMessage:string | undefined;
     let successMessage:string | undefined;
@@ -47,11 +47,11 @@
 
     onMount(async () => {
         try {
-            result = await getUserById(data.id);
+            result = await getUserById(u.id);
             
             user = {
                 ...result.data,
-                id: data.id,
+                id: u.id,
             };
             if(!result.isSuccess){
                 errorMessage = result.message;
@@ -71,7 +71,7 @@
 
     async function handleSubmit(e:Event){
         e.preventDefault();
-        user = {...user,id: data.id};
+        user = {...user,id: u.id};
         user.assignedSchoolId = assignedId;
         try {
             const callResult:CallResultDto<object> = await editUser(user);
@@ -89,14 +89,18 @@
         }
     }
 
+    function handleClose() {
+        dispatch('close');
+    }
+
 </script>
 
 <div class="container is-narrow">
     {#if result?.isSuccess}
         <div class="is-flex is-align-items-center mb-3">
-            <a class="button is-link" href="/user">
+            <button class="button is-link" on:click={handleClose}>
                 <Icon icon={faArrowLeft}/>
-            </a>
+            </button>
             <h1 class="subtitle ml-2 has-text-black">Edit User</h1>        
         </div>
 

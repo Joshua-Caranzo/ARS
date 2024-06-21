@@ -1,33 +1,33 @@
 <script lang="ts">
-	import type { CallResultDto } from "../../../../types/types";
+	import type { CallResultDto } from "../../../types/types";
 	import Icon from "$lib/components/Icon.svelte";
 	import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-	import { onMount } from "svelte";
+	import { createEventDispatcher, onMount } from "svelte";
 	import Notification from "$lib/components/Notification.svelte";
-	import type { SchoolYear } from "../../type";
-	import { editSchoolYear, getSchoolYearById } from "../../repo";
+	import type { SchoolYear } from "../type";
+	import { editSchoolYear, getSchoolYearById } from "../repo";
 
-    export let data: {   
-        id:number
-    };
+    export let s: SchoolYear;
+
+    const dispatch = createEventDispatcher();
 
     let errorMessage:string | undefined;
     let successMessage:string | undefined;
     let result: CallResultDto<SchoolYear>;
-        let schoolyears: SchoolYear = {
+    let schoolyears: SchoolYear = {
         id: 0,
-  fromSchoolTerm: "",
-  toSchoolTerm: "",
-  isActive: false
+        fromSchoolTerm: "",
+        toSchoolTerm: "",
+        isActive: false
     };
 
     onMount(async () => {
         try {
-            result = await getSchoolYearById(data.id);
+            result = await getSchoolYearById(s.id);
             
             schoolyears = {
                 ...result.data,
-                id: data.id,
+                id: s.id,
             };
             if(!result.isSuccess){
                 errorMessage = result.message;
@@ -39,7 +39,7 @@
 
     async function handleSubmit(e:Event){
         e.preventDefault();
-        schoolyears = {...schoolyears,id: data.id};
+        schoolyears = {...schoolyears,id: s.id};
         try {
             const callResult:CallResultDto<object> = await editSchoolYear(schoolyears);
 
@@ -56,14 +56,18 @@
         } 
     }
 
+    function handleClose() {
+        dispatch('close');
+    }
+
 </script>
 
 <div class="container is-narrow">
     {#if result?.isSuccess}
         <div class="is-flex is-align-items-center mb-3">
-            <a class="button is-link" href="/schoolterm">
+            <button class="button is-link" on:click={handleClose}>
                 <Icon icon={faArrowLeft}/>
-            </a>
+            </button>
             <h1 class="subtitle ml-2 has-text-black">Edit School Term</h1>        
         </div>
 

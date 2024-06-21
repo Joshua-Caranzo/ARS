@@ -10,11 +10,11 @@ using System.Text;
 
 namespace ARS.API.Services.Student
 {
-    public class StudentService(ParyollContext payrollcontext, IDbConnection connection, IEmailService _emailService) : IStudentService
+    public class StudentService(ParyollContext payrollcontext, IDbConnection connection, IEmailService emailService) : IStudentService
     {
         private readonly ParyollContext _payrollcontext = payrollcontext;
         private readonly IDbConnection _connection = connection;
-        private readonly IEmailService emailService = _emailService;
+        private readonly IEmailService _emailService = emailService;
 
         public async Task<CallResultDto<object>> AddStudentRegistrar(StudentDto student, int userId, bool? isStudentRegistered, CancellationToken ct)
         {

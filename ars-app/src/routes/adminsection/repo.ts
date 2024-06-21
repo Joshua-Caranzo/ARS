@@ -26,3 +26,4 @@ export async function getSectionById(id:number) {
 export async function editSection(section: SchoolSection) {
 	return await put<CallResultDto<object>>(`/Section/EditSection`,undefined,section);
 }
+

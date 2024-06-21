@@ -1,6 +1,6 @@
 <script lang="ts">
-        import Notification from "$lib/components/Notification.svelte";
-        import { loggedInUser, shortcuts } from '$lib/store';
+    import Notification from "$lib/components/Notification.svelte";
+    import { loggedInUser, shortcuts } from '$lib/store';
 	import type { StudentFormData } from "./type";
 	import { addStudent, getStudentList } from "./repo";
 	import type { CallResultDto } from "../../types/types";
@@ -10,12 +10,15 @@
 	import SchoolListTable from "../school/SchoolListTable.svelte";
 	import IconButton from "$lib/components/IconButton.svelte";
 	import StudentListTable from "./StudentListTable.svelte";
+	import Edit from "./edit/Edit.svelte";
 
-let errorMessage: string | undefined;
+    let errorMessage: string | undefined;
     let searchQuery: string = "";
     let currentPage: number = 1;
     let rowsPerPage: number = 10;
     let totalCount: number | null = 0;
+    let gotoEdit: boolean = false;
+    let s: StudentFormData;
 
     let studentListCallResult:CallResultDto<StudentFormData[]> = {
         message:"",
@@ -55,8 +58,19 @@ let errorMessage: string | undefined;
         fetchStudentList();
     }
  
-    
-    </script>
+    function goEdit(studentFormData: StudentFormData) {
+        s = studentFormData;
+        gotoEdit = true;
+    }
+
+    function handleClose() {
+        gotoEdit = false;
+        console.log(gotoEdit)
+    }
+</script>
+{#if gotoEdit}
+    <Edit {s} on:close={handleClose} ></Edit>
+{:else}
   <h1 class="subtitle has-text-black">Registered Students</h1>
   <div class="field is-flex">
       <div class="control" style="flex: 1;">
@@ -68,7 +82,7 @@ let errorMessage: string | undefined;
       Register Student
   </a>
   </div>
-  <StudentListTable {students} message={errorMessage} isSuccess={studentListCallResult.isSuccess}/>
+  <StudentListTable {students} message={errorMessage} isSuccess={studentListCallResult.isSuccess} {goEdit}/>
   
   
   <div class="pagination">
@@ -80,7 +94,8 @@ let errorMessage: string | undefined;
       {/if}
       <IconButton class="is-ghost" icon={faChevronRight} on:click={() => changePage(currentPage + 1)} disabled={totalCount === null || currentPage === Math.ceil(totalCount / rowsPerPage)} />
   </div>
-  
+  {/if}
+
   <style>
       .pagination button {
           margin: 0 5px;

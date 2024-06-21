@@ -30,3 +30,11 @@ export type GradeLevel =
     level:string,
     departmentId:number
 }
+
+export type EditSchoolSectionDto =  {
+    id: number;
+    gradeLevelId: number;
+    sectionName: string;
+    schoolId: number;
+    strandId?: number | null;
+}
