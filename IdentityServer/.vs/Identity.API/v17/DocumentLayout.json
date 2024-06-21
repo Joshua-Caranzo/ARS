@@ -1,186 +1,230 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\",
+  "WorkspaceRootPath": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\services\\userprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:services\\userprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\loginresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:loginresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\interfaces\\isecurityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:interfaces\\isecurityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\services\\securityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:services\\securityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\helper\\encryptionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:helper\\encryptionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\helper\\stringutilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:helper\\stringutilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\helper\\emailutilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:helper\\emailutilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\data\\identitycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:data\\identitycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\data\\clients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:data\\clients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\dto\\ajaxcallresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:dto\\ajaxcallresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\controllers\\account\\logoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\account\\logoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\controllers\\account\\logoutinputmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\account\\logoutinputmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\controllers\\account\\logininputmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\account\\logininputmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\controllers\\account\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\account\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\controllers\\account\\loggedoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\account\\loggedoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\controllers\\account\\forgotpasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\account\\forgotpasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\controllers\\account\\externalprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\account\\externalprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\controllers\\account\\changepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\account\\changepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\controllers\\account\\accountoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\account\\accountoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\controllers\\account\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\account\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\controllers\\grants\\grantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\grants\\grantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\controllers\\account\\resetpasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\account\\resetpasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\controllers\\account\\redirectviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\account\\redirectviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\controllers\\account\\externalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\account\\externalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\controllers\\home\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\home\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\views\\grants\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:views\\grants\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\views\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:views\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\views\\account\\setupauthenticator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:views\\account\\setupauthenticator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\views\\shared\\redirect.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:views\\shared\\redirect.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\views\\shared\\_scopelistitem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:views\\shared\\_scopelistitem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\views\\account\\authenticator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:views\\account\\authenticator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\.gitkeep||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:.gitkeep||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\views\\account\\forgottenpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\views\\account\\forgottenpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:views\\account\\forgottenpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\views\\consent\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\views\\account\\loggedout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:views\\account\\loggedout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\views\\account\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:views\\account\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\identity.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:identity.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\loginresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:loginresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\controllers\\account\\resetpasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\account\\resetpasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\controllers\\account\\forgotpasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\account\\forgotpasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\controllers\\account\\accountoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\account\\accountoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\controllers\\account\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\account\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\controllers\\account\\redirectviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\account\\redirectviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\controllers\\account\\externalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\account\\externalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\controllers\\account\\changepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\account\\changepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\controllers\\consent\\consentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\consent\\consentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\controllers\\account\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\account\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\controllers\\account\\logoutinputmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\account\\logoutinputmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\controllers\\account\\loggedoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\account\\loggedoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\views\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:views\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\controllers\\home\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\home\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\controllers\\account\\logininputmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\account\\logininputmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\data\\clients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:data\\clients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\tempkey.rsa||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:tempkey.rsa||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\controllers\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\package-lock.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:package-lock.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\properties\\publishprofiles\\folderprofile.pubxml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:properties\\publishprofiles\\folderprofile.pubxml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\controllers\\home\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\home\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\controllers\\account\\logoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\account\\logoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\controllers\\account\\externalprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\account\\externalprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\services\\securityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:services\\securityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\services\\userprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:services\\userprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\interfaces\\isecurityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:interfaces\\isecurityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\helper\\encryptionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:helper\\encryptionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\helper\\stringutilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:helper\\stringutilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\helper\\emailutilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:helper\\emailutilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\data\\identitycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:data\\identitycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\dto\\ajaxcallresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:dto\\ajaxcallresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\controllers\\grants\\grantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:controllers\\grants\\grantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\views\\grants\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:views\\grants\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\views\\account\\setupauthenticator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:views\\account\\setupauthenticator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\views\\shared\\redirect.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:views\\shared\\redirect.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\views\\shared\\_scopelistitem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:views\\shared\\_scopelistitem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\views\\account\\authenticator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:views\\account\\authenticator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\.gitkeep||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:.gitkeep||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\views\\consent\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:views\\consent\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\views\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\identityserver\\views\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:views\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|c:\\users\\joshua\\documents\\ars\\payroll\\identityserver\\views\\account\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F06712A6-4AAB-4BCC-BB91-7371A04FEC7A}|Identity.API.csproj|solutionrelative:views\\account\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -190,304 +234,184 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "EncryptionHelper.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Helper\\EncryptionHelper.cs",
-              "RelativeDocumentMoniker": "Helper\\EncryptionHelper.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Helper\\EncryptionHelper.cs",
-              "RelativeToolTip": "Helper\\EncryptionHelper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T01:44:12.399Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "EmailUtilities.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Helper\\EmailUtilities.cs",
-              "RelativeDocumentMoniker": "Helper\\EmailUtilities.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Helper\\EmailUtilities.cs",
-              "RelativeToolTip": "Helper\\EmailUtilities.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T01:44:05.779Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "Entities\\User.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Entities\\User.cs",
-              "RelativeToolTip": "Entities\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T01:41:12.427Z"
+              "DocumentIndex": 0,
+              "Title": "ForgottenPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Views\\Account\\ForgottenPassword.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\ForgottenPassword.cshtml",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Views\\Account\\ForgottenPassword.cshtml",
+              "RelativeToolTip": "Views\\Account\\ForgottenPassword.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAmwBcAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-30T08:11:49.7Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Services\\UserService.cs",
-              "RelativeToolTip": "Services\\UserService.cs",
-              "ViewState": "AQIAAJ0AAAAAAAAAAAAjwNMAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T00:33:27.075Z"
+              "Title": "LoggedOut.cshtml",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Views\\Account\\LoggedOut.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\LoggedOut.cshtml",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Views\\Account\\LoggedOut.cshtml",
+              "RelativeToolTip": "Views\\Account\\LoggedOut.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-21T01:50:24.489Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginResult.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\LoginResult.cs",
-              "RelativeDocumentMoniker": "LoginResult.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\LoginResult.cs",
-              "RelativeToolTip": "LoginResult.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA4AAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T01:30:02.465Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserProfileService.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Services\\UserProfileService.cs",
-              "RelativeDocumentMoniker": "Services\\UserProfileService.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Services\\UserProfileService.cs",
-              "RelativeToolTip": "Services\\UserProfileService.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAiwAwAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T03:02:41.751Z",
+              "DocumentIndex": 4,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-30T01:13:55.117Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "StringUtilities.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Helper\\StringUtilities.cs",
-              "RelativeDocumentMoniker": "Helper\\StringUtilities.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Helper\\StringUtilities.cs",
-              "RelativeToolTip": "Helper\\StringUtilities.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Startup.cs",
+              "RelativeDocumentMoniker": "Startup.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Startup.cs",
+              "RelativeToolTip": "Startup.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAgwA4AAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T01:44:14.065Z"
+              "WhenOpened": "2024-06-14T04:34:23.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Views\\Account\\Login.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACAAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-30T01:30:24.185Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ISecurityService.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Interfaces\\ISecurityService.cs",
-              "RelativeDocumentMoniker": "Interfaces\\ISecurityService.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Interfaces\\ISecurityService.cs",
-              "RelativeToolTip": "Interfaces\\ISecurityService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T01:44:18.119Z"
+              "Title": "Identity.API",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Identity.API.csproj",
+              "RelativeDocumentMoniker": "Identity.API.csproj",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Identity.API.csproj",
+              "RelativeToolTip": "Identity.API.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-19T08:11:44.962Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Interfaces\\IUserService.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IUserService.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Interfaces\\IUserService.cs",
-              "RelativeToolTip": "Interfaces\\IUserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T01:44:19.411Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IdentityContext.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Data\\IdentityContext.cs",
-              "RelativeDocumentMoniker": "Data\\IdentityContext.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Data\\IdentityContext.cs",
-              "RelativeToolTip": "Data\\IdentityContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T01:41:07.927Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Clients.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Data\\Clients.cs",
-              "RelativeDocumentMoniker": "Data\\Clients.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Data\\Clients.cs",
-              "RelativeToolTip": "Data\\Clients.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T01:41:06.678Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AjaxCallResultDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Dto\\AjaxCallResultDTO.cs",
-              "RelativeDocumentMoniker": "Dto\\AjaxCallResultDTO.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Dto\\AjaxCallResultDTO.cs",
-              "RelativeToolTip": "Dto\\AjaxCallResultDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T01:41:01.816Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "LoginInputModel.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Controllers\\Account\\LoginInputModel.cs",
-              "RelativeDocumentMoniker": "Controllers\\Account\\LoginInputModel.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Controllers\\Account\\LoginInputModel.cs",
-              "RelativeToolTip": "Controllers\\Account\\LoginInputModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T01:34:07.589Z"
+              "DocumentIndex": 3,
+              "Title": "ChangePassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Views\\Account\\ChangePassword.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\ChangePassword.cshtml",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Views\\Account\\ChangePassword.cshtml",
+              "RelativeToolTip": "Views\\Account\\ChangePassword.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-30T08:11:52.362Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "SecurityService.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Services\\SecurityService.cs",
-              "RelativeDocumentMoniker": "Services\\SecurityService.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Services\\SecurityService.cs",
-              "RelativeToolTip": "Services\\SecurityService.cs",
-              "ViewState": "AQIAAGUAAAAAAAAAAAAYwBMAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T03:02:42.774Z"
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-13T01:52:52.95Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "LoggedOutViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Controllers\\Account\\LoggedOutViewModel.cs",
-              "RelativeDocumentMoniker": "Controllers\\Account\\LoggedOutViewModel.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Controllers\\Account\\LoggedOutViewModel.cs",
-              "RelativeToolTip": "Controllers\\Account\\LoggedOutViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T01:34:05.252Z"
+              "WhenOpened": "2024-06-14T04:55:16.143Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Controllers\\Account\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "Controllers\\Account\\LoginViewModel.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Controllers\\Account\\LoginViewModel.cs",
-              "RelativeToolTip": "Controllers\\Account\\LoginViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 7,
+              "Title": "LoginResult.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\LoginResult.cs",
+              "RelativeDocumentMoniker": "LoginResult.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\LoginResult.cs",
+              "RelativeToolTip": "LoginResult.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA4AAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T01:37:59.184Z"
+              "WhenOpened": "2024-05-30T01:30:02.465Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "LogoutInputModel.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Controllers\\Account\\LogoutInputModel.cs",
-              "RelativeDocumentMoniker": "Controllers\\Account\\LogoutInputModel.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Controllers\\Account\\LogoutInputModel.cs",
-              "RelativeToolTip": "Controllers\\Account\\LogoutInputModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T01:34:09.669Z"
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABQAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-30T01:10:02.812Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "LogoutViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Controllers\\Account\\LogoutViewModel.cs",
-              "RelativeDocumentMoniker": "Controllers\\Account\\LogoutViewModel.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Controllers\\Account\\LogoutViewModel.cs",
-              "RelativeToolTip": "Controllers\\Account\\LogoutViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T01:34:10.913Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ForgotPasswordViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Controllers\\Account\\ForgotPasswordViewModel.cs",
-              "RelativeDocumentMoniker": "Controllers\\Account\\ForgotPasswordViewModel.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Controllers\\Account\\ForgotPasswordViewModel.cs",
-              "RelativeToolTip": "Controllers\\Account\\ForgotPasswordViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T01:34:02.134Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ExternalProvider.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Controllers\\Account\\ExternalProvider.cs",
-              "RelativeDocumentMoniker": "Controllers\\Account\\ExternalProvider.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Controllers\\Account\\ExternalProvider.cs",
-              "RelativeToolTip": "Controllers\\Account\\ExternalProvider.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T01:34:18.674Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ChangePassword.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Controllers\\Account\\ChangePassword.cs",
-              "RelativeDocumentMoniker": "Controllers\\Account\\ChangePassword.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Controllers\\Account\\ChangePassword.cs",
-              "RelativeToolTip": "Controllers\\Account\\ChangePassword.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T01:33:55.224Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
               "Title": "AccountOptions.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Controllers\\Account\\AccountOptions.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Account\\AccountOptions.cs",
               "RelativeDocumentMoniker": "Controllers\\Account\\AccountOptions.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Controllers\\Account\\AccountOptions.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Account\\AccountOptions.cs",
               "RelativeToolTip": "Controllers\\Account\\AccountOptions.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T01:39:06.154Z"
+              "WhenOpened": "2024-06-04T01:39:06.154Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 14,
               "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Controllers\\Account\\AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Account\\AccountController.cs",
               "RelativeDocumentMoniker": "Controllers\\Account\\AccountController.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Controllers\\Account\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Account\\AccountController.cs",
               "RelativeToolTip": "Controllers\\Account\\AccountController.cs",
-              "ViewState": "AQIAAJABAAAAAAAAAAAcwKAAAABJAAAA",
+              "ViewState": "AQIAAJABAAAAAAAAAAAcwKIBAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-31T00:32:32.993Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "GrantsController.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Controllers\\Grants\\GrantsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\Grants\\GrantsController.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Controllers\\Grants\\GrantsController.cs",
-              "RelativeToolTip": "Controllers\\Grants\\GrantsController.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAgwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T01:39:57.46Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 11,
               "Title": "ResetPasswordViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Controllers\\Account\\ResetPasswordViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Account\\ResetPasswordViewModel.cs",
               "RelativeDocumentMoniker": "Controllers\\Account\\ResetPasswordViewModel.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Controllers\\Account\\ResetPasswordViewModel.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Account\\ResetPasswordViewModel.cs",
               "RelativeToolTip": "Controllers\\Account\\ResetPasswordViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -495,11 +419,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 12,
+              "Title": "ForgotPasswordViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Account\\ForgotPasswordViewModel.cs",
+              "RelativeDocumentMoniker": "Controllers\\Account\\ForgotPasswordViewModel.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Account\\ForgotPasswordViewModel.cs",
+              "RelativeToolTip": "Controllers\\Account\\ForgotPasswordViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAUAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T01:34:02.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "RedirectViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Controllers\\Account\\RedirectViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Account\\RedirectViewModel.cs",
               "RelativeDocumentMoniker": "Controllers\\Account\\RedirectViewModel.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Controllers\\Account\\RedirectViewModel.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Account\\RedirectViewModel.cs",
               "RelativeToolTip": "Controllers\\Account\\RedirectViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -507,47 +443,84 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 16,
               "Title": "ExternalController.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Controllers\\Account\\ExternalController.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Account\\ExternalController.cs",
               "RelativeDocumentMoniker": "Controllers\\Account\\ExternalController.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Controllers\\Account\\ExternalController.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Account\\ExternalController.cs",
               "RelativeToolTip": "Controllers\\Account\\ExternalController.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAYwGUAAAAtAAAA",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAgwGUAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-04T01:34:19.836Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Controllers\\Home\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\Home\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Controllers\\Home\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\Home\\HomeController.cs",
-              "ViewState": "AQIAAEkAAAAAAAAAAAAkwAAAAAAAAAAA",
+              "DocumentIndex": 17,
+              "Title": "ChangePassword.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Account\\ChangePassword.cs",
+              "RelativeDocumentMoniker": "Controllers\\Account\\ChangePassword.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Account\\ChangePassword.cs",
+              "RelativeToolTip": "Controllers\\Account\\ChangePassword.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T01:37:43.797Z"
+              "WhenOpened": "2024-06-04T01:33:55.224Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Views\\Grants\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Grants\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Views\\Grants\\Index.cshtml",
-              "RelativeToolTip": "Views\\Grants\\Index.cshtml",
+              "DocumentIndex": 18,
+              "Title": "ConsentController.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Consent\\ConsentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Consent\\ConsentController.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Consent\\ConsentController.cs",
+              "RelativeToolTip": "Controllers\\Consent\\ConsentController.cs",
+              "ViewState": "AQIAAM4AAAAAAAAAAAAswAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T04:01:50.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Account\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "Controllers\\Account\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Account\\LoginViewModel.cs",
+              "RelativeToolTip": "Controllers\\Account\\LoginViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-30T08:12:18.977Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T01:37:59.184Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 20,
+              "Title": "LogoutInputModel.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Account\\LogoutInputModel.cs",
+              "RelativeDocumentMoniker": "Controllers\\Account\\LogoutInputModel.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Account\\LogoutInputModel.cs",
+              "RelativeToolTip": "Controllers\\Account\\LogoutInputModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T01:34:09.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LoggedOutViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Account\\LoggedOutViewModel.cs",
+              "RelativeDocumentMoniker": "Controllers\\Account\\LoggedOutViewModel.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Account\\LoggedOutViewModel.cs",
+              "RelativeToolTip": "Controllers\\Account\\LoggedOutViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T01:34:05.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "ResetPassword.cshtml",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Views\\Account\\ResetPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Views\\Account\\ResetPassword.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\ResetPassword.cshtml",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Views\\Account\\ResetPassword.cshtml",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Views\\Account\\ResetPassword.cshtml",
               "RelativeToolTip": "Views\\Account\\ResetPassword.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -555,11 +528,305 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-30T01:30:39.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Home\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Home\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Home\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\Home\\HomeController.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAkwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T01:37:43.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "LoginInputModel.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Account\\LoginInputModel.cs",
+              "RelativeDocumentMoniker": "Controllers\\Account\\LoginInputModel.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Account\\LoginInputModel.cs",
+              "RelativeToolTip": "Controllers\\Account\\LoginInputModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T01:34:07.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Clients.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Data\\Clients.cs",
+              "RelativeDocumentMoniker": "Data\\Clients.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Data\\Clients.cs",
+              "RelativeToolTip": "Data\\Clients.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBMAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T01:41:06.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "tempkey.rsa",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\tempkey.rsa",
+              "RelativeDocumentMoniker": "tempkey.rsa",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\tempkey.rsa",
+              "RelativeToolTip": "tempkey.rsa",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-06-14T04:34:27.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Extensions.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Extensions.cs",
+              "RelativeDocumentMoniker": "Controllers\\Extensions.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Extensions.cs",
+              "RelativeToolTip": "Controllers\\Extensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T04:51:17.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "package-lock.json",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\package-lock.json",
+              "RelativeDocumentMoniker": "package-lock.json",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\package-lock.json",
+              "RelativeToolTip": "package-lock.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-14T04:11:56.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "FolderProfile.pubxml",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Properties\\PublishProfiles\\FolderProfile.pubxml",
+              "RelativeDocumentMoniker": "Properties\\PublishProfiles\\FolderProfile.pubxml",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Properties\\PublishProfiles\\FolderProfile.pubxml",
+              "RelativeToolTip": "Properties\\PublishProfiles\\FolderProfile.pubxml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-06-14T04:34:15.743Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 30,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Services\\UserService.cs",
+              "RelativeToolTip": "Services\\UserService.cs",
+              "ViewState": "AQIAAK4AAAAAAAAAAAAnwNMAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T00:33:27.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Home\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Controllers\\Home\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Home\\ErrorViewModel.cs",
+              "RelativeToolTip": "Controllers\\Home\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T04:29:12.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "LogoutViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Account\\LogoutViewModel.cs",
+              "RelativeDocumentMoniker": "Controllers\\Account\\LogoutViewModel.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Account\\LogoutViewModel.cs",
+              "RelativeToolTip": "Controllers\\Account\\LogoutViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T01:34:10.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ExternalProvider.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Account\\ExternalProvider.cs",
+              "RelativeDocumentMoniker": "Controllers\\Account\\ExternalProvider.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Account\\ExternalProvider.cs",
+              "RelativeToolTip": "Controllers\\Account\\ExternalProvider.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T01:34:18.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "SecurityService.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Services\\SecurityService.cs",
+              "RelativeDocumentMoniker": "Services\\SecurityService.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Services\\SecurityService.cs",
+              "RelativeToolTip": "Services\\SecurityService.cs",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAYwBMAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T03:02:42.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "EncryptionHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Helper\\EncryptionHelper.cs",
+              "RelativeDocumentMoniker": "Helper\\EncryptionHelper.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Helper\\EncryptionHelper.cs",
+              "RelativeToolTip": "Helper\\EncryptionHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T01:44:12.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "EmailUtilities.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Helper\\EmailUtilities.cs",
+              "RelativeDocumentMoniker": "Helper\\EmailUtilities.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Helper\\EmailUtilities.cs",
+              "RelativeToolTip": "Helper\\EmailUtilities.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T01:44:05.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "StringUtilities.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Helper\\StringUtilities.cs",
+              "RelativeDocumentMoniker": "Helper\\StringUtilities.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Helper\\StringUtilities.cs",
+              "RelativeToolTip": "Helper\\StringUtilities.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T01:44:14.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "UserProfileService.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Services\\UserProfileService.cs",
+              "RelativeDocumentMoniker": "Services\\UserProfileService.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Services\\UserProfileService.cs",
+              "RelativeToolTip": "Services\\UserProfileService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAiwAwAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T03:02:41.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Entities\\User.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Entities\\User.cs",
+              "RelativeToolTip": "Entities\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T01:41:12.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ISecurityService.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Interfaces\\ISecurityService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\ISecurityService.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Interfaces\\ISecurityService.cs",
+              "RelativeToolTip": "Interfaces\\ISecurityService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T01:44:18.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IUserService.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "Interfaces\\IUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T01:44:19.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "IdentityContext.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Data\\IdentityContext.cs",
+              "RelativeDocumentMoniker": "Data\\IdentityContext.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Data\\IdentityContext.cs",
+              "RelativeToolTip": "Data\\IdentityContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T01:41:07.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "AjaxCallResultDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Dto\\AjaxCallResultDTO.cs",
+              "RelativeDocumentMoniker": "Dto\\AjaxCallResultDTO.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Dto\\AjaxCallResultDTO.cs",
+              "RelativeToolTip": "Dto\\AjaxCallResultDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T01:41:01.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "GrantsController.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Grants\\GrantsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Grants\\GrantsController.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Controllers\\Grants\\GrantsController.cs",
+              "RelativeToolTip": "Controllers\\Grants\\GrantsController.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T01:39:57.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Views\\Grants\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Grants\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Views\\Grants\\Index.cshtml",
+              "RelativeToolTip": "Views\\Grants\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-30T08:12:18.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
               "Title": "SetupAuthenticator.cshtml",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Views\\Account\\SetupAuthenticator.cshtml",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Views\\Account\\SetupAuthenticator.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\SetupAuthenticator.cshtml",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Views\\Account\\SetupAuthenticator.cshtml",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Views\\Account\\SetupAuthenticator.cshtml",
               "RelativeToolTip": "Views\\Account\\SetupAuthenticator.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -567,23 +834,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "Views\\Account\\Login.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAABlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-30T01:30:24.185Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 48,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -591,11 +846,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 49,
               "Title": "Redirect.cshtml",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Views\\Shared\\Redirect.cshtml",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Views\\Shared\\Redirect.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\Redirect.cshtml",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Views\\Shared\\Redirect.cshtml",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Views\\Shared\\Redirect.cshtml",
               "RelativeToolTip": "Views\\Shared\\Redirect.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -603,11 +858,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 50,
               "Title": "_ScopeListItem.cshtml",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Views\\Shared\\_ScopeListItem.cshtml",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Views\\Shared\\_ScopeListItem.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_ScopeListItem.cshtml",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Views\\Shared\\_ScopeListItem.cshtml",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Views\\Shared\\_ScopeListItem.cshtml",
               "RelativeToolTip": "Views\\Shared\\_ScopeListItem.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -615,35 +870,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "appsettings.Development.json",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\appsettings.Development.json",
-              "RelativeToolTip": "appsettings.Development.json",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-30T01:13:55.117Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABgAAABXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-30T01:30:39.84Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 52,
               "Title": ".gitkeep",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\.gitkeep",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\.gitkeep",
               "RelativeDocumentMoniker": ".gitkeep",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\.gitkeep",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\.gitkeep",
               "RelativeToolTip": ".gitkeep",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
@@ -651,11 +882,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 51,
               "Title": "Authenticator.cshtml",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Views\\Account\\Authenticator.cshtml",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Views\\Account\\Authenticator.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Authenticator.cshtml",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Views\\Account\\Authenticator.cshtml",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Views\\Account\\Authenticator.cshtml",
               "RelativeToolTip": "Views\\Account\\Authenticator.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -663,35 +894,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "ForgottenPassword.cshtml",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Views\\Account\\ForgottenPassword.cshtml",
-              "RelativeDocumentMoniker": "Views\\Account\\ForgottenPassword.cshtml",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Views\\Account\\ForgottenPassword.cshtml",
-              "RelativeToolTip": "Views\\Account\\ForgottenPassword.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-30T08:11:49.7Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-30T01:10:02.812Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 53,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Views\\Consent\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Views\\Consent\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Consent\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Views\\Consent\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Views\\Consent\\Index.cshtml",
               "RelativeToolTip": "Views\\Consent\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -699,11 +906,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 54,
               "Title": "AccessDenied.cshtml",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Views\\Account\\AccessDenied.cshtml",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Views\\Account\\AccessDenied.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\AccessDenied.cshtml",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Views\\Account\\AccessDenied.cshtml",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Views\\Account\\AccessDenied.cshtml",
               "RelativeToolTip": "Views\\Account\\AccessDenied.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -711,27 +918,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 55,
               "Title": "Logout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Views\\Account\\Logout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Views\\Account\\Logout.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Logout.cshtml",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Views\\Account\\Logout.cshtml",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\IdentityServer\\Views\\Account\\Logout.cshtml",
               "RelativeToolTip": "Views\\Account\\Logout.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-30T08:12:10.11Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "ChangePassword.cshtml",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Views\\Account\\ChangePassword.cshtml",
-              "RelativeDocumentMoniker": "Views\\Account\\ChangePassword.cshtml",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\IdentityServer\\Views\\Account\\ChangePassword.cshtml",
-              "RelativeToolTip": "Views\\Account\\ChangePassword.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-30T08:11:52.362Z"
             }
           ]
         }

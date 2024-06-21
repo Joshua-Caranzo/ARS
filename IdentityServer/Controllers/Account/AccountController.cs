@@ -416,6 +416,10 @@ namespace Identity.API.Controllers.Account
             return vm;
         }
 
- 
+        [HttpGet]
+        public IActionResult ForgottenPassword()
+        {
+            return View();
+        }
     }
 }

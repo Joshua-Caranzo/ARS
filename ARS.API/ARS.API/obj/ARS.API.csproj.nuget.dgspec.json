@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\ARS.API.csproj": {}
+    "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\ARS.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\ARS.API.csproj": {
+    "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\ARS.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\ARS.API.csproj",
+        "projectUniqueName": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\ARS.API.csproj",
         "projectName": "ARS.API",
-        "projectPath": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\ARS.API.csproj",
+        "projectPath": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\ARS.API.csproj",
         "packagesPath": "C:\\Users\\Joshua\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\obj\\",
+        "outputPath": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

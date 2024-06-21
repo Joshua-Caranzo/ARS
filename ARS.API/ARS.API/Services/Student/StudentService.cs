@@ -122,7 +122,7 @@ namespace ARS.API.Services.Student
                 <p>Best regards,</p>
                 <p>School Administration</p>";
 
-                //await _emailService.SendEmailAsync(student.Email, emailSubject, emailBody, ct);
+                await _emailService.SendEmailAsync(student.Email, emailSubject, emailBody, ct);
 
                 callResult.IsSuccess = true;
                 callResult.Message = "School has been successfully added.";

@@ -8,11 +8,7 @@
 	import { loggedInUser, isLocal } from '$lib/store';
 
 	import { page } from '$app/stores';
-	import { onMount } from 'svelte';
-	import { getUserById } from './user/repo';
-	import type { CallResultDto } from '../types/types';
-	import type { UserDTO } from './user/type';
-
+	
 	const unprotectedRoutes = ['/', '/signin-callback', '/successfulregister'];
 
 	$: needsLogin = !unprotectedRoutes.includes($page.url.pathname);
@@ -40,9 +36,6 @@ async function waitForLogin(): Promise<void> {
 {/if}
 
 <div class="main has-background-white">
-
-	<!-- <slot /> -->
-
 	{#if $loggedInUser || !needsLogin}
 		<slot />
 	{:else}

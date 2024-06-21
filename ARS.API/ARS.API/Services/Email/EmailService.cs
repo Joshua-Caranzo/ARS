@@ -13,29 +13,51 @@ namespace ARS.API.Services.Email
         }
         public async Task SendEmailAsync(string toEmail, string subject, string body, CancellationToken ct)
         {
-            var smtpSettings = _configuration.GetSection("SmtpSettings");
-
-            var host = smtpSettings["Host"];
-            var port = int.Parse(smtpSettings["Port"]);
-            var username = smtpSettings["Username"];
-            var password = smtpSettings["Password"];
-
-            using (var client = new SmtpClient(host, port))
+            try
             {
-                client.Credentials = new NetworkCredential(username, password);
-                client.EnableSsl = true;
+                var smtpSettings = _configuration.GetSection("SmtpSettings");
 
-                var mailMessage = new MailMessage
+                var host = smtpSettings["Host"];
+                var port = int.Parse(smtpSettings["Port"]);
+                var username = smtpSettings["Username"];
+                var password = smtpSettings["Password"];
+
+                using (var client = new SmtpClient(host, port))
                 {
-                    From = new MailAddress(username),
-                    Subject = subject,
-                    Body = body,
-                    IsBodyHtml = true
-                };
-                mailMessage.To.Add(toEmail);
+                    client.Credentials = new NetworkCredential(username, password);
+                    client.EnableSsl = true;
 
-                await client.SendMailAsync(mailMessage, ct);
+                    var mailMessage = new MailMessage
+                    {
+                        From = new MailAddress(username),
+                        Subject = subject,
+                        Body = body,
+                        IsBodyHtml = true
+                    };
+                    mailMessage.To.Add(toEmail);
+
+                    await client.SendMailAsync(mailMessage, ct);
+                }
+            }
+            catch (FormatException ex)
+            {
+                // Handle format-related exceptions (e.g., invalid email address)
+                Console.WriteLine($"Format error while sending email: {ex.Message}");
+                throw; // Re-throw to propagate the exception
+            }
+            catch (SmtpException ex)
+            {
+                // Handle SMTP-related exceptions (e.g., SMTP server issues)
+                Console.WriteLine($"SMTP error while sending email: {ex.StatusCode} - {ex.Message}");
+                throw; // Re-throw to propagate the exception
+            }
+            catch (Exception ex)
+            {
+                // Handle other unexpected exceptions
+                Console.WriteLine($"An error occurred while sending email: {ex.Message}");
+                throw; // Re-throw to propagate the exception
             }
         }
+
     }
 }

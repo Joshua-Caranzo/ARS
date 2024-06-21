@@ -1,46 +1,45 @@
 @model LoginViewModel
 @if (Model.EnableLocalLogin)
 {
-
-
-    <div class="container">
-        <div class="columns is-vcentered">
-            <div class="column is-hidden-touch is-half mt-xl-2">
-                <img src="~/arsprofile.jpg" alt="Placeholder Image" class="image">
-            </div>
-            <div class="column">
-                <div class="box">
-                    <h3 class="title is-3">User Login</h3>
-                    <form asp-route="Login">
-                        <input type="hidden" asp-for="ReturnUrl" />
-                        <div class="field">
-                            <label class="label">Username</label>
-                            <div class="control">
-                                <input class="input" placeholder="UserName" asp-for="UserName" autofocus>
-                            </div>
+    <section class="hero is-fullheight">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-4-desktop is-6-tablet">
+                        <div class="box">
+                            <h3 class="title is-3 has-text-centered">User Login</h3>
+                            <form asp-route="Login">
+                                <input type="hidden" asp-for="ReturnUrl" />
+                                <div class="field">
+                                    <label class="label">Username</label>
+                                    <div class="control">
+                                        <input class="input" placeholder="UserName" asp-for="UserName" autofocus>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label class="label">Password</label>
+                                    <div class="control">
+                                        <input type="password" class="input" placeholder="Password" asp-for="Password" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="control">
+                                        <button class="button is-link is-fullwidth" name="button" id="Submit" value="login">Log in</button>
+                                    </div>
+                                </div>
+                                <p class="has-text-right">
+                                    <a href="ForgottenPassword" class="is-underlined">Forgot password?</a>
+                                </p>
+                                <p class="error has-text-danger" style="white-space: pre-line; display: none;">
+                                    <partial name="_ValidationSummary" class="error" />
+                                </p>
+                            </form>
                         </div>
-                        <div class="field">
-                            <label class="label">Password</label>
-                            <div class="control">
-                                <input type="password" class="input" placeholder="Password" asp-for="Password" autocomplete="off">
-                            </div>
-                        </div>
-                        <div class="field">
-                            <div class="control">
-                                <button class="button is-link" name="button" id="Submit" value="login">Log in</button>
-                            </div>
-                        </div>
-                        <p class="has-text-right">
-                            <a href="#" class="is-underlined">Forgotten password?</a>
-                        </p>
-                        <p class="error" style="white-space: pre-line; display: none;">
-                            <partial name="_ValidationSummary" class="error" />
-                        </p>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 }
 
 @if (Model.VisibleExternalProviders.Any())
