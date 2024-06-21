@@ -1,6 +1,5 @@
 <script lang="ts">
     import type { SchoolYear} from "./type";
-    import Icon from "$lib/components/Icon.svelte";
     import { faEdit } from "@fortawesome/free-solid-svg-icons";
     import Notification from "$lib/components/Notification.svelte";
 	import IconButton from "$lib/components/IconButton.svelte";

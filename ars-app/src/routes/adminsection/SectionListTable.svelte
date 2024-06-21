@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Icon from "$lib/components/Icon.svelte";
 	import { faEdit } from "@fortawesome/free-solid-svg-icons";
 	import Notification from "$lib/components/Notification.svelte";
 	import type { SchoolSectionDto } from "./type";
