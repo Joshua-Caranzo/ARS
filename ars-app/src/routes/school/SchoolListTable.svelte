@@ -1,12 +1,13 @@
 <script lang="ts">
     import type { School } from "./type";
-    import Icon from "$lib/components/Icon.svelte";
     import { faEdit } from "@fortawesome/free-solid-svg-icons";
     import Notification from "$lib/components/Notification.svelte";
+	import IconButton from "$lib/components/IconButton.svelte";
 
     export let schools: School[] = [];
     export let message: string | undefined;
     export let isSuccess: boolean;
+    export let goEdit: (school: School) => void;
 </script>
 
 <div style="overflow: auto;">
@@ -30,10 +31,7 @@
                 <td class="has-text-black">{school.schoolContactNum}</td>
                 <td class="has-text-black">{school.schoolEmail}</td>
                 <td class="has-text-centered has-text-black">
-                    <a class="button is-link" href={`/school/edit/${school.id}`}>
-                        <Icon icon={faEdit} className="mr-2"/>
-                        Edit
-                    </a>
+                    <IconButton icon={faEdit} on:click={() => goEdit(school)} label="Edit"/>
                 </td>
             </tr>
             {/each}
