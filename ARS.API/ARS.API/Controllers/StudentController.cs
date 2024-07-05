@@ -12,9 +12,9 @@ namespace ARS.API.Controllers
         private readonly IStudentService _studentService = studentService;
 
         [HttpPost]
-        public async Task<IActionResult> AddStudent(StudentDto student,  int userId, bool? isStudentRegistered, CancellationToken ct)
+        public async Task<IActionResult> AddStudent(StudentDto student, int userId, bool? isStudentRegistered, CancellationToken ct)
         {
-            var response = await _studentService.AddStudentRegistrar(student, userId, isStudentRegistered,ct);
+            var response = await _studentService.AddStudentRegistrar(student, userId, isStudentRegistered, ct);
             return Ok(response);
         }
 
@@ -68,7 +68,7 @@ namespace ARS.API.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetMoveUpStatus( int studentId, CancellationToken ct)
+        public async Task<IActionResult> GetMoveUpStatus(int studentId, CancellationToken ct)
         {
             var moveUpstatus = await _studentService.GetMoveUpStatus(studentId, ct);
             return Ok(moveUpstatus);
@@ -87,5 +87,48 @@ namespace ARS.API.Controllers
             var moveUpstatus = await _studentService.GetStudentListReport(userId, gradeLevelId, syId, ct);
             return Ok(moveUpstatus);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> GetStudentListSuperAdmin(string? searchQuery, int pageNumber, int pageSize, CancellationToken ct)
+        {
+            var studentList = await _studentService.GetStudentListSuperAdmin(searchQuery, pageNumber, pageSize, ct);
+            return Ok(studentList);
+        }
+        
+        [HttpPut]
+        public async Task<IActionResult> DenyStudent(int studentId, CancellationToken ct)
+        {
+            var response = await _studentService.DenyStudent(studentId, ct);
+            return Ok(response);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetStudentProfile(int userId, int syId, CancellationToken ct)
+        {
+            var studentList = await _studentService.GetStudentProfile( userId, syId, ct);
+            return Ok(studentList);
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> AddNotes(int studentId, string notes, CancellationToken ct)
+        {
+            var response = await _studentService.AddNotes(studentId, notes, ct);
+            return Ok(response);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetNotes(int studentId, CancellationToken ct)
+        {
+            var notes = await _studentService.GetStudentNotes(studentId, ct);
+            return Ok(notes);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetConsolidatedReport(int syId, CancellationToken ct)
+        {
+            var school = await _studentService.GetSchoolConsolidatedReport(syId, ct);
+            return Ok(school);
+        }
     }
 }
+

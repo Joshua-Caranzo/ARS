@@ -10,7 +10,6 @@
     let notificationClass: string;
   
     $: if (errorMessage != "" || successMessage != "") {
-      console.log("scheduleAutoHide");
       scheduleAutoHide();
     }
   

@@ -1,4 +1,5 @@
 ﻿using ARS.API.Models;
+using ARS.API.Services.Email;
 using ARS.API.Services.User.Dto;
 using Dapper;
 using Microsoft.EntityFrameworkCore;
@@ -10,10 +11,11 @@ using System.Text;
 
 namespace Payroll.API.Services.User
 {
-    public class UserService(ParyollContext payrollcontext, IDbConnection connection) : IUserService
+    public class UserService(ParyollContext payrollcontext, IDbConnection connection, IEmailService emailService) : IUserService
     {
         private readonly ParyollContext _payrollcontext = payrollcontext;
         private readonly IDbConnection _connection = connection;
+        private readonly IEmailService _emailService = emailService;
 
 
         public async Task<CallResultDto<List<UserDto>>> GetUserList(string? searchQuery, int pageNumber, int pageSize, CancellationToken ct)
@@ -158,7 +160,7 @@ namespace Payroll.API.Services.User
             INNER JOIN Employee e on e.UserId = u.Id
             INNER JOIN UserType ut ON u.UserTypeId = ut.Id
             INNER JOIN School s ON e.AssignedSchoolId = s.Id
-            WHERE u.Active = true AND e.assignedSchoolId = @SchoolId";
+            WHERE u.Active = true AND e.assignedSchoolId = @SchoolId and u.UserTypeId > 2";
 
                 var countSql = @"
             SELECT COUNT(*)
@@ -166,7 +168,7 @@ namespace Payroll.API.Services.User
             INNER JOIN Employee e on e.UserId = u.Id
             INNER JOIN UserType ut ON u.UserTypeId = ut.Id
             INNER JOIN School s ON e.AssignedSchoolId = s.Id
-            WHERE u.Active = true AND e.assignedSchoolId = @SchoolId";
+            WHERE u.Active = true AND e.assignedSchoolId = @SchoolId and  u.UserTypeId > 2";
 
                 if (!string.IsNullOrEmpty(searchQuery))
                 {
@@ -230,43 +232,65 @@ namespace Payroll.API.Services.User
 
             try
             {
-                // Not sure sa algo gamit for password hashing
-                var hashedPassword = Encoding.UTF8.GetBytes(user.Password);
-
-                // Using Bycrypt for encrpyting password which will be used for password comparison
-                var encryptedPassword = BCrypt.Net.BCrypt.HashPassword(user.Password);
-
-                var newUser = new ARS.API.Models.User
+                var existStudent = await _payrollcontext.Users.FirstOrDefaultAsync(x => x.Email == user.Email && x.Active == true);
+                if (existStudent == null)
                 {
-                    UserName = user.UserName,
-                    Password = hashedPassword,
-                    FirstName = user.FirstName,
-                    LastName = user.LastName,
-                    Email = user.Email,
-                    CreatedDate = DateTime.Now,
-                    EncryptedPassword = encryptedPassword,
-                    Active = true,
-                    IsEmployee = true,
-                    UserTypeId = user.UserTypeId,
-                    IsStudent = false
-                };
+                    // Not sure sa algo gamit for password hashing
+                    var hashedPassword = Encoding.UTF8.GetBytes(user.Password);
 
-                _payrollcontext.Users.Add(newUser);
-                await _payrollcontext.SaveChangesAsync(ct);
+                    // Using Bycrypt for encrpyting password which will be used for password comparison
+                    var encryptedPassword = BCrypt.Net.BCrypt.HashPassword(user.Password);
 
-                var newUserId = newUser.Id;
+                    var newUser = new ARS.API.Models.User
+                    {
+                        UserName = user.UserName,
+                        Password = hashedPassword,
+                        FirstName = user.FirstName,
+                        LastName = user.LastName,
+                        Email = user.Email,
+                        CreatedDate = DateTime.Now,
+                        EncryptedPassword = encryptedPassword,
+                        Active = true,
+                        IsEmployee = true,
+                        UserTypeId = user.UserTypeId,
+                        IsStudent = false,
+                        Sex = ""
+                    };
 
-                var newEmployee = new Ars.API.Models.Employee
+                    _payrollcontext.Users.Add(newUser);
+                    await _payrollcontext.SaveChangesAsync(ct);
+
+                    var newUserId = newUser.Id;
+
+                    var newEmployee = new Ars.API.Models.Employee
+                    {
+                        UserId = newUserId,
+                        AssignedSchoolId = user.AssignedSchoolId ?? 0,
+                    };
+
+                    _payrollcontext.Employee.Add(newEmployee);
+                    await _payrollcontext.SaveChangesAsync(ct);
+
+                    var emailSubject = "Welcome to ARS!";
+                    var emailBody = $@"
+                <p>Dear {user.FirstName} {user.LastName},</p>
+                <p>Congratulations! You have been successfully registered.</p>
+                <p>Your User Name is: <strong>{user.Email}</strong></p>
+                <p>Your password is: <strong>{user.Password}</strong></p>
+                <p>Best regards,</p>
+                <p>School Administration</p>";
+
+                    await _emailService.SendEmailAsync(user.Email, emailSubject, emailBody, ct);
+
+
+                    callResult.IsSuccess = true;
+                    callResult.Message = "User has been successfully added.";
+                }
+                else 
                 {
-                    UserId = newUserId,
-                    AssignedSchoolId = user.AssignedSchoolId ?? 0,
-                };
-
-                _payrollcontext.Employee.Add(newEmployee);
-                await _payrollcontext.SaveChangesAsync(ct);
-
-                callResult.IsSuccess = true;
-                callResult.Message = "User has been successfully added.";
+                    callResult.IsSuccess = false;
+                    callResult.Message = "Email Address is already being used.";
+                }
             }
             catch (Exception ex)
             {
@@ -286,43 +310,65 @@ namespace Payroll.API.Services.User
 
             try
             {
-                // Not sure sa algo gamit for password hashing
-                var hashedPassword = Encoding.UTF8.GetBytes(user.Password);
-
-                // Using Bycrypt for encrpyting password which will be used for password comparison
-                var encryptedPassword = BCrypt.Net.BCrypt.HashPassword(user.Password);
-
-                var newUser = new ARS.API.Models.User
+                var existStudent = await _payrollcontext.Users.FirstOrDefaultAsync(x => x.Email == user.Email && x.Active == true);
+                if (existStudent == null)
                 {
-                    UserName = user.UserName,
-                    Password = hashedPassword,
-                    FirstName = user.FirstName,
-                    LastName = user.LastName,
-                    Email = user.Email,
-                    CreatedDate = DateTime.Now,
-                    EncryptedPassword = encryptedPassword,
-                    Active = true,
-                    IsEmployee = true,
-                    UserTypeId = user.UserTypeId,
-                    IsStudent = false
-                };
+                    // Not sure sa algo gamit for password hashing
+                    var hashedPassword = Encoding.UTF8.GetBytes(user.Password);
 
-                _payrollcontext.Users.Add(newUser);
-                await _payrollcontext.SaveChangesAsync(ct);
+                    // Using Bycrypt for encrpyting password which will be used for password comparison
+                    var encryptedPassword = BCrypt.Net.BCrypt.HashPassword(user.Password);
 
-                var newUserId = newUser.Id;
+                    var newUser = new ARS.API.Models.User
+                    {
+                        UserName = user.UserName,
+                        Password = hashedPassword,
+                        FirstName = user.FirstName,
+                        LastName = user.LastName,
+                        Email = user.Email,
+                        CreatedDate = DateTime.Now,
+                        EncryptedPassword = encryptedPassword,
+                        Active = true,
+                        IsEmployee = true,
+                        UserTypeId = user.UserTypeId,
+                        IsStudent = false,
+                        Sex = ""
+                    };
 
-                var newEmployee = new Ars.API.Models.Employee
+                    _payrollcontext.Users.Add(newUser);
+                    await _payrollcontext.SaveChangesAsync(ct);
+
+                    var newUserId = newUser.Id;
+
+                    var newEmployee = new Ars.API.Models.Employee
+                    {
+                        UserId = newUserId,
+                        AssignedSchoolId = schoolId,
+                    };
+
+                    _payrollcontext.Employee.Add(newEmployee);
+                    await _payrollcontext.SaveChangesAsync(ct);
+
+                    var emailSubject = "Welcome to ARS!";
+                    var emailBody = $@"
+                        <p>Dear {user.FirstName} {user.LastName},</p>
+                        <p>Congratulations! You have been successfully registered.</p>
+                        <p>Your User Name is: <strong>{user.Email}</strong></p>
+                        <p>Your password is: <strong>{user.Password}</strong></p>
+                        <p>Best regards,</p>
+                        <p>School Administration</p>";
+
+                    await _emailService.SendEmailAsync(user.Email, emailSubject, emailBody, ct);
+
+
+                    callResult.IsSuccess = true;
+                    callResult.Message = "User has been successfully added.";
+                }
+                else 
                 {
-                    UserId = newUserId,
-                    AssignedSchoolId = user.AssignedSchoolId ?? 0,
-                };
-
-                _payrollcontext.Employee.Add(newEmployee);
-                await _payrollcontext.SaveChangesAsync(ct);
-
-                callResult.IsSuccess = true;
-                callResult.Message = "User has been successfully added.";
+                    callResult.IsSuccess = false;
+                    callResult.Message = "Email Address is already being used.";
+                }
             }
             catch (Exception ex)
             {
@@ -353,11 +399,33 @@ namespace Payroll.API.Services.User
                 user.UserName = userDetail.UserName;
                 user.FirstName = userDetail.FirstName;
                 user.LastName = userDetail.LastName;
-                user.Email = userDetail.Email;
+                //user.Email = userDetail.Email;
                 user.Active = userDetail.Active;
                 employee.AssignedSchoolId = userDetail.AssignedSchoolId;
                 user.UserTypeId = userDetail.UserTypeId;
+                if (user.Email != userDetail.Email) 
+                {
+                    var emailExists = await _payrollcontext.Users
+                    .AnyAsync(u => u.Email == userDetail.Email && u.Id != userDetail.Id && u.Active == true, ct);
 
+                    if (emailExists)
+                    {
+                        callResult.IsSuccess = false;
+                        callResult.Message = "Email already exists.";
+                        return callResult;
+                    }
+                    user.Email = userDetail.Email;
+                    var emailSubject = "Changed Email Address";
+                    var emailBody = $@"
+                        <p>Dear {user.FirstName} {user.LastName},</p>
+                        <p>Your email address has been changed to this email address used to receive this message.</p>
+                        <p>Your New User Name is: <strong>{user.Email}</strong></p>
+                        <p>Your Password is still the same as your current password</strong></p>
+                        <p>Best regards,</p>
+                        <p>School Administration</p>";
+
+                    await _emailService.SendEmailAsync(user.Email, emailSubject, emailBody, ct);
+                }
                 await _payrollcontext.SaveChangesAsync(ct);
                 callResult.IsSuccess = true;
                 callResult.Message = "User has been successfully edited.";
@@ -422,6 +490,75 @@ namespace Payroll.API.Services.User
             return callResult;
         }
 
+        public async Task<CallResultDto<object>> UnlockAccount(int userId, CancellationToken ct)
+        {
+            var callResult = new CallResultDto<object>();
+
+            try
+            {
+                var user = await _payrollcontext.Users
+                    .FirstOrDefaultAsync(u => u.Id == userId, ct);
+
+                if (user == null)
+                {
+                    callResult.IsSuccess = false;
+                    callResult.Message = "User Not Found.";
+                    return callResult; //messages here and set issucess false;
+                }
+
+                user.FailedLogins = null;
+                user.LoginTimeLockout = null;
+                user.IsLockedOut = false;
+
+                await _payrollcontext.SaveChangesAsync(ct);
+                callResult.IsSuccess = true;
+                callResult.Message = "User Account has been sucessfully unlocked.";
+            }
+            catch (Exception ex)
+            {
+                callResult.IsSuccess = false;
+                callResult.Message = "Failed to Unlock User.";
+            }
+
+            return callResult;
+
+        }
+
+        public async Task<CallResultDto<object>> UnlockStudentAccount(int studentId, CancellationToken ct)
+        {
+            var callResult = new CallResultDto<object>();
+
+            try
+            {
+                var student = await _payrollcontext.Students.FirstOrDefaultAsync(x => x.Id == studentId);
+                var user = await _payrollcontext.Users
+                    .FirstOrDefaultAsync(u => u.Id == student.UserId, ct);
+
+                if (user == null)
+                {
+                    callResult.IsSuccess = false;
+                    callResult.Message = "User Not Found.";
+                    return callResult; //messages here and set issucess false;
+                }
+
+                user.FailedLogins = null;
+                user.LoginTimeLockout = null;
+                user.IsLockedOut = false;
+
+                await _payrollcontext.SaveChangesAsync(ct);
+                callResult.IsSuccess = true;
+                callResult.Message = "User Account has been sucessfully unlocked.";
+            }
+            catch (Exception ex)
+            {
+                callResult.IsSuccess = false;
+                callResult.Message = "Failed to Unlock User.";
+            }
+
+            return callResult;
+
+        }
+
         // Temporary Method For PasswordUpdater
         public async Task<CallResultDto<object>> PasswordUpdater(string username, string password, CancellationToken ct)
         {
@@ -444,6 +581,5 @@ namespace Payroll.API.Services.User
 
             return callResult;
         }
-
     }
 }

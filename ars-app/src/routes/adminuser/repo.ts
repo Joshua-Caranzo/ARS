@@ -13,8 +13,6 @@ export async function getUserById(id: number) {
 }
 
 export async function addUserAdmin(user: AddUserDTO, userId:number) {
-	console.log(userId);
-	console.log(user);
 	return await post<CallResultDto<object>>(`/User/AddUserAdmin`, {userId}, user);
 }
 
@@ -28,4 +26,8 @@ export async function getUserType() {
 
 export async function getSchool() {
 	return await get<CallResultDto<SchoolDto[]>>(`/User/GetSchool`);
+}
+
+export async function unlockUser(userId:number) {
+	return await put<CallResultDto<object>>(`/User/UnlockAccount`,{userId});
 }

@@ -206,7 +206,7 @@ const getStrandsString = (strand: StrandDto | undefined) => {
                 <input class="input has-background-white has-text-black" type="text" placeholder="Search..." bind:value={searchQuery} on:input={handleSearch} />
             </div>
         
-            <IconButton link icon={faPrint} on:click={() => exportToCsv(studentList, getSchoolYearString(syListCallResult.data[currentIndex]), getGradeLevelString(glListCallResult.data.find(gls => gls.gradeLevelId === gl)), str ? getStrandsString(strandListCallResult.data.find(strand => strand.id === str)) : null)}>Print</IconButton>
+            <IconButton class="button-blue has-text-white" icon={faPrint} on:click={() => exportToCsv(studentList, getSchoolYearString(syListCallResult.data[currentIndex]), getGradeLevelString(glListCallResult.data.find(gls => gls.gradeLevelId === gl)), str ? getStrandsString(strandListCallResult.data.find(strand => strand.id === str)) : null)}>Print</IconButton>
 
         </div>
         
@@ -326,4 +326,9 @@ const getStrandsString = (strand: StrandDto | undefined) => {
     display: inline-block;
     margin-top: 8px; /* Adjust as necessary */
 }
+.button-blue
+	{
+		background-color: #063F78;
+        color:white;
+	}
 </style>

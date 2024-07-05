@@ -3,15 +3,119 @@
   "WorkspaceRootPath": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\services\\student\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\services\\student\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\services\\user\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\services\\user\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\services\\user\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\services\\user\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\services\\student\\dto\\studentforenroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\services\\student\\dto\\studentforenroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\services\\student\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\services\\student\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\controllers\\schoolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\controllers\\schoolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\services\\user\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\services\\user\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\services\\section\\sectionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\services\\section\\sectionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\controllers\\sectioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\controllers\\sectioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\services\\student\\dto\\studentadmindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\services\\student\\dto\\studentadmindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\SectionService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\controllers\\schoolyearcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\controllers\\schoolyearcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\services\\student\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\services\\student\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\services\\schoolyear\\schoolyearservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\services\\schoolyear\\schoolyearservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\services\\student\\dto\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\services\\student\\dto\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\services\\student\\dto\\studentreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\services\\student\\dto\\studentreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\services\\school\\schoolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\services\\school\\schoolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\services\\student\\dto\\consolidatedreports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\services\\student\\dto\\consolidatedreports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\services\\school\\ischoolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\services\\school\\ischoolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\services\\section\\isectionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\services\\section\\isectionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\services\\section\\dto\\currentstranddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\services\\section\\dto\\currentstranddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\services\\section\\dto\\currentsection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\services\\section\\dto\\currentsection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\controllers\\appsettingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\controllers\\appsettingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Joshua\\AppData\\Local\\SourceServer\\8b6a19efcd5c144fb986a363390168e27da036f29e8c9fff30011ed271e18cf8\\ARS.API\\ARS.API\\Services\\Student\\StudentService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\services\\email\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,35 +126,7 @@
       "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\services\\email\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\controllers\\schoolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\controllers\\schoolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\controllers\\schoolyearcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\controllers\\schoolyearcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\controllers\\sectioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\controllers\\sectioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\controllers\\appsettingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\controllers\\appsettingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Joshua\\Downloads\\payroll-master\\payroll-master\\Payroll.API\\Payroll.API\\Models\\AppSetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|solutionrelative:ars.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{38366499-E53C-4905-905F-A0FF964BA862}|ARS.API\\ARS.API.csproj|c:\\users\\joshua\\documents\\ars\\arssystem\\ars\\ars.api\\ars.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -211,55 +287,90 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SectionService.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\SectionService.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\SectionService.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\SectionService.cs",
-              "RelativeToolTip": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\SectionService.cs",
+              "DocumentIndex": 6,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "ARS.API\\Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "ARS.API\\Controllers\\StudentController.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAArwDoAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T06:26:03.345Z",
-              "IsPinned": true
+              "WhenOpened": "2024-06-13T02:42:55.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\User\\UserService.cs",
+              "RelativeDocumentMoniker": "ARS.API\\Services\\User\\UserService.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\User\\UserService.cs",
+              "RelativeToolTip": "ARS.API\\Services\\User\\UserService.cs",
+              "ViewState": "AQIAACICAAAAAAAAAAAuwGAAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T03:23:00.088Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "EmailService.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\Email\\EmailService.cs",
-              "RelativeDocumentMoniker": "ARS.API\\Services\\Email\\EmailService.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\Email\\EmailService.cs",
-              "RelativeToolTip": "ARS.API\\Services\\Email\\EmailService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAABTAAAA",
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "ARS.API\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Controllers\\UserController.cs",
+              "RelativeToolTip": "ARS.API\\Controllers\\UserController.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAwwDoAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T04:37:17.052Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\appsettings.json",
-              "RelativeDocumentMoniker": "ARS.API\\appsettings.json",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\appsettings.json",
-              "RelativeToolTip": "ARS.API\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-14T03:39:01.228Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-13T02:43:22.358Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\User\\IUserService.cs",
+              "RelativeDocumentMoniker": "ARS.API\\Services\\User\\IUserService.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\User\\IUserService.cs",
+              "RelativeToolTip": "ARS.API\\Services\\User\\IUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T13:44:26.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SchoolController.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Controllers\\SchoolController.cs",
+              "RelativeDocumentMoniker": "ARS.API\\Controllers\\SchoolController.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Controllers\\SchoolController.cs",
+              "RelativeToolTip": "ARS.API\\Controllers\\SchoolController.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAwwCsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T06:21:31.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IStudentService.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\Student\\IStudentService.cs",
+              "RelativeDocumentMoniker": "ARS.API\\Services\\Student\\IStudentService.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\Student\\IStudentService.cs",
+              "RelativeToolTip": "ARS.API\\Services\\Student\\IStudentService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T12:13:36.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "StudentService.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\Student\\StudentService.cs",
               "RelativeDocumentMoniker": "ARS.API\\Services\\Student\\StudentService.cs",
               "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\Student\\StudentService.cs",
               "RelativeToolTip": "ARS.API\\Services\\Student\\StudentService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA3AAAA",
+              "ViewState": "AQIAAPwDAAAAAAAAAAAiwB0BAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-17T04:40:04.588Z",
               "EditorCaption": ""
@@ -267,97 +378,222 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "IEmailService.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\Email\\IEmailService.cs",
-              "RelativeDocumentMoniker": "ARS.API\\Services\\Email\\IEmailService.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\Email\\IEmailService.cs",
-              "RelativeToolTip": "ARS.API\\Services\\Email\\IEmailService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "StudentForEnroll.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\Student\\Dto\\StudentForEnroll.cs",
+              "RelativeDocumentMoniker": "ARS.API\\Services\\Student\\Dto\\StudentForEnroll.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\Student\\Dto\\StudentForEnroll.cs",
+              "RelativeToolTip": "ARS.API\\Services\\Student\\Dto\\StudentForEnroll.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T04:39:54.402Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-21T12:15:34.92Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SchoolController.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Controllers\\SchoolController.cs",
-              "RelativeDocumentMoniker": "ARS.API\\Controllers\\SchoolController.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Controllers\\SchoolController.cs",
-              "RelativeToolTip": "ARS.API\\Controllers\\SchoolController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAIBJwCoAAAA6AAAA",
+              "DocumentIndex": 9,
+              "Title": "SectionService.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\Section\\SectionService.cs",
+              "RelativeDocumentMoniker": "ARS.API\\Services\\Section\\SectionService.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\Section\\SectionService.cs",
+              "RelativeToolTip": "ARS.API\\Services\\Section\\SectionService.cs",
+              "ViewState": "AQIAADcBAAAAAAAAAAASwFQBAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T06:21:31.211Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-22T14:21:55.867Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SchoolYearController.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Controllers\\SchoolYearController.cs",
-              "RelativeDocumentMoniker": "ARS.API\\Controllers\\SchoolYearController.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Controllers\\SchoolYearController.cs",
-              "RelativeToolTip": "ARS.API\\Controllers\\SchoolYearController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAIBJwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T06:22:00.938Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "SectionController.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Controllers\\SectionController.cs",
               "RelativeDocumentMoniker": "ARS.API\\Controllers\\SectionController.cs",
               "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Controllers\\SectionController.cs",
               "RelativeToolTip": "ARS.API\\Controllers\\SectionController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAADEAAAAAAAAAAAA6wEgAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T06:21:52.923Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T06:21:52.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "StudentAdminDto.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\Student\\Dto\\StudentAdminDto.cs",
+              "RelativeDocumentMoniker": "ARS.API\\Services\\Student\\Dto\\StudentAdminDto.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\Student\\Dto\\StudentAdminDto.cs",
+              "RelativeToolTip": "ARS.API\\Services\\Student\\Dto\\StudentAdminDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T15:48:59.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SchoolYearController.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Controllers\\SchoolYearController.cs",
+              "RelativeDocumentMoniker": "ARS.API\\Controllers\\SchoolYearController.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Controllers\\SchoolYearController.cs",
+              "RelativeToolTip": "ARS.API\\Controllers\\SchoolYearController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAD4vzAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T06:22:00.938Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "ARS.API\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Controllers\\UserController.cs",
-              "RelativeToolTip": "ARS.API\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAIBJwA8AAAAJAAAA",
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\User\\Dto\\UserDto.cs",
+              "RelativeDocumentMoniker": "ARS.API\\Services\\User\\Dto\\UserDto.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\User\\Dto\\UserDto.cs",
+              "RelativeToolTip": "ARS.API\\Services\\User\\Dto\\UserDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA8AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T02:43:22.358Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-01T11:53:52.037Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AppSettingsController.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Controllers\\AppSettingsController.cs",
-              "RelativeDocumentMoniker": "ARS.API\\Controllers\\AppSettingsController.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Controllers\\AppSettingsController.cs",
-              "RelativeToolTip": "ARS.API\\Controllers\\AppSettingsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 17,
+              "Title": "SchoolService.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\School\\SchoolService.cs",
+              "RelativeDocumentMoniker": "ARS.API\\Services\\School\\SchoolService.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\School\\SchoolService.cs",
+              "RelativeToolTip": "ARS.API\\Services\\School\\SchoolService.cs",
+              "ViewState": "AQIAAOoAAAAAAAAAAAAqwBcBAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T06:21:53.972Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "StudentController.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Controllers\\StudentController.cs",
-              "RelativeDocumentMoniker": "ARS.API\\Controllers\\StudentController.cs",
-              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Controllers\\StudentController.cs",
-              "RelativeToolTip": "ARS.API\\Controllers\\StudentController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T02:42:55.14Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-22T14:27:26.775Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\appsettings.json",
+              "RelativeDocumentMoniker": "ARS.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\appsettings.json",
+              "RelativeToolTip": "ARS.API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-14T03:39:01.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "StudentDto.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\Student\\Dto\\StudentDto.cs",
+              "RelativeDocumentMoniker": "ARS.API\\Services\\Student\\Dto\\StudentDto.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\Student\\Dto\\StudentDto.cs",
+              "RelativeToolTip": "ARS.API\\Services\\Student\\Dto\\StudentDto.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAwwCgAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T12:13:43.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SchoolYearService.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\SchoolYear\\SchoolYearService.cs",
+              "RelativeDocumentMoniker": "ARS.API\\Services\\SchoolYear\\SchoolYearService.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\SchoolYear\\SchoolYearService.cs",
+              "RelativeToolTip": "ARS.API\\Services\\SchoolYear\\SchoolYearService.cs",
+              "ViewState": "AQIAAM0AAAAAAAAAAAASwOsAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T01:39:12.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ConsolidatedReports.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\Student\\Dto\\ConsolidatedReports.cs",
+              "RelativeDocumentMoniker": "ARS.API\\Services\\Student\\Dto\\ConsolidatedReports.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\Student\\Dto\\ConsolidatedReports.cs",
+              "RelativeToolTip": "ARS.API\\Services\\Student\\Dto\\ConsolidatedReports.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T15:29:04.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "StudentReport.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\Student\\Dto\\StudentReport.cs",
+              "RelativeDocumentMoniker": "ARS.API\\Services\\Student\\Dto\\StudentReport.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\Student\\Dto\\StudentReport.cs",
+              "RelativeToolTip": "ARS.API\\Services\\Student\\Dto\\StudentReport.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T15:31:28.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ISectionService.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\Section\\ISectionService.cs",
+              "RelativeDocumentMoniker": "ARS.API\\Services\\Section\\ISectionService.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\Section\\ISectionService.cs",
+              "RelativeToolTip": "ARS.API\\Services\\Section\\ISectionService.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAewBkAAAB9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T14:23:51.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CurrentSection.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\Section\\Dto\\CurrentSection.cs",
+              "RelativeDocumentMoniker": "ARS.API\\Services\\Section\\Dto\\CurrentSection.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\Section\\Dto\\CurrentSection.cs",
+              "RelativeToolTip": "ARS.API\\Services\\Section\\Dto\\CurrentSection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T05:58:52.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ISchoolService.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\School\\ISchoolService.cs",
+              "RelativeDocumentMoniker": "ARS.API\\Services\\School\\ISchoolService.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\School\\ISchoolService.cs",
+              "RelativeToolTip": "ARS.API\\Services\\School\\ISchoolService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T14:28:53.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CurrentStrandDto.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\Section\\Dto\\CurrentStrandDto.cs",
+              "RelativeDocumentMoniker": "ARS.API\\Services\\Section\\Dto\\CurrentStrandDto.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\Section\\Dto\\CurrentStrandDto.cs",
+              "RelativeToolTip": "ARS.API\\Services\\Section\\Dto\\CurrentStrandDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T14:49:30.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "ARS.API\\Models\\Student.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Models\\Student.cs",
+              "RelativeToolTip": "ARS.API\\Models\\Student.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAwwCwAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T12:13:20.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "ARS.API\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\appsettings.Development.json",
+              "RelativeToolTip": "ARS.API\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-24T01:03:15.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Program.cs",
               "RelativeDocumentMoniker": "ARS.API\\Program.cs",
@@ -365,12 +601,72 @@
               "RelativeToolTip": "ARS.API\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T05:03:43.979Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-15T05:03:43.979Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 27,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Models\\User.cs",
+              "RelativeDocumentMoniker": "ARS.API\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Models\\User.cs",
+              "RelativeToolTip": "ARS.API\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T03:22:38.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AppSettingsController.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Controllers\\AppSettingsController.cs",
+              "RelativeDocumentMoniker": "ARS.API\\Controllers\\AppSettingsController.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Controllers\\AppSettingsController.cs",
+              "RelativeToolTip": "ARS.API\\Controllers\\AppSettingsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T06:21:53.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\AppData\\Local\\SourceServer\\8b6a19efcd5c144fb986a363390168e27da036f29e8c9fff30011ed271e18cf8\\ARS.API\\ARS.API\\Services\\Student\\StudentService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\SourceServer\\8b6a19efcd5c144fb986a363390168e27da036f29e8c9fff30011ed271e18cf8\\ARS.API\\ARS.API\\Services\\Student\\StudentService.cs",
+              "ToolTip": "C:\\Users\\Joshua\\AppData\\Local\\SourceServer\\8b6a19efcd5c144fb986a363390168e27da036f29e8c9fff30011ed271e18cf8\\ARS.API\\ARS.API\\Services\\Student\\StudentService.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\SourceServer\\8b6a19efcd5c144fb986a363390168e27da036f29e8c9fff30011ed271e18cf8\\ARS.API\\ARS.API\\Services\\Student\\StudentService.cs [Read Only]",
+              "ViewState": "AQIAAPcCAAAAAAAAAAAtwAYDAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T10:00:13.615Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IEmailService.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\Email\\IEmailService.cs",
+              "RelativeDocumentMoniker": "ARS.API\\Services\\Email\\IEmailService.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\Email\\IEmailService.cs",
+              "RelativeToolTip": "ARS.API\\Services\\Email\\IEmailService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T04:39:54.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\Email\\EmailService.cs",
+              "RelativeDocumentMoniker": "ARS.API\\Services\\Email\\EmailService.cs",
+              "ToolTip": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Services\\Email\\EmailService.cs",
+              "RelativeToolTip": "ARS.API\\Services\\Email\\EmailService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T04:37:17.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
               "Title": "AppSetting.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Downloads\\payroll-master\\payroll-master\\Payroll.API\\Payroll.API\\Models\\AppSetting.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Downloads\\payroll-master\\payroll-master\\Payroll.API\\Payroll.API\\Models\\AppSetting.cs",
@@ -378,12 +674,11 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\Downloads\\payroll-master\\payroll-master\\Payroll.API\\Payroll.API\\Models\\AppSetting.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T04:41:41.426Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-17T04:41:41.426Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 32,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\ArsSystem\\ARS\\ARS.API\\ARS.API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "ARS.API\\Properties\\launchSettings.json",
@@ -391,12 +686,11 @@
               "RelativeToolTip": "ARS.API\\Properties\\launchSettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-14T04:11:32.76Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-14T04:11:32.76Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 34,
               "Title": "SchoolController.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Controllers\\SchoolController.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Controllers\\SchoolController.cs",
@@ -407,7 +701,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 35,
               "Title": "ISchoolService.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\School\\ISchoolService.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Services\\School\\ISchoolService.cs",
@@ -418,7 +712,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 36,
               "Title": "SchoolService.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\School\\SchoolService.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Services\\School\\SchoolService.cs",
@@ -429,7 +723,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 37,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Controllers\\UserController.cs",
@@ -440,7 +734,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 33,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\User\\UserService.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Services\\User\\UserService.cs",
@@ -451,7 +745,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 38,
               "Title": "StudentMasterlist.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\Dto\\StudentMasterlist.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\Dto\\StudentMasterlist.cs",
@@ -462,7 +756,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 39,
               "Title": "StudentByLevel.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\Dto\\StudentByLevel.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\Dto\\StudentByLevel.cs",
@@ -473,7 +767,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 40,
               "Title": "SectionController.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Controllers\\SectionController.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Controllers\\SectionController.cs",
@@ -484,7 +778,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 41,
               "Title": "StudentController.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Controllers\\StudentController.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Controllers\\StudentController.cs",
@@ -495,7 +789,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 42,
               "Title": "ISectionService.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\ISectionService.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\ISectionService.cs",
@@ -506,7 +800,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 43,
               "Title": "StudentCount.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\Dto\\StudentCount.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\Dto\\StudentCount.cs",
@@ -517,7 +811,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 44,
               "Title": "StudentBySection.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\Dto\\StudentBySection.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\Dto\\StudentBySection.cs",
@@ -528,7 +822,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 45,
               "Title": "SchoolYearService.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\SchoolYear\\SchoolYearService.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Services\\SchoolYear\\SchoolYearService.cs",
@@ -539,7 +833,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 46,
               "Title": "StudentService.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Student\\StudentService.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Services\\Student\\StudentService.cs",
@@ -550,7 +844,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 47,
               "Title": "SchoolYearController.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Controllers\\SchoolYearController.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Controllers\\SchoolYearController.cs",
@@ -561,7 +855,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 48,
               "Title": "SchoolSectionDto.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\Dto\\SchoolSectionDto.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\Dto\\SchoolSectionDto.cs",
@@ -572,7 +866,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 49,
               "Title": "StudentReport.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Student\\Dto\\StudentReport.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Services\\Student\\Dto\\StudentReport.cs",
@@ -583,7 +877,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 50,
               "Title": "IStudentService.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Student\\IStudentService.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Services\\Student\\IStudentService.cs",
@@ -594,7 +888,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 51,
               "Title": "Student.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Models\\Student.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Models\\Student.cs",
@@ -605,7 +899,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 52,
               "Title": "StudentForEnroll.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Student\\Dto\\StudentForEnroll.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Services\\Student\\Dto\\StudentForEnroll.cs",
@@ -616,7 +910,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 53,
               "Title": "ISchoolYearService.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\SchoolYear\\ISchoolYearService.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Services\\SchoolYear\\ISchoolYearService.cs",
@@ -627,7 +921,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 54,
               "Title": "StudentDto.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Student\\Dto\\StudentDto.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Services\\Student\\Dto\\StudentDto.cs",
@@ -638,7 +932,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 55,
               "Title": "IEmailService.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Email\\IEmailService.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Services\\Email\\IEmailService.cs",
@@ -649,7 +943,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 56,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Program.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Program.cs",
@@ -660,7 +954,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 57,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\appsettings.Development.json",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\appsettings.Development.json",
@@ -671,7 +965,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 58,
               "Title": "EmailService.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Email\\EmailService.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Services\\Email\\EmailService.cs",
@@ -682,7 +976,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 59,
               "Title": "StudentSection.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Models\\StudentSection.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Models\\StudentSection.cs",
@@ -693,7 +987,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 60,
               "Title": "School.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Models\\School.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Models\\School.cs",
@@ -704,7 +998,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 61,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Models\\User.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Models\\User.cs",
@@ -715,7 +1009,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 62,
               "Title": "EnrollStudentDto.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Student\\Dto\\EnrollStudentDto.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Services\\Student\\Dto\\EnrollStudentDto.cs",
@@ -726,7 +1020,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 63,
               "Title": "Track.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Models\\Track.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Models\\Track.cs",
@@ -737,7 +1031,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 64,
               "Title": "Employee.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Models\\Employee.cs",
@@ -748,7 +1042,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 65,
               "Title": "ParyollContext.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Context\\ParyollContext.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Context\\ParyollContext.cs",
@@ -759,7 +1053,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 66,
               "Title": "AppSettingsController.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Controllers\\AppSettingsController.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Controllers\\AppSettingsController.cs",
@@ -770,7 +1064,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 67,
               "Title": "SchoolYear.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Models\\SchoolYear.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Models\\SchoolYear.cs",
@@ -781,7 +1075,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 68,
               "Title": "Semester.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Models\\Semester.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Models\\Semester.cs",
@@ -792,7 +1086,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 69,
               "Title": "Gender.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Enums\\Gender.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Enums\\Gender.cs",
@@ -803,7 +1097,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 70,
               "Title": "UserDto.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\User\\Dto\\UserDto.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Services\\User\\Dto\\UserDto.cs",
@@ -814,7 +1108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 71,
               "Title": "UserType.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Models\\UserType.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Models\\UserType.cs",
@@ -825,7 +1119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 72,
               "Title": "EnrollStudent.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Models\\EnrollStudent.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Models\\EnrollStudent.cs",
@@ -836,7 +1130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 73,
               "Title": "CallResultDto.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\SharedDto\\CallResultDto.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\SharedDto\\CallResultDto.cs",
@@ -847,7 +1141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 74,
               "Title": "StrandDto.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\Dto\\StrandDto.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Services\\Section\\Dto\\StrandDto.cs",
@@ -858,7 +1152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 75,
               "Title": "IUserService.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\User\\IUserService.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Services\\User\\IUserService.cs",
@@ -869,7 +1163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 76,
               "Title": "AddUserDTO.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\User\\Dto\\AddUserDTO.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Services\\User\\Dto\\AddUserDTO.cs",
@@ -880,7 +1174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 77,
               "Title": "ARS.API.csproj",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\ARS.API.csproj",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\ARS.API.csproj",
@@ -891,7 +1185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 78,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Properties\\launchSettings.json",
@@ -902,7 +1196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 79,
               "Title": "EditUserDTO.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\User\\Dto\\EditUserDTO.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Services\\User\\Dto\\EditUserDTO.cs",
@@ -913,7 +1207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 80,
               "Title": "SchoolDto.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\Services\\User\\Dto\\SchoolDto.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\Services\\User\\Dto\\SchoolDto.cs",
@@ -924,7 +1218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 81,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Joshua\\Documents\\ARS\\payroll\\Payroll.API\\Payroll.API\\appsettings.json",
               "RelativeDocumentMoniker": "..\\..\\..\\payroll\\Payroll.API\\Payroll.API\\appsettings.json",

@@ -41,12 +41,15 @@
   
     onMount(async () => {
         try {
-            schoolSectionListCallResult = await getSection(gradeId, strandId);
+          if($loggedInUser)
+          {
+            schoolSectionListCallResult = await getSection(parseInt($loggedInUser.uid), gradeId, strandId);
             schoolSections = schoolSectionListCallResult.data;
             errorMessage = schoolSectionListCallResult?.message || '';
             schoolYearCallResult = await getSchoolYearList();
             schoolYears = schoolYearCallResult.data;
             errorMessage = schoolYearCallResult?.message || '';
+          }
         } catch (err:any ) {
             errorMessage = err.message;
         }
@@ -117,11 +120,11 @@
             </div>
           </div>
         {/if}
-        <div class="field">
+        <div class="field is-flex is-justify-content-flex-end">
           <div class="control">
-            <button class="button is-link" on:click={handleSubmit}>Enroll</button>
+            <button class="button button-blue is-pulled-right" on:click={handleSubmit}>Enroll</button>
           </div>
-        </div>
+      </div>
       </div>
     </div>
     <button class="modal-close is-large" aria-label="close" on:click={handleClose}></button>
@@ -132,4 +135,10 @@
       align-items: center;
       justify-content: center;
     }
+
+    .button-blue
+	{
+		background-color: #063F78;
+        color:white;
+	}
   </style>

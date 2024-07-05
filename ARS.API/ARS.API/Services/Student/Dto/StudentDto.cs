@@ -38,5 +38,6 @@
         public string? Suffix { get; set; }
         public string? Age { get; set; }
         public string? StudentIdNumber { get; set; }
+        public string StudentAddress { get; set; }
     }
 }

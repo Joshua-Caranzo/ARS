@@ -47,7 +47,8 @@
 		isFatherDeceased: false,
 		guardianRelationship: '',
 		motherOccupation: null,
-		fatherOccupation: null
+		fatherOccupation: null,
+		studentAddress:""
 	};
 
 	let errorMessage: string | undefined;
@@ -149,6 +150,7 @@
 			student.guardiansContactNumber = s.fathersContactNumber ?? '';
 			student.guardiansEmailAddress = s.fathersEmailAddress ?? '';
 			student.guardianRelationship = 'Father';
+			sameMother=false;
 		} else {
 			student.guardiansName = '';
 			student.guardiansAddress = '';
@@ -165,6 +167,7 @@
 			student.guardiansContactNumber = s.mothersContactNumber ?? '';
 			student.guardianRelationship = 'Mother';
 			student.guardiansEmailAddress = s.mothersEmailAddress ?? '';
+			sameFather=false;
 		} else {
 			student.guardiansName = '';
 			student.guardiansAddress = '';
@@ -181,7 +184,7 @@
 
 <div class="container mt-6">
 	<div class="is-flex is-align-items-center">
-		<button class="button is-link" on:click={handleClose}>
+		<button class="button button-blue" on:click={handleClose}>
 			<Icon icon={faArrowLeft} />
 		</button>
 		<h1 class="subtitle ml-2 has-text-black">Edit Student</h1>
@@ -200,525 +203,346 @@
 							</div>
 							<div class="columns is-multiline">
 								<!-- Row 1 -->
-								<div class="column is-one-third">
-									<div class="field mb-4">
-										<div class="control">
-											<div class="is-flex">
-												<label class="label has-text-black">Last Name</label>
-												<label class="label has-text-danger"> *</label>
-											</div>
-											<input
-												class="input has-background-white has-text-black"
-												type="text"
-												bind:value={student.lastName}
-												required
-											/>
-										</div>
+								<div class="column is-4">
+								  <div class="field mb-4">
+									<div class="control">
+									  <div class="is-flex"><label class="label has-text-black">Last Name</label>    <label class="label has-text-danger"> *</label></div>
+									  <input class="input has-background-white has-text-black" type="text" bind:value={student.lastName} required>
 									</div>
+								  </div>
 								</div>
-								<div class="column is-one-third">
-									<div class="field mb-4">
-										<div class="control">
-											<div class="is-flex">
-												<label class="label has-text-black">First Name</label>
-												<label class="label has-text-danger"> *</label>
-											</div>
-											<input
-												class="input has-background-white has-text-black"
-												type="text"
-												bind:value={student.firstName}
-												required
-											/>
-										</div>
+								<div class="column is-4">
+								  <div class="field mb-4">
+									<div class="control">
+									  <div class="is-flex"><label class="label has-text-black">First Name</label>    <label class="label has-text-danger"> *</label></div>
+									  <input class="input has-background-white has-text-black" type="text" bind:value={student.firstName} required>
 									</div>
+								  </div>
 								</div>
-								<div class="column is-one-quarter">
-									<div class="field mb-4">
-										<div class="control">
-											<label class="label has-text-black">Middle Name</label>
-											<input
-												class="input has-background-white has-text-black"
-												type="text"
-												bind:value={student.middleName}
-											/>
-										</div>
+								<div class="column is-3">
+								  <div class="field mb-4">
+									<div class="control">
+									  <label class="label has-text-black">Middle Name</label>
+									  <input class="input has-background-white has-text-black" type="text" bind:value={student.middleName}>
 									</div>
+								  </div>
 								</div>
-
-								<div class="column auto">
-									<div class="field mb-4">
-										<div class="control">
-											<label class="label has-text-black">Suffix</label>
-											<input
-												class="input has-background-white has-text-black"
-												type="text"
-												bind:value={student.suffix}
-											/>
-										</div>
+		
+								<div class="column is-1">
+								  <div class="field mb-4">
+									<div class="control">
+									  <label class="label has-text-black">Suffix</label>
+									  <input class="input has-background-white has-text-black" type="text" bind:value={student.suffix}>
 									</div>
+								  </div>
 								</div>
-
+						  
 								<!-- Row 2 -->
-								<div class="column is-one-quarter">
-									<div class="field mb-4">
-										<div class="control">
-											<div class="is-flex">
-												<label class="label has-text-black">Email</label>
-												<label class="label has-text-danger"> *</label>
-											</div>
-											<input
-												class="input has-background-white has-text-black"
-												type="email"
-												bind:value={student.email}
-												required
-											/>
-										</div>
+								<div class="column is-3">
+								  <div class="field mb-4">
+									<div class="control">
+									  <div class="is-flex"><label class="label has-text-black">Email</label>    <label class="label has-text-danger"> *</label></div>
+									  <input class="input has-background-white has-text-black" type="email" bind:value={student.email} required>
 									</div>
+								  </div>
 								</div>
-								<div class="column is-one-quarter">
-									<div class="field mb-4">
-										<div class="control">
-											<div class="is-flex">
-												<label class="label has-text-black">Contact Number</label>
-												<label class="label has-text-danger"> *</label>
-											</div>
-											<input
-												class="input has-background-white has-text-black"
-												type="text"
-												bind:value={student.contactNumber}
-											/>
-										</div>
+								<div class="column is-3">
+								  <div class="field mb-4">
+									<div class="control">
+									  <div class="is-flex"><label class="label has-text-black">Contact Number</label>    <label class="label has-text-danger"> *</label></div>
+									  <input class="input has-background-white has-text-black" type="text" bind:value={student.contactNumber}>
 									</div>
+								  </div>
 								</div>
-								<div class="column is-one-quarter">
-									<div class="field">
-										<div class="control">
-											<div class="is-flex">
-												<label class="label has-text-black">Grade Level</label>
-												<label class="label has-text-danger"> *</label>
-											</div>
-											<select
-												class="input has-background-white has-text-black"
-												bind:value={gradeLevel}
-											>
-												<option value={0}>-- SELECT --</option>
-												{#each gradeLevels as gradeLevel}
-													<option value={gradeLevel.id}>{gradeLevel.level}</option>
-												{/each}
-											</select>
-										</div>
+								<div class="column is-3">
+								  <div class="field ">
+									<div class="control">
+									
+										<div class="is-flex"><label class="label has-text-black">Grade Level</label>    <label class="label has-text-danger"> *</label></div>
+									  <select class="input has-background-white has-text-black" bind:value={gradeLevel}>
+										  <option value={0}>-- SELECT --</option>
+										  {#each gradeLevels as gradeLevel}
+											  <option value={gradeLevel.id}>{gradeLevel.level}</option>
+										  {/each}
+									  </select>
+									  </div>
+									  </div>
+									  </div>
+									  <div class="column is-3">
+										<div class="field ">
+										  <div class="control">
+										  <label class="label has-text-black">Strand</label>
+										  <select class="input has-background-white has-text-black" disabled={student.gradeLevelId <= 13} bind:value={strandID}>
+											  <option value={null}>-- SELECT --</option>
+											  {#each strands as strand}
+											  <option value={strand.id}>   {strand.strandAbbrev ? strand.strandAbbrev : strand.strandName}</option>
+											  {/each}
+										  </select>
+										  </div>      
+								  </div>
+								</div>
+								 <!-- Row 3 -->
+								 <div class="column is-3">
+								  <div class="field mb-4">
+									<div class="control">
+									  <div class="is-flex"><label class="label has-text-black">Student Address</label>    <label class="label has-text-danger"> *</label></div>
+									  <input class="input has-background-white has-text-black"  type="text" bind:value={student.studentAddress}>
 									</div>
+								  </div>
 								</div>
-								<div class="column is-one-quarter">
-									<div class="field">
-										<div class="control">
-											<label class="label has-text-black">Strand</label>
-											<select
-												class="input has-background-white has-text-black"
-												disabled={student.gradeLevelId <= 13}
-												bind:value={strandID}
-											>
-												<option value={null}>-- SELECT --</option>
-												{#each strands as strand}
-													<option value={strand.id}>
-														{strand.strandAbbrev ? strand.strandAbbrev : strand.strandName}</option
-													>
-												{/each}
-											</select>
-										</div>
+		
+								 <div class="column is-3">
+								  <div class="field mb-4">
+									<div class="control">
+									  <label class="label has-text-black">LRN</label>
+									  <input class="input has-background-white has-text-black"  disabled={student.gradeLevelId <= 3} type="text" bind:value={student.lrn}>
 									</div>
+								  </div>
 								</div>
-								<!-- Row 3 -->
-								<div class="column is-one-quarter">
-									<div class="field mb-4">
-										<div class="control">
-											<div class="is-flex">
-												<label class="label has-text-black">Birthdate</label>
-												<label class="label has-text-danger"> *</label>
-											</div>
-											<input
-												class="input has-background-white has-text-black"
-												type="date"
-												bind:value={birthdate}
-												required
-											/>
-										</div>
-									</div>
-								</div>
-								<div class="column is-one-quarter">
-									<div class="field mb-4">
-										<div class="control">
-											<div class="is-flex">
-												<label class="label has-text-black">Civil Status</label>
-												<label class="label has-text-danger"> *</label>
-											</div>
-											<div class="select">
-												<select
-													class="has-background-white has-text-black"
-													bind:value={student.civilStatus}
-													required
-												>
-													<option value="" disabled>Select Civil Status</option>
-													<option value="Single">Single</option>
-													<option value="Married">Married</option>
-												</select>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="column is-one-quarter">
-									<div class="field mb-4">
-										<div class="control">
-											<div class="is-flex">
-												<label class="label has-text-black">Birth Place</label>
-												<label class="label has-text-danger"> *</label>
-											</div>
-											<input
-												class="input has-background-white has-text-black"
-												type="text"
-												bind:value={student.birthplace}
-												required
-											/>
-										</div>
-									</div>
-								</div>
-								<div class="column is-one-quarter">
-									<div class="field mb-4">
-										<div class="control">
-											<label class="label has-text-black">LRN</label>
-											<input
-												class="input has-background-white has-text-black"
-												disabled={student.gradeLevelId <= 3}
-												type="text"
-												bind:value={student.lrn}
-											/>
-										</div>
-									</div>
-								</div>
-
-								<!-- Row 4 -->
-								<div class="column is-one-quarter">
-									<div class="field mb-4">
-										<div class="control">
-											<div class="is-flex">
-												<label class="label has-text-black">Religion</label>
-												<label class="label has-text-danger"> *</label>
-											</div>
-											<input
-												class="input has-background-white has-text-black"
-												type="text"
-												bind:value={student.religion}
-												required
-											/>
-										</div>
-									</div>
-								</div>
-								<div class="column is-one-quarter">
-									<div class="field mb-4">
-										<div class="is-flex">
-											<label class="label has-text-black">Sex</label>
-											<label class="label has-text-danger"> *</label>
-										</div>
+								 <div class="column is-2">
+								  <div class="field mb-4">
+									<div class="control">
+						  
+											<div class="is-flex"><label class="label has-text-black">Birthdate</label>    <label class="label has-text-danger"> *</label></div>
+											  <input class="input has-background-white has-text-black" type="date" bind:value={birthdate} required>
+										  </div>
+		
+										  </div>
+										  </div>
+										  <div class="column is-2">
+											<div class="field mb-4">
+											  <div class="control">
+									
+											<div class="is-flex"><label class="label has-text-black">Civil Status</label>    <label class="label has-text-danger"> *</label></div>
+											  <div class="select">
+												  <select class="has-background-white has-text-black" bind:value={student.civilStatus} required>
+													  <option value="" disabled>Select Civil Status</option>
+													  <option value="Single">Single</option>
+													  <option value="Married">Married</option>
+												  </select>
+											  </div>
+										  </div>
+									  </div>  
+									</div>    
+									<div class="column is-2">
+						
+									  <div class="field mb-4">
+									  <div class="is-flex"><label class="label has-text-black">Sex</label>    <label class="label has-text-danger"> *</label></div>
 										<div class="select">
-											<select
-												class="has-background-white has-text-black"
-												bind:value={student.sex}
-												required
-											>
+											<select class="has-background-white has-text-black" bind:value={student.sex} required>
 												<option value="" disabled>Select Sex</option>
 												<option value="Male">Male</option>
 												<option value="Female">Female</option>
 											</select>
 										</div>
 									</div>
-								</div>
-
-								<div class="column is-one-quarter">
-									<div class="field mb-4">
+								  </div>   
+									<div class="column is-3">
+									  <div class="field mb-4">
 										<div class="control">
-											<label class="label has-text-black">Last School Attended</label>
-											<input
-												class="input has-background-white has-text-black"
-												type="text"
-												bind:value={student.lastSchoolAttended}
-												required
-											/>
+										  <div class="is-flex"><label class="label has-text-black">Birth Place</label>    <label class="label has-text-danger"> *</label></div>
+										  <input class="input has-background-white has-text-black" type="text" bind:value={student.birthplace} required>
 										</div>
+									  </div>
 									</div>
+						 
+								<!-- Row 4 -->
+								<div class="column is-3">
+						
+								  <div class="field mb-4">
+									<div class="control">
+									 <div class="is-flex"><label class="label has-text-black">Religion</label>    <label class="label has-text-danger"> *</label></div>
+									  <input class="input has-background-white has-text-black" type="text" bind:value={student.religion} required>
+									</div>
+								  </div>
+								</div>
+								<div class="column is-3">
+								  <div class="field mb-4">
+									<div class="control">
+									  <label class="label has-text-black">Last School Attended</label>
+									  <input class="input has-background-white has-text-black" type="text" bind:value={student.lastSchoolAttended} required>
+									</div>
+								  </div>
 								</div>
 								<div class="column is-one-quarter">
-									<div class="field mb-4">
-										<div class="control">
-											<label class="label has-text-black">Last School Year Attended</label>
-											<div class="columns">
-												<div class="column is-half">
-													<input
-														id="fromSchoolYear"
-														class="input has-background-white has-text-black"
-														type="number"
-														min="2000"
-														max="2100"
-														placeholder="From (YYYY)"
-														bind:value={schoolYearFrom}
-														required
-													/>
-												</div>
-												<div class="column is-half">
-													<input
-														id="toSchoolYear"
-														class="input has-background-white has-text-black"
-														type="number"
-														min="2010"
-														max="2100"
-														placeholder="To (YYYY)"
-														bind:value={schoolYearTo}
-														required
-													/>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
+								  <div class="field mb-4">
+									  <div class="control">
+										  <label class="label has-text-black">Last School Year Attended</label>
+										  <div class="columns">
+											  <div class="column is-half">
+												  <input id="fromSchoolYear" class="input has-background-white has-text-black" type="number" min="2000" max="2100" placeholder="From (YYYY)" bind:value={schoolYearFrom} required>
+											  </div>
+											  <div class="column is-half">
+												  <input id="toSchoolYear" class="input has-background-white has-text-black" type="number" min="2010" max="2100" placeholder="To (YYYY)" bind:value={schoolYearTo} required>
+											  </div>
+										  </div>
+									  </div>
+								  </div>
+							  </div>
+							  
 								<div class="column is-full has-background-light is-flex">
-									<Icon className="mr-2 mt-1" icon={faInfoCircle}></Icon>
+								  <Icon className="mr-2 mt-1" icon={faInfoCircle}></Icon>
 									<h2 class="title is-4 has-text-black">Parents Information</h2>
+							   </div>
+							  <div class="column  is-half">
+								<div class="field mb-4">
+								  <div class="control">
+									<label class="label has-text-black">Mother's Name</label>
+									<input class="input has-background-white has-text-black" type="text" bind:value={student.mothersName}>
+								  </div>
+								</div>
+							  </div>
+							  <div class="column is-half">
+								<div class="field mb-4">
+								  <div class="control">
+									<label class="label has-text-black">Mother's Address</label>
+									<input class="input has-background-white has-text-black" type="text" bind:value={student.mothersAddress}>
+								  </div>
+								</div>
+							  </div>
+							  <div class="column  is-one-quarter">
+								<div class="field mb-4">
+								  <div class="control">
+									<label class="label has-text-black">Mother's Contact</label>
+									<input class="input has-background-white has-text-black" type="text" bind:value={student.mothersContactNumber}>
+								  </div>
+								</div>
+							  </div>
+							  <div class="column  is-one-quarter">
+								<div class="field mb-4">
+								  <div class="control">
+									<label class="label has-text-black">Mother's Occupation</label>
+									<input class="input has-background-white has-text-black" type="text" bind:value={student.motherOccupation}>
+								  </div>
+								</div>
+							  </div>
+							  <div class="column is-one-quarter">
+								<div class="field mb-4">
+								  <div class="control">
+									<label class="label has-text-black">Mother's Email</label>
+									<input class="input has-background-white has-text-black" type="text" bind:value={student.mothersEmailAddress}>
+								  </div>
+								</div>
+							  </div>
+							  <div class="column auto">
+							  <div class="field mb-4 mt-4">
+								<div class="is-flex mt-6">
+								  <div class="control">
+									<input class="checkbox" type="checkbox" bind:checked={student.isMotherDeceased}>
+								  </div>
+								  <label class="label has-text-black ml-2"> Deceased?</label>
+								</div>
+							  </div>
+							  </div>
+							  <div class="column  is-half">
+								  <div class="field mb-4">
+									<div class="control">
+									  <label class="label has-text-black">Father's Name</label>
+									  <input class="input has-background-white has-text-black" type="text" bind:value={student.fathersName}>
+									</div>
+								  </div>
 								</div>
 								<div class="column is-half">
-									<div class="field mb-4">
-										<div class="control">
-											<label class="label has-text-black">Mother's Name</label>
-											<input
-												class="input has-background-white has-text-black"
-												type="text"
-												bind:value={student.mothersName}
-											/>
-										</div>
+								  <div class="field mb-4">
+									<div class="control">
+									  <label class="label has-text-black">Father's Address</label>
+									  <input class="input has-background-white has-text-black" type="text" bind:value={student.fathersAddress}>
 									</div>
+								  </div>
 								</div>
-								<div class="column is-half">
-									<div class="field mb-4">
-										<div class="control">
-											<label class="label has-text-black">Mother's Address</label>
-											<input
-												class="input has-background-white has-text-black"
-												type="text"
-												bind:value={student.mothersAddress}
-											/>
-										</div>
+								<div class="column  is-one-quarter">
+								  <div class="field mb-4">
+									<div class="control">
+									  <label class="label has-text-black">Father's Contact</label>
+									  <input class="input has-background-white has-text-black" type="text" bind:value={student.fathersContactNumber}>
 									</div>
+								  </div>
 								</div>
-								<div class="column is-one-quarter">
-									<div class="field mb-4">
-										<div class="control">
-											<label class="label has-text-black">Mother's Contact</label>
-											<input
-												class="input has-background-white has-text-black"
-												type="text"
-												bind:value={student.mothersContactNumber}
-											/>
-										</div>
+								<div class="column  is-one-quarter">
+								  <div class="field mb-4">
+									<div class="control">
+									  <label class="label has-text-black">Father's Occupation</label>
+									  <input class="input has-background-white has-text-black" type="text" bind:value={student.fatherOccupation}>
 									</div>
+								  </div>
 								</div>
 								<div class="column is-one-quarter">
-									<div class="field mb-4">
-										<div class="control">
-											<label class="label has-text-black">Mother's Occupation</label>
-											<input
-												class="input has-background-white has-text-black"
-												type="text"
-												bind:value={student.motherOccupation}
-											/>
-										</div>
+								  <div class="field mb-4">
+									<div class="control">
+									  <label class="label has-text-black">Father's Email</label>
+									  <input class="input has-background-white has-text-black" type="text" bind:value={student.fathersEmailAddress}>
 									</div>
-								</div>
-								<div class="column is-one-quarter">
-									<div class="field mb-4">
-										<div class="control">
-											<label class="label has-text-black">Mother's Email</label>
-											<input
-												class="input has-background-white has-text-black"
-												type="text"
-												bind:value={student.mothersEmailAddress}
-											/>
-										</div>
-									</div>
+								  </div>
 								</div>
 								<div class="column auto">
-									<div class="field mb-4 mt-4">
-										<div class="is-flex mt-6">
-											<div class="control">
-												<input
-													class="checkbox"
-													type="checkbox"
-													bind:checked={student.isMotherDeceased}
-												/>
-											</div>
-											<label class="label has-text-black ml-2"> Deceased?</label>
-										</div>
+								<div class="field mb-4">
+								  <div class="is-flex mt-6">
+									<div class="control">
+									  <input class="checkbox" type="checkbox" bind:checked={student.isFatherDeceased}>
 									</div>
+									<label class="label has-text-black ml-2">Deceased?</label>
+								  </div>
 								</div>
-								<div class="column is-half">
-									<div class="field mb-4">
-										<div class="control">
-											<label class="label has-text-black">Father's Name</label>
-											<input
-												class="input has-background-white has-text-black"
-												type="text"
-												bind:value={student.fathersName}
-											/>
-										</div>
-									</div>
 								</div>
-								<div class="column is-half">
-									<div class="field mb-4">
-										<div class="control">
-											<label class="label has-text-black">Father's Address</label>
-											<input
-												class="input has-background-white has-text-black"
-												type="text"
-												bind:value={student.fathersAddress}
-											/>
-										</div>
-									</div>
-								</div>
-								<div class="column is-one-quarter">
-									<div class="field mb-4">
-										<div class="control">
-											<label class="label has-text-black">Father's Contact</label>
-											<input
-												class="input has-background-white has-text-black"
-												type="text"
-												bind:value={student.fathersContactNumber}
-											/>
-										</div>
-									</div>
-								</div>
-								<div class="column is-one-quarter">
-									<div class="field mb-4">
-										<div class="control">
-											<label class="label has-text-black">Father's Occupation</label>
-											<input
-												class="input has-background-white has-text-black"
-												type="text"
-												bind:value={student.fatherOccupation}
-											/>
-										</div>
-									</div>
-								</div>
-								<div class="column is-one-quarter">
-									<div class="field mb-4">
-										<div class="control">
-											<label class="label has-text-black">Father's Email</label>
-											<input
-												class="input has-background-white has-text-black"
-												type="text"
-												bind:value={student.fathersEmailAddress}
-											/>
-										</div>
-									</div>
-								</div>
-								<div class="column auto">
-									<div class="field mb-4">
-										<div class="is-flex mt-6">
-											<div class="control">
-												<input
-													class="checkbox"
-													type="checkbox"
-													bind:checked={student.isFatherDeceased}
-												/>
-											</div>
-											<label class="label has-text-black ml-2">Deceased?</label>
-										</div>
-									</div>
-								</div>
-
+							   
 								<div class="column is-full has-background-light is-flex">
-									<Icon className="mr-2 mt-1" icon={faInfoCircle}></Icon>
+								  <Icon className="mr-2 mt-1" icon={faInfoCircle}></Icon>
 									<h2 class="title is-4 has-text-black">Guardian Information</h2>
+							   </div>
+							   <div class="column auto">
+								<div class="field mb-4 mt-4">
+								  <div class="is-flex">
+									<div class="control">
+									  <label class="checkbox has-text-black">
+										<input type="checkbox" bind:checked={sameFather} on:change={() => fillGuardianWithFather(student)}> Same as Father
+									  </label>
+									  <label class="checkbox has-text-black">
+										<input type="checkbox" bind:checked={sameMother} on:change={() => fillGuardianWithMother(student)}> Same as Mother
+									  </label>
+								  </div>
 								</div>
-								<div class="column auto">
-									<div class="field mb-4 mt-4">
-										<div class="is-flex">
-											<div class="control">
-												<label class="checkbox has-text-black">
-													<input
-														type="checkbox"
-														bind:checked={sameFather}
-														on:change={() => fillGuardianWithFather(student)}
-													/> Same as Father
-												</label>
-												<label class="checkbox has-text-black">
-													<input
-														type="checkbox"
-														bind:checked={sameMother}
-														on:change={() => fillGuardianWithMother(student)}
-													/> Same as Mother
-												</label>
-											</div>
-										</div>
-									</div>
+								</div>
 								</div>
 								<!-- Row 7 -->
-								<div class="column is-one-third">
-									<div class="field mb-4">
-										<div class="control">
-											<label class="label has-text-black">Guardian's Name</label>
-											<input
-												class="input has-background-white has-text-black"
-												type="text"
-												bind:value={student.guardiansName}
-											/>
-										</div>
+								<div class="column  is-one-third">
+								  <div class="field mb-4">
+									<div class="control">
+									  <div class="is-flex"><label class="label has-text-black">Guardian's Name</label>    <label class="label has-text-danger"> *</label></div>
+									  <input class="input has-background-white has-text-black" type="text" bind:value={student.guardiansName}>
 									</div>
+								  </div>
 								</div>
 								<div class="column is-half">
-									<div class="field mb-4">
-										<div class="control">
-											<label class="label has-text-black">Guardian's Address</label>
-											<input
-												class="input has-background-white has-text-black"
-												type="text"
-												bind:value={student.guardiansAddress}
-											/>
-										</div>
+								  <div class="field mb-4">
+									<div class="control">
+									  <div class="is-flex"><label class="label has-text-black">Guardian's Address</label>    <label class="label has-text-danger"> *</label></div>
+									  <input class="input has-background-white has-text-black" type="text" bind:value={student.guardiansAddress}>
 									</div>
+								  </div>
 								</div>
-								<div class="column is-one-quarter">
-									<div class="field mb-4">
-										<div class="control">
-											<label class="label has-text-black">Guardian's Contact</label>
-											<input
-												class="input has-background-white has-text-black"
-												type="text"
-												bind:value={student.guardiansContactNumber}
-											/>
-										</div>
+								<div class="column  is-one-quarter">
+								  <div class="field mb-4">
+									<div class="control">
+									  <div class="is-flex"><label class="label has-text-black">Guardian's Contact</label>    <label class="label has-text-danger"> *</label></div>
+									  <input class="input has-background-white has-text-black" type="text" bind:value={student.guardiansContactNumber}>
 									</div>
+								  </div>
 								</div>
-								<div class="column is-one-quarter">
-									<div class="field mb-4">
-										<div class="control">
-											<label class="label has-text-black">Guardian's Relationship</label>
-											<input
-												class="input has-background-white has-text-black"
-												type="text"
-												bind:value={student.guardianRelationship}
-											/>
-										</div>
+								<div class="column  is-one-quarter">
+								  <div class="field mb-4">
+									<div class="control">
+									  <div class="is-flex"><label class="label has-text-black">Guardian's Relationship</label>    <label class="label has-text-danger"> *</label></div>
+									  <input class="input has-background-white has-text-black" type="text" bind:value={student.guardianRelationship}>
 									</div>
+								  </div>
 								</div>
 								<div class="column is-half">
-									<div class="field mb-4">
-										<div class="control">
-											<label class="label has-text-black">Guardian's Email</label>
-											<input
-												class="input has-background-white has-text-black"
-												type="text"
-												bind:value={student.guardiansEmailAddress}
-											/>
-										</div>
+								  <div class="field mb-4">
+									<div class="control">
+									  <div class="is-flex"><label class="label has-text-black">Guardian's Email</label>    <label class="label has-text-danger"> *</label></div>
+									  <input class="input has-background-white has-text-black" type="text" bind:value={student.guardiansEmailAddress}>
 									</div>
+								  </div>
 								</div>
 								<div class="column">
 									<div class="field">
@@ -763,5 +587,10 @@
 		font-size: 1.2rem;
 		font-weight: bold;
 		margin-bottom: 5px;
+	}
+	.button-blue
+	{
+		background-color: #063F78;
+        color:white;
 	}
 </style>

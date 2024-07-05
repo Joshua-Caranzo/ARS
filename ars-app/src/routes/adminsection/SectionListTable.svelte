@@ -27,7 +27,7 @@
                     <td>{section.sectionName}</td>
                     <td>{section.strandName || "Not Applicable"}</td>
                     <td class="has-text-centered">
-                        <IconButton icon={faEdit} on:click={() => goEdit(section)} label="Edit"/>
+                        <IconButton  class="button-blue has-text-white" icon={faEdit} on:click={() => goEdit(section)} label="Edit"/>
                     </td>
                 </tr>
             {/each}    
@@ -48,5 +48,9 @@
     .my-custom-table td {
         color: black;
     }
-    
+    .button-blue
+	{
+		background-color: #063F78;
+        color:white;
+	}
 </style>

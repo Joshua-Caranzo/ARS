@@ -7,6 +7,8 @@
     import { getGradeLevels } from "../repo";
     import { faChevronDown ,faPrint} from "@fortawesome/free-solid-svg-icons";
     import IconButton from "$lib/components/IconButton.svelte";
+	import html2canvas from "html2canvas";
+	import jsPDF from "jspdf";
 
     let previewImage: string | null = null;
     let school: School = {
@@ -68,25 +70,24 @@ return () => {
     }
 
     const refresh = async () => {
-        try {
-            if ($loggedInUser) {
-                const result = await getSchoolById(parseInt($loggedInUser?.uid));
-                school = result.data;
-                previewImage = school.imagePath ? `static/images/${school.imagePath}` : null;
-                errorMessage = result?.message || '';
-                syListCallResult = await getSchoolYearList();
-                currentIndex = syListCallResult.data.findIndex(item => item.id === sy);
-                
-                studentListCallResult = await getLevelBySection(parseInt($loggedInUser?.uid), sy);
-                studentList = studentListCallResult.data;
-                totalListCallResult = await getTotalBySchool(parseInt($loggedInUser?.uid), sy);
-                total = totalListCallResult.data;
-                console.log(total)
-            }
-        } catch (err: any) {
-            errorMessage = err.message;
+    try {
+        if ($loggedInUser) {
+            const result = await getSchoolById(parseInt($loggedInUser?.uid));
+            school = result.data;
+            previewImage = school.imagePath ? `static/images/${school.imagePath}` : null;
+            errorMessage = result?.message || '';
+            syListCallResult = await getSchoolYearList();
+            currentIndex = syListCallResult.data.findIndex(item => item.id === sy);
+            
+            studentListCallResult = await getLevelBySection(parseInt($loggedInUser?.uid), sy);
+            studentList = studentListCallResult.data;
+            totalListCallResult = await getTotalBySchool(parseInt($loggedInUser?.uid), sy);
+            total = totalListCallResult.data;
         }
-    };
+    } catch (err: any) {
+        errorMessage = err.message;
+    }
+};
 
     const handleSchoolYearChange = async (event: Event) => {
         const selectElement = event.target as HTMLSelectElement;
@@ -107,31 +108,53 @@ return () => {
         }
     }
 
+    
     const printPage = () => {
-        const printContent = document.getElementById("print-section");
-        if (printContent) {
-            const originalDocument = document.body.innerHTML;
-            const content = printContent.innerHTML;
-            document.body.innerHTML = content;
-            window.print();
-            document.body.innerHTML = originalDocument;
-        }
-    };
+    const element = document.getElementById("print-section");
+
+    if (element) {
+        // Configure html2canvas with scale factor (adjust scale as needed)
+        const options = {
+            scale: 2, // Apply a scale factor of 2x (adjust as needed)
+        };
+
+        html2canvas(element, options).then(canvas => {
+            const imgData = canvas.toDataURL('image/png');
+            const pdf = new jsPDF({
+                unit: 'in', // Use inches for units
+                format: [8.5, 13], // Long bond paper size: 8.5 x 13 inches
+            });
+
+            const imgProps = pdf.getImageProperties(imgData);
+            const pdfWidth = pdf.internal.pageSize.getWidth() - 1; // Adjust margins as needed
+            const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
+
+            // Add image to PDF with margins
+            pdf.addImage(imgData, 'PNG', 0.5, 0.5, pdfWidth, pdfHeight); // Adjust margins as needed
+
+            // Save the PDF file
+            pdf.save(`Summary_of_Enrollment_${new Date().toISOString()}.pdf`);
+        });
+    }
+};
     function reloadPage() {
         window.location.reload();
     }
 </script>
+<IconButton class="button-blue has-text-white is-pulled-right" icon={faPrint} on:click={printPage}>Print</IconButton>                
 
 <section class="section">
     <div class="container">
         <!-- School Information (Header) -->
         <div class="mb-5">
-            <IconButton link icon={faPrint} on:click={printPage}>Print</IconButton>                
             <div id="print-section">
                     <div class="has-text-centered">
-                        {#if previewImage}
-                            <img src={previewImage} alt="School Picture" class="profile-picture" style="width: 120px; height: 100px;">
+                        {#if school.imagePath}
+                        <figure class="image is-128x128 is-inline-block">
+                            <img src="/{school.imagePath}" alt="Company Logo">
+                            </figure>
                         {/if}
+                       
                     </div>           
                     <div class="mb-4 has-text-centered">
                         <p class="is-size-4 has-text-black gothic-like-font">{school.schoolName}</p>
@@ -194,10 +217,17 @@ return () => {
 
 
 <style>
+    @media print {
+        .non-printable {
+            display: none !important;
+        }
+        #print-section {
+            display: block;
+        }
+    }
     .gothic-like-font {
         font-family: 'Franklin Gothic Medium', 'Arial', sans-serif;
     }
-   
     .select {
         font-size: 1rem;
         padding: 0.5rem;
@@ -226,4 +256,9 @@ return () => {
     .my-custom-table td {
         color: black;
     }
+    .button-blue
+	{
+		background-color: #063F78;
+        color:white;
+	}
 </style>

@@ -1,13 +1,25 @@
 <script lang="ts">
     import type { UserDTO } from "./type";
-    import { faEdit } from "@fortawesome/free-solid-svg-icons";
+    import { faEdit, faLockOpen } from "@fortawesome/free-solid-svg-icons";
     import Notification from "$lib/components/Notification.svelte";
     import IconButton from "$lib/components/IconButton.svelte";
+	import { unlockUser } from "./repo";
+	import { createEventDispatcher } from "svelte";
 
     export let users: UserDTO[] = [];
     export let message: string | undefined;
     export let isSuccess: boolean;
     export let goEdit: (user: UserDTO) => void; // Add this line
+
+    const dispatch = createEventDispatcher();
+    function refresh() {
+    dispatch('refresh');
+  }
+  async function unlock(userId:number)
+  {
+    await unlockUser(userId);
+    refresh();
+  }
 </script>
 
 <div style="overflow: auto;">
@@ -31,7 +43,10 @@
                     <td>{user.email}</td>
                     <td>{user.userTypeName}</td>
                     <td class="has-text-centered">
-                        <IconButton icon={faEdit} on:click={() => goEdit(user)} label="Edit"/>
+                        <IconButton class="button-blue has-text-white" icon={faEdit} on:click={() => goEdit(user)} label="Edit"/>
+                            {#if user.isLockedOut == true}
+                            <IconButton class="button-blue has-text-white" icon={faLockOpen} on:click = {() => unlock(user.id)} label="Unlock Account"/>
+                            {/if}
                     </td>
                 </tr>
             {/each}
@@ -51,4 +66,10 @@
     .my-custom-table td {
         color: black;
     }
+    .button-blue
+	{
+		background-color: #063F78;
+        color:white;
+	}
+
 </style>

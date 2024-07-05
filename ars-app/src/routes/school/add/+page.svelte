@@ -42,7 +42,7 @@
 
 </script>
 <div class="is-flex is-align-items-center">
-    <a class="button is-link" href="/school">
+    <a class="button button-blue" href="/school">
         <Icon icon={faArrowLeft}/>
     </a>      
     <h1 class="subtitle ml-2 has-text-black">Add School</h1>
@@ -92,7 +92,7 @@
         
         <div class="field">
             <div class="control">
-            <button class="button is-link" >Add</button>
+            <button class="button button-blue is-pulled-right" >Add</button>
             </div>
         </div>
     </fieldset>
@@ -130,5 +130,10 @@
         font-weight: bold;
         margin-bottom: 5px;
     }
+    .button-blue
+	{
+		background-color: #063F78;
+        color:white;
+	}
 
   </style>

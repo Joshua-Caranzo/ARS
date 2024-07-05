@@ -45,5 +45,13 @@ namespace ARS.API.Controllers
             var school = await _schoolService.GetSchoolByUserId(id, ct);
             return Ok(school);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllSchools(CancellationToken ct)
+        {
+            var school = await _schoolService.GetAllSchools( ct);
+            return Ok(school);
+        }
+
     }
 }

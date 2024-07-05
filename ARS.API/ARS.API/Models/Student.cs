@@ -41,5 +41,7 @@
         public bool? IsFatherDeceased { get; set; }
         public DateTime? DateRegistered { get; set; }
         public bool RequestToMoveUp { get; set; }
+        public string StudentAddress { get; set; }
+        public string? Notes { get; set; }
     }
 }

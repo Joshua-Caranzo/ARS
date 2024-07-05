@@ -1,40 +1,37 @@
-export type StudentFormData = {
+export type Student = {
     id: number;
     lastName: string;
+    middleName: string | null; // Assuming middleName can be null if not available
     firstName: string;
-    suffix: string | null;
-    middleName?: string | null;
     email: string;
-    contactNumber?: string | null;
-    lrn: string | null;
-    birthdate: Date;
-    birthplace: string;
+    contactNumber: string;
+    lrn: string;
+    studentIdNumber: string;
+    gradeLevel: string; // Assuming gradeLevel is a string, change to number if needed
+    strandName: string;
+    gradeLevelId: number;
+    birthDate: Date;
+    age: number;
+    birthPlace: string;
     civilStatus: string;
     religion: string;
-    sex: string;
-    mothersName?: string | null;
-    mothersAddress?: string | null;
-    mothersContactNumber?: string | null;
-    mothersEmailAddress?: string | null;
-    fathersName?: string | null;
-    fathersAddress?: string | null;
-    fathersContactNumber?: string | null;
-    fathersEmailAddress?: string | null;
-    guardiansName: string;
-    guardiansAddress: string;
-    guardiansContactNumber?: string | null;
-    guardiansEmailAddress?: string | null;
+    motherName: string | null;
+    motherAddress: string | null;
+    fatherName: string | null;
+    fatherAddress: string | null;
+    guardianName: string;
+    guardianAddress: string | null;
     lastSchoolAttended: string | null;
-    lastSchoolAttendedYear: string | null;
-    gradeLevelId: number;
-    strandId: number | null;
-    isMotherDeceased: boolean | null;
-    isFatherDeceased: boolean | null;
-    motherOccupation: string | null;
-    fatherOccupation: string | null;
-    guardianRelationship: string;
-    age: string;
-    studentIdNumber: string;
+    lastSchoolAttendedYear: string | null; // Assuming this is a year
+    motherContactNumber: string | null;
+    fatherContactNumber: string | null;
+    guardianContactNumber: string | null;
+    motherEmailAddress: string | null;
+    fatherEmailAddress: string | null;
+    guardianEmailAddress: string | null;
+    sex: string;
+    gradeLevelForSy:string;
+    studentAddress:string
 };
 
 export type SchoolSection =  {

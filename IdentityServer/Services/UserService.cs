@@ -1,4 +1,5 @@
-﻿using Identity.API.Data;
+﻿using Azure.Core;
+using Identity.API.Data;
 using Identity.API.Entities;
 using Identity.API.Helper;
 using Identity.API.Interfaces;
@@ -8,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -17,12 +19,13 @@ namespace Identity.API.Services
     {
         private readonly IdentityContext _dbContext;
         private readonly IWebHostEnvironment _hostingEnvironment;
+        private readonly IEmailService _emailService;
 
-
-        public UserService(IdentityContext dbContext, IWebHostEnvironment hostingEnvironment)
+        public UserService(IdentityContext dbContext, IWebHostEnvironment hostingEnvironment, IEmailService emailService)
         {
             _dbContext = dbContext;
             _hostingEnvironment = hostingEnvironment;
+            _emailService = emailService;
         }
 
         public async Task<User> GetById(int id)
@@ -173,6 +176,15 @@ namespace Identity.API.Services
             // Check login is locked by username
             if (await IsLockedOut(userName))
             {
+                string subject = "User Account Locked";
+                string body = $@"<h1>Your Account has been temporarily locked.</h1>
+                            <p>Hello,</p>
+                            <p>Your account has been locked out due to too many failed login attempts. Please wait 24 hours for another login attempt. You may contact the System Administrator for assistance.</p>";
+
+                // Send email
+                var ct = new CancellationToken();
+                await _emailService.SendEmailAsync(userName, subject, body, ct);
+
                 return new LoginResult(false, "Your account has been locked out due to too many failed login attempts. Please contact System Administrator!");
             }
 
@@ -191,7 +203,7 @@ namespace Identity.API.Services
             //if failed checking using lower case, return false
             if (user == null)
             {
-                return new LoginResult(false, "Invalid username or password.");
+                return new LoginResult(false, "User not found.");
             }
 
             // Prevents throwing of exception if EncyptedPassword is null
@@ -207,7 +219,8 @@ namespace Identity.API.Services
             {
                 // Handle failed login attempt (e.g., increment failed login counter, possibly lock the account)
                 // await HandleFailedLoginAttempt(user);
-                return new LoginResult(false, "Invalid username or password.");
+                await FailedLoginAttempt(user.UserName);
+                return new LoginResult(false, $"Invalid username or password");
             }
 
             // If login is successful, unlock the user account if it was locked

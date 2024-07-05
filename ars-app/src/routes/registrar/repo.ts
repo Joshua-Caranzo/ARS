@@ -3,7 +3,6 @@ import type { CallResultDto } from '../../types/types';
 import type { GradeLevel, StrandDto, StudentFormData } from './type';
 
 export async function addStudent(student:StudentFormData, userId: number, isStudentRegistered:boolean | null) {
-	console.log(student);
 	return await post<CallResultDto<object>>(`/Student/AddStudent`, {
 		userId, isStudentRegistered
 	}, student);
@@ -29,4 +28,8 @@ export async function getGradeLevels() {
 
 export async function getStrands() {
 	return await get<CallResultDto<StrandDto[]>>(`/Section/GetStrands`);
+}
+
+export async function denyStudent(studentId:number) {
+	return await put<CallResultDto<object>>(`/Student/DenyStudent`,{studentId});
 }

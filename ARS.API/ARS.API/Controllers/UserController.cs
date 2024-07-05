@@ -74,5 +74,19 @@ namespace Payroll.API.Controllers
             var response = await _userService.PasswordUpdater(username, password, ct);
             return Ok(response);
         }
+
+        [HttpPut]
+        public async Task<IActionResult> UnlockAccount(int userId, CancellationToken ct)
+        {
+            var response = await _userService.UnlockAccount(userId, ct);
+            return Ok(response);
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> UnlockStudentAccount(int studentId, CancellationToken ct)
+        {
+            var response = await _userService.UnlockStudentAccount(studentId, ct);
+            return Ok(response);
+        }
     }
 }

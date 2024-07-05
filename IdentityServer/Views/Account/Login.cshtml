@@ -30,9 +30,7 @@
                                 <p class="has-text-right">
                                     <a href="ForgottenPassword" class="is-underlined">Reset Password</a>
                                 </p>
-                                <p class="error has-text-danger" style="white-space: pre-line; display: none;">
-                                    <partial name="_ValidationSummary" class="error" />
-                                </p>
+                                <div asp-validation-summary="All" class="has-text-danger"></div>
                             </form>
                         </div>
                     </div>

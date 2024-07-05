@@ -37,7 +37,7 @@
                         {user.schoolName}
                     </td>
                     <td class="has-text-centered">
-                        <IconButton icon={faEdit} on:click={() => goEdit(user)} label="Edit"/>
+                        <IconButton class=" button-blue has-text-white" icon={faEdit} on:click={() => goEdit(user)} label="Edit"/>
                     </td>
                 </tr>
             {/each}    

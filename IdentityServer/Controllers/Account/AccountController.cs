@@ -26,8 +26,10 @@ using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
+using static System.Net.WebRequestMethods;
 
 namespace Identity.API.Controllers.Account
 {
@@ -140,6 +142,12 @@ namespace Identity.API.Controllers.Account
                 LoginResult loginResult = await _userService.Login(model.UserName, model.Password);
                 if (loginResult.Success)
                 {
+
+                    if (!IsStrongPassword(model.Password))
+                    {
+                        return RedirectToAction("ResetPassword", "Account", new { email = model.UserName });
+
+                    }
                     await _events.RaiseAsync(new UserLoginSuccessEvent(model.UserName, "", model.UserName, clientId: context?.ClientId));
 
                     if (context != null)
@@ -190,7 +198,7 @@ namespace Identity.API.Controllers.Account
                 else
                 {
                     await _events.RaiseAsync(new UserLoginFailureEvent(model.UserName, loginResult.Message));
-                    ModelState.AddModelError("", "Invalid Login");
+                    ModelState.AddModelError("", $"{loginResult.Message}");
                     var vmError = await BuildLoginViewModelAsync(model);
                     return View(vmError);
                 }
@@ -206,6 +214,11 @@ namespace Identity.API.Controllers.Account
             var vm = await BuildLoginViewModelAsync(model);
             return View(vm);
 
+        }
+
+        private bool IsStrongPassword(string password)
+        {
+            return Regex.IsMatch(password, @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,}$");
         }
 
         public string GetUserDevice()
@@ -425,7 +438,8 @@ namespace Identity.API.Controllers.Account
         [HttpGet]
         public IActionResult ForgottenPassword()
         {
-            return View();
+            var model = new ForgotPasswordViewModel();
+            return View(model);
         }
 
         [HttpPost]
@@ -454,8 +468,8 @@ namespace Identity.API.Controllers.Account
                     // Send email
                     await _emailService.SendEmailAsync(model.Email, subject, body, cancellationToken);
 
-                    ModelState.AddModelError("Email", "Successfully sent an email request. Please Check your Gmail");
-                    return View(model);
+                    model.Message = "Successfully sent an email request. Please Check your Gmail";
+                    return Redirect("https://arschools.app");
                 }
                 catch (Exception ex)
                 {
@@ -499,6 +513,15 @@ namespace Identity.API.Controllers.Account
                 try
                 {
                     var resetResult = await _userService.ResetPassword(user, model.Password1, cancellationToken);
+                    string subject = "Password Reset Successful";
+                    string body = $@"<h1>Password successfully changed!</h1>
+                            <p>You may now login with your user name and your new password. For guidance, please keep your password secure. 
+                                Do not share your password with anyone to ensure the safety of your account. 
+                                Please click the link below to proceed:</p>
+                            <a href=""https://arschools.app"">Reset Password</a>";
+
+                    // Send email
+                    await _emailService.SendEmailAsync(model.Email, subject, body, cancellationToken);
                     if (resetResult.Succeeded)
                     {
                         model.Message = "Password has been reset successfully. Go Back and Try to Log In now!";

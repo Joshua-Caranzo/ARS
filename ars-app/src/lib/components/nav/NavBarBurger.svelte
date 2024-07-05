@@ -6,7 +6,7 @@
 </script>
 
 <a
-	class="navbar-burger"
+	class="navbar-burger button-blue has-text-white"
 	class:is-active={dropdownActive}
 	on:click={toggleDropdown}
 	href={$page.url.href}

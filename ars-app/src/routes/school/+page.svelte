@@ -33,7 +33,6 @@
 
     async function fetchSchoolList() {
         try {
-            console.log(schoolListCallResult)
             schoolListCallResult = await getSchoolList(searchQuery, currentPage, rowsPerPage);
             schools = schoolListCallResult.data;
             totalCount = schoolListCallResult.totalCount;
@@ -60,7 +59,6 @@
 
     function handleClose() {
         gotoEdit = false;
-        console.log(gotoEdit)
     }
 </script>
 
@@ -74,7 +72,7 @@
             <input class="input has-background-white has-text-black" type="text" placeholder="Search..." bind:value={searchQuery} on:input={handleSearch} />
         </div>
 
-        <a class="button is-link mb-2 ml-4" href="/school/add">
+        <a class="button has-text-white button-blue mb-2 ml-4" href="/school/add">
             <Icon icon={faPlus} className="mr-2" />
             Add School
         </a>
@@ -112,4 +110,11 @@
         display: flex;
         justify-content: center;
     }
+
+    .button-blue
+	{
+		background-color: #063F78;
+        color:white;
+	}
+
 </style>

@@ -10,7 +10,6 @@
     import { loggedInUser, shortcuts } from '$lib/store';
     import { goto } from "$app/navigation";
     import Edit from "./edit/Edit.svelte";
-	import { getCombinedNodeFlags } from "typescript";
 
     let errorMessage: string | undefined;
     let searchQuery: string = "";
@@ -48,7 +47,7 @@
     }
 
     function handleSearch() {
-        currentPage = 1; // Reset to first page on new search
+        currentPage = 1;
         fetchUserList();
     }
 
@@ -64,7 +63,11 @@
 
     function handleClose() {
         gotoEdit = false;
-        console.log(gotoEdit)
+    }
+
+    async function refresh()
+    {
+        await fetchUserList();
     }
 </script>
 
@@ -76,12 +79,12 @@
         <div class="control" style="flex: 1;">
             <input class="input has-background-white has-text-black" type="text" placeholder="Search..." bind:value={searchQuery} on:input={handleSearch} />
         </div>
-        <a class="button is-link mb-2 ml-4" href="/adminuser/add">
+        <a class="button button-blue mb-2 ml-4" href="/adminuser/add">
             <Icon icon={faPlus} className="mr-2"/>
             Add User
         </a>
     </div>
-    <UserListTable users={userListCallResult.data} message={errorMessage} isSuccess={userListCallResult.isSuccess} {goEdit}/>
+    <UserListTable users={userListCallResult.data} message={errorMessage} isSuccess={userListCallResult.isSuccess} {goEdit} on:refresh={refresh}/>
 
     <div class="pagination">
         <IconButton class="is-ghost" icon={faChevronLeft} on:click={() => changePage(currentPage - 1)} disabled={currentPage === 1} />
@@ -113,4 +116,10 @@
         display: flex;
         justify-content: center;
     }
+    .button-blue
+	{
+		background-color: #063F78;
+        color:white;
+	}
+
 </style>

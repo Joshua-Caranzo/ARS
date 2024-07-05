@@ -26,8 +26,8 @@
                 <td class="has-text-black">{school.fromSchoolTerm}</td>
                 <td class="has-text-black">{school.toSchoolTerm}</td>
                 <td class="has-text-black">{school.isActive}</td>
-                <td class="has-text-centered has-text-black">
-                    <IconButton icon={faEdit} on:click={() => goEdit(school)} label="Edit"/>
+                <td class="has-text-centered has-text-white">
+                    <IconButton class="button-blue has-text-white" icon={faEdit} on:click={() => goEdit(school)} label="Edit"/>
                 </td>
             </tr>
             {/each}
@@ -60,4 +60,10 @@
         background-color: lightgray;
         color: white;
     }
+    .button-blue
+	{
+		background-color: #063F78;
+        color:white;
+	}
+
 </style>

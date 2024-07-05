@@ -9,5 +9,6 @@ namespace ARS.API.Services.School
         Task<CallResultDto<Models.School>> GetSchoolById(int id, CancellationToken ct);
         Task<CallResultDto<object>> EditSchool(Models.School school, IFormFile? file, CancellationToken ct);
         Task<CallResultDto<Models.School>> GetSchoolByUserId(int id, CancellationToken ct);
+        Task<CallResultDto<List<Models.School>>> GetAllSchools(CancellationToken ct);
     }
 }

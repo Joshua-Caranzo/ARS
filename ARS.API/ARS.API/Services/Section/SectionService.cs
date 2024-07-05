@@ -281,15 +281,16 @@ namespace ARS.API.Services.Section
 
 
         }
-        public async Task<CallResultDto<List<SchoolSection>>> GetSchoolSectionbyGrade(int id, int? strandId, CancellationToken ct)
+        public async Task<CallResultDto<List<SchoolSection>>> GetSchoolSectionbyGrade(int userId, int id, int? strandId, CancellationToken ct)
         {
             var callResult = new CallResultDto<List<SchoolSection>>();
-
+            var user = await _payrollcontext.Employee.FirstOrDefaultAsync(x => x.UserId == userId);
+            var schoolId = user.AssignedSchoolId;
             try
             {
                 var sql = @"
                     SELECT * FROM SchoolSection
-                    WHERE GradeLevelId = @id";
+                    WHERE GradeLevelId = @id and SchoolId = @schoolId";
 
                 if (strandId.HasValue)
                 {
@@ -297,7 +298,7 @@ namespace ARS.API.Services.Section
                 }
 
                 sql += " ORDER BY Id";
-                var userTypes = await _connection.QueryAsync<SchoolSection>(sql, new { id, strandId });
+                var userTypes = await _connection.QueryAsync<SchoolSection>(sql, new { id, strandId, schoolId });
 
                 callResult.IsSuccess = true;
                 callResult.Data = userTypes.ToList();
@@ -330,13 +331,14 @@ namespace ARS.API.Services.Section
                     FROM 
                         schoolSection ss
                     LEFT JOIN 
-                        enrollstudent es ON es.sectionId = ss.Id AND es.schoolYearId = @syId AND es.schoolId = @schoolId
+                        enrollstudent es ON es.sectionId = ss.Id AND es.schoolYearId = @syId
                     LEFT JOIN 
                         student s ON es.studentId = s.id
                     LEFT JOIN 
                         user u ON s.userId = u.id
                     INNER JOIN 
                         gradeLevel gl ON gl.id = ss.GradeLevelID
+                    WHERE ss.schoolId = @schoolId
                     GROUP BY 
                         gl.Level, 
                         ss.SectionName, 
@@ -519,5 +521,228 @@ namespace ARS.API.Services.Section
             return callResult;
         }
 
+        public async Task<CallResultDto<List<StudentByLevel>>> GetTotalByLevelSuperAdmin(int schoolId, int syId, CancellationToken ct)
+        {
+            var callResult = new CallResultDto<List<StudentByLevel>>();
+            try
+            {
+                var sql = @"
+                     SELECT 
+                        gl.Level AS GradeLevel,
+                        SUM(CASE WHEN u.sex = 'Male' THEN 1 ELSE 0 END) AS TotalMales,
+                        SUM(CASE WHEN u.sex = 'Female' THEN 1 ELSE 0 END) AS TotalFemales,
+                        COUNT(u.id) AS TotalStudents
+                    FROM 
+                        enrollstudent es
+                    LEFT JOIN 
+                        schoolSection ss ON es.sectionId = ss.Id
+                    INNER JOIN 
+                        gradeLevel gl ON gl.id = ss.GradeLevelID
+                    LEFT JOIN 
+                        student s ON es.studentId = s.id
+                    LEFT JOIN 
+                        user u ON s.userId = u.id
+                    WHERE 
+                        es.schoolYearId = @syID AND es.schoolId = @schoolId
+                    GROUP BY 
+                        gl.Level, 
+                        gl.id
+                    ORDER BY 
+                        gl.id;
+                        ";
+
+                var userTypes = await _connection.QueryAsync<StudentByLevel>(sql, new { schoolId, syId });
+
+
+                callResult.IsSuccess = true;
+                callResult.Data = userTypes.ToList();
+            }
+            catch (Exception ex)
+            {
+                // Log the exception or handle it as needed
+                callResult.IsSuccess = false;
+                callResult.Data = null;
+                callResult.Message = "Fetching Grade Level List failed.";
+            }
+
+            return callResult;
+        }
+
+        public async Task<CallResultDto<StudentCount>> GetTotalBySchoolSuperAdmin(int schoolId, int syId, CancellationToken ct)
+        {
+            var callResult = new CallResultDto<StudentCount>();
+            try
+            {
+                var sql = @"
+                     SELECT  
+                            SUM(CASE WHEN u.sex = 'Male' THEN 1 ELSE 0 END) AS TotalMales,
+                            SUM(CASE WHEN u.sex = 'Female' THEN 1 ELSE 0 END) AS TotalFemales,
+                            COUNT(u.id) AS TotalStudents
+                        FROM 
+                            enrollstudent es
+                        INNER JOIN 
+                            schoolSection ss ON es.sectionId = ss.Id
+                        INNER JOIN 
+                            gradeLevel gl ON gl.id = ss.GradeLevelID
+                        INNER JOIN 
+                            student s ON es.studentId = s.id
+                        INNER JOIN 
+                            user u ON s.userId = u.id
+                        INNER JOIN 
+                            schoolYear sy ON es.schoolYearId = sy.id
+                        INNER JOIN 
+                            school sc ON ss.schoolId = sc.id
+                        WHERE es.schoolYearId = @syId and es.schoolId = @schoolId
+                        ";
+
+                var userTypes = await _connection.QueryFirstOrDefaultAsync<StudentCount>(sql, new { schoolId, syId });
+
+                callResult.IsSuccess = true;
+                callResult.Data = userTypes;
+            }
+            catch (Exception ex)
+            {
+                // Log the exception or handle it as needed
+                callResult.IsSuccess = false;
+                callResult.Data = null;
+                callResult.Message = "Fetching Grade Level List failed.";
+            }
+
+            return callResult;
+        }
+        public async Task<CallResultDto<CurrentSection>> GetCurrentSection(int studentId, int syId, CancellationToken ct)
+        {
+            var callResult = new CallResultDto<CurrentSection>();
+            try
+            {
+                var sql = @"
+            SELECT e.sectionId, ss.gradeLevelId, ss.sectionName
+            FROM ars.enrollstudent e 
+            INNER JOIN schoolsection ss ON ss.id = e.sectionId 
+            WHERE e.studentId = @studentId AND e.schoolYearId = @syId
+            ORDER BY e.Id"; // Assuming 'Id' is the primary key or unique identifier
+
+                var userTypes = await _connection.QueryFirstOrDefaultAsync<CurrentSection>(sql, new { studentId, syId });
+
+                if (userTypes != null)
+                {
+                    callResult.IsSuccess = true;
+                    callResult.Data = userTypes;
+                }
+                else
+                {
+                    callResult.IsSuccess = false;
+                    callResult.Data = null;
+                    callResult.Message = "No school section found for the specified student and school year.";
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log the exception or handle it as needed
+                callResult.IsSuccess = false;
+                callResult.Data = null;
+                callResult.Message = "Fetching School Section failed: " + ex.Message;
+            }
+
+            return callResult;
+        }
+
+        public async Task<CallResultDto<object>> ChangeSection(int studentId, int syId, int sectionId, CancellationToken ct)
+        {
+            var callResult = new CallResultDto<object>();
+
+            try
+            {
+                var sect = await _payrollcontext.EnrollStudents.Where(x => x.StudentId == studentId && x.SchoolYearId == syId).FirstOrDefaultAsync(ct);
+                if (sect == null)
+                {
+                    callResult.IsSuccess = false;
+                    callResult.Message = "Section Not Found.";
+                    return callResult; //messages here and set issucess false;
+                }
+
+                sect.SectionId = sectionId;
+
+                await _payrollcontext.SaveChangesAsync(ct);
+                callResult.IsSuccess = true;
+                callResult.Message = "Changed section successfully.";
+            }
+            catch (Exception ex)
+            {
+                callResult.IsSuccess = false;
+                callResult.Message = "Failed to Edit Section.";
+            }
+
+            return callResult;
+
+
+        }
+
+        public async Task<CallResultDto<CurrentStrandDto>> GetCurrentStrand(int studentId, int syId, CancellationToken ct)
+        {
+            var callResult = new CallResultDto<CurrentStrandDto>();
+            try
+            {
+                var sql = @"
+                SELECT ss.strandId, ss.gradeLevelId from enrollstudent es inner join schoolsection ss on ss.Id = es.sectionId where es.studentId = @studentId and es.schoolyearId= @syId
+                "; 
+
+                var userTypes = await _connection.QueryFirstOrDefaultAsync<CurrentStrandDto>(sql, new { studentId, syId });
+
+                if (userTypes != null)
+                {
+                    callResult.IsSuccess = true;
+                    callResult.Data = userTypes;
+                }
+                else
+                {
+                    callResult.IsSuccess = false;
+                    callResult.Data = null;
+                    callResult.Message = "No school section found for the specified student and school year.";
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log the exception or handle it as needed
+                callResult.IsSuccess = false;
+                callResult.Data = null;
+                callResult.Message = "Fetching School Section failed: " + ex.Message;
+            }
+
+            return callResult;
+        }
+
+        public async Task<CallResultDto<object>> ChangeStrand(int studentId, int sectionId, int strandId, int syId, CancellationToken ct)
+        {
+            var callResult = new CallResultDto<object>();
+
+            try
+            {
+                var sect = await _payrollcontext.EnrollStudents.Where(x => x.StudentId == studentId && x.SchoolYearId == syId).FirstOrDefaultAsync(ct);
+                var student = await _payrollcontext.Students.Where(x => x.Id == studentId).FirstOrDefaultAsync(ct);
+                if (sect == null)
+                {
+                    callResult.IsSuccess = false;
+                    callResult.Message = "Section Not Found.";
+                    return callResult; //messages here and set issucess false;
+                }
+
+                sect.SectionId = sectionId;
+                student.StrandId = strandId;
+
+                await _payrollcontext.SaveChangesAsync(ct);
+                callResult.IsSuccess = true;
+                callResult.Message = "Changed strand successfully.";
+            }
+            catch (Exception ex)
+            {
+                callResult.IsSuccess = false;
+                callResult.Message = "Failed to Edit Section.";
+            }
+
+            return callResult;
+
+
+        }
     }
 }

@@ -135,14 +135,14 @@ let errorMessage: string | undefined;
                   
                     {#if user.isEnrolled == true}
                     <td class="has-text-centered">
-                        <a class="button is-link"  on:click={() => openMoveUp(user.id, user.gradeLevelId, user.gradeLevel, user.strandId)}>
+                        <a class="button button-blue"  on:click={() => openMoveUp(user.id, user.gradeLevelId, user.gradeLevel, user.strandId)}>
                             <Icon icon={faArrowUp} className="mr-2"/>
                             Move Up
                         </a>
                     </td>
                     {:else}
                     <td class="has-text-centered">
-                        <a class="button is-link"  on:click={() => openEnroll(user.id, user.gradeLevelId, user.gradeLevel, user.strandId)}>
+                        <a class="button button-blue"  on:click={() => openEnroll(user.id, user.gradeLevelId, user.gradeLevel, user.strandId)}>
                             <Icon icon={faEdit} className="mr-2"/>
                             Enroll
                         </a>
@@ -195,6 +195,10 @@ let errorMessage: string | undefined;
     .my-custom-table td {
         color: black;
     }
-    
+    .button-blue
+	{
+		background-color: #063F78;
+        color:white;
+	}
   </style>
   

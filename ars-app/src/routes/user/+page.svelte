@@ -60,7 +60,6 @@
 
     function handleClose() {
         gotoEdit = false;
-        console.log(gotoEdit)
     }
 
 </script>
@@ -74,7 +73,7 @@
             <input class="input has-background-white has-text-black" type="text" placeholder="Search..." bind:value={searchQuery} on:input={handleSearch} />
         </div>
 
-    <a class="button is-link mb-2 ml-4" href="/user/add">
+    <a class="button button-blue has-text-white mb-2 ml-4" href="/user/add">
         <Icon icon={faPlus} className="mr-2"/>
         Add User
     </a>
@@ -112,4 +111,11 @@
         display: flex;
         justify-content: center;
     }
+
+    .button-blue
+	{
+		background-color: #063F78;
+        color:white;
+	}
+
 </style>

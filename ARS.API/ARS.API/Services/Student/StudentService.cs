@@ -3,6 +3,7 @@ using ARS.API.Services.Email;
 using ARS.API.Services.Student.Dto;
 using Dapper;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 using Payroll.API.Context;
 using Payroll.API.SharedDto;
 using System.Data;
@@ -21,116 +22,127 @@ namespace ARS.API.Services.Student
             var callResult = new CallResultDto<object>();
             try
             {
-                var schoolId = 0;
-                if (isStudentRegistered == true)
+                var existStudent = await _payrollcontext.Users.FirstOrDefaultAsync(x => x.Email == student.Email);
+                if (existStudent == null)
                 {
-                    schoolId = userId;
-                }
-                else
-                {
-                    var u = await _payrollcontext.Employee.FirstOrDefaultAsync(x => x.UserId == userId);
-                    schoolId = u.AssignedSchoolId;
-                }
-                var studentsCount = await _payrollcontext.Students.CountAsync(x => x.BirthDate == student.Birthdate);
-                var studentIdNumber = $"{student.Birthdate.Month:00}{student.Birthdate.Day:00}{student.Birthdate.Year % 100:00}{studentsCount + 1:000}";
-                var age = DateTime.UtcNow.Year - student.Birthdate.Year;
-                if (DateTime.UtcNow < student.Birthdate.AddYears(age))
-                {
-                    age--; // Decrease age if the birthday hasn't occurred yet this year
-                }
+                    var schoolId = 0;
+                    if (isStudentRegistered == true)
+                    {
+                        schoolId = userId;
+                    }
+                    else
+                    {
+                        var u = await _payrollcontext.Employee.FirstOrDefaultAsync(x => x.UserId == userId);
+                        schoolId = u.AssignedSchoolId;
+                    }
+                    var studentsCount = await _payrollcontext.Students.CountAsync(x => x.BirthDate == student.Birthdate);
+                    var studentIdNumber = $"{student.Birthdate.Month:00}{student.Birthdate.Day:00}{student.Birthdate.Year % 100:00}{studentsCount + 1:000}";
+                    var age = DateTime.UtcNow.Year - student.Birthdate.Year;
+                    if (DateTime.UtcNow < student.Birthdate.AddYears(age))
+                    {
+                        age--; // Decrease age if the birthday hasn't occurred yet this year
+                    }
 
-                string passwordToHash = student.LastName + "123"; // need to change more credible
+                    string passwordToHash = student.LastName + "123"; // need to change more credible
 
-                // Convert the concatenated string to bytes
-                var passwordBytes = Encoding.UTF8.GetBytes(passwordToHash);
+                    // Convert the concatenated string to bytes
+                    var passwordBytes = Encoding.UTF8.GetBytes(passwordToHash);
 
-                // Hash the password using BCrypt
-                var hashedPassword = BCrypt.Net.BCrypt.HashPassword(passwordToHash);
+                    // Hash the password using BCrypt
+                    var hashedPassword = BCrypt.Net.BCrypt.HashPassword(passwordToHash);
 
-                var newUser = new Models.User
-                {
-                    UserName = student.Email,
-                    FirstName = student.FirstName,
-                    LastName = student.LastName,
-                    MiddleName = student.MiddleName,
-                    Password = passwordBytes,
-                    EncryptedPassword = hashedPassword,
-                    Email = student.Email,
-                    Active = true,
-                    CreatedBy = userId,
-                    CreatedDate = DateTime.UtcNow,
-                    IsStudent = true,
-                    IsEmployee = false,
-                    Sex = student.Sex,
-                    Suffix = student.Suffix,
-                    UserTypeId = 1
-                };
+                    var newUser = new Models.User
+                    {
+                        UserName = student.Email,
+                        FirstName = student.FirstName,
+                        LastName = student.LastName,
+                        MiddleName = student.MiddleName,
+                        Password = passwordBytes,
+                        EncryptedPassword = hashedPassword,
+                        Email = student.Email,
+                        Active = true,
+                        CreatedBy = userId,
+                        CreatedDate = DateTime.UtcNow,
+                        IsStudent = true,
+                        IsEmployee = false,
+                        Sex = student.Sex,
+                        Suffix = student.Suffix,
+                        UserTypeId = 1
+                    };
 
-                _payrollcontext.Users.Add(newUser);
-                await _payrollcontext.SaveChangesAsync(ct);
+                    _payrollcontext.Users.Add(newUser);
+                    await _payrollcontext.SaveChangesAsync(ct);
 
-                var newstudent = new Models.Student
-                {
-                    StudentIdNumber = studentIdNumber,
-                    ContactNumber = student.ContactNumber,
-                    LRN = student.LRN,
-                    BirthDate = student.Birthdate,
-                    Age = age,
-                    BirthPlace = student.Birthplace,
-                    CivilStatus = student.CivilStatus,
-                    Religion = student.Religion,
-                    MotherName = student.MothersName,
-                    MotherAddress = student.MothersAddress,
-                    FatherName = student.FathersName,
-                    FatherAddress = student.FathersAddress,
-                    GuardianName = student.GuardiansName,
-                    GuardianAddress = student.GuardiansAddress,
-                    LastSchoolAttended = student.LastSchoolAttended,
-                    LastSchoolAttendedYear = student.LastSchoolAttendedYear,
-                    IsRegistered = true,
-                    IsEnrolled = false,
-                    IsForConfirmation = false,
-                    IsActive = true,
-                    IsGraduated = false,
-                    UserId = newUser.Id, // Set this value appropriately
-                    SchoolId = schoolId,// Set this value appropriately
-                    GradeLevelId = student.GradeLevelId, // Set this value appropriately
-                    StrandId = student.StrandId, // Set this value appropriately
-                    MotherContactNumber = student.MothersContactNumber,
-                    FatherContactNumber = student.FathersContactNumber,
-                    GuardianContactNumber = student.GuardiansContactNumber,
-                    MotherEmailAddress = student.MothersEmailAddress,
-                    FatherEmailAddress = student.FathersEmailAddress,
-                    GuardianEmailAddress = student.GuardiansEmailAddress,
-                    FatherOccupation = student.FatherOccupation,
-                    MotherOccupation = student.MotherOccupation,
-                    IsMotherDeceased = student.IsMotherDeceased,
-                    IsFatherDeceased = student.IsFatherDeceased,
-                    GuardianRelationship = student.GuardianRelationship,
-                    DateRegistered = DateTime.UtcNow
-                };
-                _payrollcontext.Students.Add(newstudent);
-                await _payrollcontext.SaveChangesAsync(ct);
+                    var newstudent = new Models.Student
+                    {
+                        StudentIdNumber = studentIdNumber,
+                        ContactNumber = student.ContactNumber,
+                        LRN = student.LRN,
+                        BirthDate = student.Birthdate,
+                        Age = age,
+                        BirthPlace = student.Birthplace,
+                        CivilStatus = student.CivilStatus,
+                        Religion = student.Religion,
+                        MotherName = student.MothersName,
+                        MotherAddress = student.MothersAddress,
+                        FatherName = student.FathersName,
+                        FatherAddress = student.FathersAddress,
+                        GuardianName = student.GuardiansName,
+                        GuardianAddress = student.GuardiansAddress,
+                        LastSchoolAttended = student.LastSchoolAttended,
+                        LastSchoolAttendedYear = student.LastSchoolAttendedYear,
+                        IsRegistered = true,
+                        IsEnrolled = false,
+                        IsForConfirmation = false,
+                        IsActive = true,
+                        IsGraduated = false,
+                        UserId = newUser.Id, // Set this value appropriately
+                        SchoolId = schoolId,// Set this value appropriately
+                        GradeLevelId = student.GradeLevelId, // Set this value appropriately
+                        StrandId = student.StrandId, // Set this value appropriately
+                        MotherContactNumber = student.MothersContactNumber,
+                        FatherContactNumber = student.FathersContactNumber,
+                        GuardianContactNumber = student.GuardiansContactNumber,
+                        MotherEmailAddress = student.MothersEmailAddress,
+                        FatherEmailAddress = student.FathersEmailAddress,
+                        GuardianEmailAddress = student.GuardiansEmailAddress,
+                        FatherOccupation = student.FatherOccupation,
+                        MotherOccupation = student.MotherOccupation,
+                        IsMotherDeceased = student.IsMotherDeceased,
+                        IsFatherDeceased = student.IsFatherDeceased,
+                        GuardianRelationship = student.GuardianRelationship,
+                        DateRegistered = DateTime.UtcNow,
+                        StudentAddress = student.StudentAddress
+                    };
+                    _payrollcontext.Students.Add(newstudent);
+                    await _payrollcontext.SaveChangesAsync(ct);
 
-                var emailSubject = "Welcome to Our School!";
-                var emailBody = $@"
+                    var emailSubject = "Welcome to Our School!";
+                    var emailBody = $@"
                 <p>Dear {student.FirstName} {student.LastName},</p>
                 <p>Congratulations! You have been successfully registered.</p>
                 <p>Your Student ID Number is: <strong>{studentIdNumber}</strong></p>
+                <p>Your User Name is: <strong>{student.Email}</strong></p>
                 <p>Your temporary password is: <strong>{passwordToHash}</strong></p>
                 <p>Please log in and change your password as soon as possible.</p>
                 <p>Best regards,</p>
                 <p>School Administration</p>";
 
-                await _emailService.SendEmailAsync(student.Email, emailSubject, emailBody, ct);
+                    await _emailService.SendEmailAsync(student.Email, emailSubject, emailBody, ct);
 
-                callResult.IsSuccess = true;
-                callResult.Message = "School has been successfully added.";
+                    callResult.IsSuccess = true;
+                    callResult.Message = "Student has been successfully registered.";
+                }
+                else 
+                {
+                    callResult.IsSuccess = false;
+                    callResult.Message = $"The email address {student.Email} is already registered in our system. If you believe this is an error or if you need assistance, please check your inbox for a confirmation email or contact the school.";
+                }
             }
             catch (Exception ex)
             {
                 callResult.IsSuccess = false;
-                callResult.Message = "Failed to add school.";
+                callResult.Message = "Failed to register student.";
             }
 
             return callResult;
@@ -146,7 +158,7 @@ namespace ARS.API.Services.Student
                 var baseSql = @"
             SELECT s.Id, u.LastName,u.MiddleName, u.FirstName, u.Email, s.ContactNumber, s.LRN, s.BirthDate AS Birthdate, 
                    s.BirthPlace, s.CivilStatus, s.Religion, s.MotherName, s.MotherAddress, s.FatherName, 
-                   s.FatherAddress, s.GuardianName, s.GuardianAddress, s.LastSchoolAttended, s.LastSchoolAttendedYear, u.Sex
+                   s.FatherAddress, s.GuardianName, s.GuardianAddress, s.LastSchoolAttended, s.LastSchoolAttendedYear, u.Sex, s.StudentAddress
             FROM Student s
             INNER JOIN User u ON s.UserId = u.Id
             WHERE s.IsActive = true and s.SchoolId = @schoolId and s.IsRegistered = true and s.IsEnrolled = false";
@@ -228,7 +240,7 @@ namespace ARS.API.Services.Student
                 var sql = @"
                 SELECT s.Id, u.LastName, u.MiddleName, u.FirstName, u.Email, s.ContactNumber, s.LRN, s.BirthDate AS Birthdate, u.Sex,u.Suffix, s.IsMotherDeceased, s.IsFatherDeceased, s.FatherOccupation , s.MotherOccupation, s.GuardianRelationship,
                        s.BirthPlace, s.CivilStatus, s.Religion, s.MotherName as MothersName, s.MotherAddress as MothersAddress, s.FatherName as FathersName, s.Age, s.StudentIdNumber,
-                       s.FatherAddress as FathersAddress, s.GuardianName as GuardiansName, s.GuardianAddress as GuardiansAddress, s.LastSchoolAttended, s.LastSchoolAttendedYear,
+                       s.FatherAddress as FathersAddress, s.GuardianName as GuardiansName, s.GuardianAddress as GuardiansAddress, s.LastSchoolAttended, s.LastSchoolAttendedYear,s.StudentAddress,
                        s.GradeLevelId, s.StrandId, s.MotherContactNumber MothersContactNumber, s.FatherContactNumber FathersContactNumber, s.GuardianContactNumber GuardiansContactNumber, s.MotherEmailAddress MothersEmailAddress, s.FatherEmailAddress FathersEmailAddress, s.GuardianEmailAddress GuardiansEmailAddress
                 FROM Student s
                 INNER JOIN User u ON s.UserId = u.Id
@@ -269,6 +281,17 @@ namespace ARS.API.Services.Student
                 // First, retrieve the student
                 var existingStudent = await _payrollcontext.Students.FirstOrDefaultAsync(x => x.Id == student.Id, ct);
 
+
+                var emailExists = await _payrollcontext.Users
+                        .AnyAsync(u => u.Email == student.Email && u.Id != existingStudent.UserId && u.Active == true, ct);
+
+                if (emailExists)
+                {
+                    callResult.IsSuccess = false;
+                    callResult.Message = "Email already exists.";
+                    return callResult;
+                }
+
                 if (existingStudent != null)
                 {
                     // Update student fields from the StudentDto
@@ -300,6 +323,7 @@ namespace ARS.API.Services.Student
                     existingStudent.IsFatherDeceased = student.IsFatherDeceased;
                     existingStudent.IsMotherDeceased = student.IsMotherDeceased;
                     existingStudent.GradeLevelId = student.GradeLevelId;
+                    existingStudent.StudentAddress = student.StudentAddress;
 
                     // Save changes to the student entity
                     await _payrollcontext.SaveChangesAsync(ct);
@@ -312,11 +336,27 @@ namespace ARS.API.Services.Student
                         associatedUser.FirstName = student.FirstName;
                         associatedUser.LastName = student.LastName;
                         associatedUser.MiddleName = student.MiddleName;
-                        associatedUser.Email = student.Email;
                         associatedUser.UpdatedBy = userId;
                         associatedUser.Sex = student.Sex;
                         associatedUser.UpdatedDate = DateTime.UtcNow;
                         associatedUser.Suffix = student.Suffix;
+
+                        if (associatedUser.Email != student.Email)
+                        {
+                            associatedUser.Email = student.Email;
+                            associatedUser.UserName = student.Email;
+                            var emailSubject = "Changed Email Address";
+                            var emailBody = $@"
+                            <p>Dear {associatedUser.FirstName} {associatedUser.LastName},</p>
+                            <p>Your email address has been changed to this email address used to receive this message.</p>
+                            <p>Your New User Name is: <strong>{associatedUser.Email}</strong></p>
+                            <p>Your Password is still the same as your current password</strong></p>
+                            <p>Best regards,</p>
+                            <p>School Administration</p>";
+
+                            await _emailService.SendEmailAsync(associatedUser.Email, emailSubject, emailBody, ct);
+                        }
+
                         await _payrollcontext.SaveChangesAsync(ct);
 
                         callResult.IsSuccess = true;
@@ -532,70 +572,77 @@ namespace ARS.API.Services.Student
             try
             {
                 var baseSql = @"
-    SELECT 
-        s.Id, 
-        u.LastName, 
-        u.MiddleName, 
-        u.FirstName, 
-        u.Email, 
-        s.ContactNumber, 
-        s.LRN, 
-        s.StudentIdNumber, 
-        s.GradeLevelId,
-        g.Level AS GradeLevel, 
-        st.strandName,
-        s.BirthDate,
-        s.Age,
-        s.BirthPlace,
-        s.CivilStatus,
-        s.Religion,
-        s.MotherName,
-        s.MotherAddress,
-        s.FatherName,
-        s.FatherAddress,
-        s.GuardianName,
-        s.GuardianAddress,
-        s.LastSchoolAttended,
-        s.LastSchoolAttendedYear,
-        s.MotherContactNumber,
-        s.FatherContactNumber,
-        s.GuardianContactNumber,
-        s.MotherEmailAddress,
-        s.FatherEmailAddress,
-        s.GuardianEmailAddress,
-        u.Sex
-    FROM Student s
-    INNER JOIN User u ON s.UserId = u.Id
-    INNER JOIN GradeLevel g ON s.GradeLevelId = g.Id
-    LEFT JOIN Strand st ON st.Id = s.StrandId
-    INNER JOIN EnrollStudent es ON s.Id = es.StudentId
-    WHERE s.IsActive = true 
-      AND s.SchoolId = @schoolId 
-      AND s.IsRegistered = true  
-      AND s.IsEnrolled = true
-      AND es.SchoolYearId = @syId";
+                    SELECT 
+                    s.Id, 
+                    u.LastName, 
+                    u.MiddleName, 
+                    u.FirstName, 
+                    u.Email, 
+                    s.ContactNumber, 
+                    s.LRN, 
+                    s.StudentIdNumber, 
+                    s.GradeLevelId,
+                    g.Level AS GradeLevel, 
+                    st.strandName,
+                    s.BirthDate,
+                    s.Age,
+                    s.BirthPlace,
+                    s.CivilStatus,
+                    s.Religion,
+                    s.MotherName,
+                    s.MotherAddress,
+                    s.FatherName,
+                    s.FatherAddress,
+                    s.GuardianName,
+                    s.GuardianAddress,
+                    s.LastSchoolAttended,
+                    s.LastSchoolAttendedYear,
+                    s.MotherContactNumber,
+                    s.FatherContactNumber,
+                    s.GuardianContactNumber,
+                    s.MotherEmailAddress,
+                    s.FatherEmailAddress,
+                    s.GuardianEmailAddress,
+                    u.Sex,
+                    s.StudentAddress,
+                    u.IsLockedOut,
+                    ssGradeLevel.Level AS GradeLevelForSy
+                FROM Student s
+                INNER JOIN User u ON s.UserId = u.Id
+                INNER JOIN GradeLevel g ON s.GradeLevelId = g.Id
+                LEFT JOIN Strand st ON st.Id = s.StrandId
+                INNER JOIN EnrollStudent es ON s.Id = es.StudentId
+                INNER JOIN SchoolSection ss ON ss.id = es.sectionId
+                INNER JOIN GradeLevel ssGradeLevel ON ss.gradeLevelId = ssGradeLevel.Id
+                WHERE s.IsActive = true 
+                  AND s.SchoolId = @schoolId 
+                  AND s.IsRegistered = true  
+                  AND s.IsEnrolled = true
+                  AND es.SchoolYearId = @syId";
 
-                var countSql = @"
-    SELECT COUNT(*)
-    FROM Student s
-    INNER JOIN User u ON s.UserId = u.Id
-    INNER JOIN GradeLevel g ON s.GradeLevelId = g.Id
-    LEFT JOIN Strand st ON st.Id = s.StrandId
-    INNER JOIN EnrollStudent es ON s.Id = es.StudentId
-    WHERE s.IsActive = true 
-      AND s.SchoolId = @schoolId 
-      AND s.IsRegistered = true  
-      AND s.IsEnrolled = true
-      AND es.SchoolYearId = @syId";
+                                var countSql = @"
+                    SELECT COUNT(*)
+                FROM Student s
+                INNER JOIN User u ON s.UserId = u.Id
+                INNER JOIN GradeLevel g ON s.GradeLevelId = g.Id
+                LEFT JOIN Strand st ON st.Id = s.StrandId
+                INNER JOIN EnrollStudent es ON s.Id = es.StudentId
+                INNER JOIN SchoolSection ss ON ss.id = es.sectionId
+                INNER JOIN GradeLevel ssGradeLevel ON ss.gradeLevelId = ssGradeLevel.Id
+                    WHERE s.IsActive = true 
+                      AND s.SchoolId = @schoolId 
+                      AND s.IsRegistered = true  
+                      AND s.IsEnrolled = true
+                      AND es.SchoolYearId = @syId";
 
                 if (!string.IsNullOrEmpty(searchQuery))
                 {
                     var searchCondition = @"
-        AND (
-            u.LastName LIKE @SearchQuery OR
-            u.FirstName LIKE @SearchQuery OR
-            g.Level LIKE @SearchQuery
-        )";
+                    AND (
+                        u.LastName LIKE @SearchQuery OR
+                        u.FirstName LIKE @SearchQuery OR
+                        g.Level LIKE @SearchQuery
+                    )";
 
                     baseSql += searchCondition;
                     countSql += searchCondition;
@@ -818,7 +865,7 @@ namespace ARS.API.Services.Student
 
                 var finalSql = baseSql;
 
-             
+
                 var students = await _connection.QueryAsync<StudentReport>(finalSql, new
                 {
                     gradeLevelId,
@@ -847,6 +894,327 @@ namespace ARS.API.Services.Student
 
             return callResult;
         }
+
+        public async Task<CallResultDto<List<StudentAdminDto>>> GetStudentListSuperAdmin(string? searchQuery, int pageNumber, int pageSize, CancellationToken ct)
+        {
+            var callResult = new CallResultDto<List<StudentAdminDto>>();
+            try
+            {
+                var baseSql = @"
+             Select student.Id, user.LAstName, user.firstNAme, user.MiddleName, user.suffix, student.StudentIdNumber , s.schoolName from student inner join user on user.id = student.userId
+             inner join school s on s.Id = student.SchoolId
+             where student.isactive = true and student.IsEnrolled = true and student.IsRegistered = true";
+
+                var countSql = @"
+            SELECT COUNT(*)
+            from student inner join user on user.id = student.userId
+            where student.isactive = true";
+
+                if (!string.IsNullOrEmpty(searchQuery))
+                {
+                    var searchCondition = @"
+                AND (
+                    user.LastName LIKE @SearchQuery OR
+                    user.FirstName LIKE @SearchQuery OR
+                    StudentIdNumber LIKE @SearchQuery
+                )";
+
+                    baseSql += searchCondition;
+                    countSql += searchCondition;
+                }
+
+                var paginationSql = "";
+                if (pageSize > 0) // Add this check to prevent fetching 0 rows
+                {
+                    paginationSql = @"
+                ORDER BY student.Id
+                LIMIT @PageSize OFFSET @Offset"; // Use LIMIT and OFFSET
+                }
+                var finalSql = baseSql + paginationSql;
+
+                var offset = (pageNumber - 1) * pageSize;
+                var students = await _connection.QueryAsync<StudentAdminDto>(finalSql, new
+                {
+                    SearchQuery = $"%{searchQuery}%",
+                    Offset = offset,
+                    PageSize = pageSize,
+                });
+
+                var totalCount = await _connection.ExecuteScalarAsync<int>(countSql, new
+                {
+                    SearchQuery = $"%{searchQuery}%",
+                });
+
+                callResult.IsSuccess = true;
+                callResult.Data = students.ToList();
+                callResult.TotalCount = totalCount;  // Add total count to the result
+            }
+            catch (Exception ex)
+            {
+                // Log the exception or handle it as needed
+                callResult.IsSuccess = false;
+                callResult.Data = null;
+                callResult.Message = "Fetching student list failed.";
+            }
+
+            return callResult;
+        }
+
+        public async Task<CallResultDto<object>> DenyStudent(int studentId, CancellationToken cancellationToken) 
+        {
+            var callResult = new CallResultDto<object>();
+            try
+            {
+                var student = await _payrollcontext.Students.FirstOrDefaultAsync(x => x.Id == studentId);
+                var studentUser = await _payrollcontext.Users.FirstOrDefaultAsync(x => x.Id == student.UserId);
+                if (student != null)
+                {
+                    var emailSubject = "School Registration";
+                    var emailBody = $@"
+                <p>Dear {studentUser.FirstName} {studentUser.LastName},</p>
+                <p>Your Admission to the School is denied for some reasons. For more information please contact the school administrator.</p>
+                <p>Best regards,</p>
+                <p>School Administration</p>";
+
+                    await _emailService.SendEmailAsync(studentUser.Email, emailSubject, emailBody, cancellationToken);
+
+                    _payrollcontext.Students.Remove(student);
+                    await _payrollcontext.SaveChangesAsync(cancellationToken);
+                    _payrollcontext.Users.Remove(studentUser);
+                    await _payrollcontext.SaveChangesAsync(cancellationToken);
+
+
+                    callResult.IsSuccess = true;
+                    callResult.Message = "Denied student Successfully";
+                }
+            }
+            catch (Exception ex) 
+            {
+                callResult.IsSuccess = false;
+                callResult.Message = "Student Deny Failed.";
+            }
+            return callResult;
+        }
+
+
+        public async Task<CallResultDto<StudentForEnroll>> GetStudentProfile(int userId, int syId, CancellationToken ct)
+        {
+            var callResult = new CallResultDto<StudentForEnroll>();
+            var student = await _payrollcontext.Students.FirstOrDefaultAsync(x => x.UserId == userId);
+            if (student == null)
+            {
+                callResult.IsSuccess = false;
+                callResult.Message = "Student not found";
+                return callResult;
+            }
+
+            var enrollmentCurrent = await _payrollcontext.EnrollStudents.FirstOrDefaultAsync(x => x.StudentId == student.Id && x.SchoolYearId == syId);
+            if (enrollmentCurrent == null)
+            {
+                callResult.IsSuccess = false;
+                callResult.Message = "Enrollment not found for the given school year";
+                return callResult;
+            }
+
+            var schoolId = enrollmentCurrent.SchoolId;
+
+            try
+            {
+                var baseSql = @"
+            SELECT 
+                s.Id, 
+                u.LastName, 
+                u.MiddleName, 
+                u.FirstName, 
+                u.Email, 
+                s.ContactNumber, 
+                s.LRN, 
+                s.StudentIdNumber, 
+                s.GradeLevelId,
+                g.Level AS GradeLevel, 
+                st.strandName,
+                s.BirthDate,
+                s.Age,
+                s.BirthPlace,
+                s.CivilStatus,
+                s.Religion,
+                s.MotherName,
+                s.MotherAddress,
+                s.FatherName,
+                s.FatherAddress,
+                s.GuardianName,
+                s.GuardianAddress,
+                s.LastSchoolAttended,
+                s.LastSchoolAttendedYear,
+                s.MotherContactNumber,
+                s.FatherContactNumber,
+                s.GuardianContactNumber,
+                s.MotherEmailAddress,
+                s.FatherEmailAddress,
+                s.GuardianEmailAddress,
+                u.Sex,
+                s.StudentAddress,
+                ssGradeLevel.Level AS GradeLevelForSy
+            FROM Student s
+            INNER JOIN User u ON s.UserId = u.Id
+            INNER JOIN GradeLevel g ON s.GradeLevelId = g.Id
+            LEFT JOIN Strand st ON st.Id = s.StrandId
+            INNER JOIN EnrollStudent es ON s.Id = es.StudentId
+            INNER JOIN SchoolSection ss ON ss.id = es.sectionId
+            INNER JOIN GradeLevel ssGradeLevel ON ss.gradeLevelId = ssGradeLevel.Id
+            WHERE s.IsActive = true 
+              AND s.SchoolId = @schoolId 
+              AND s.IsRegistered = true  
+              AND s.IsEnrolled = true
+              AND es.SchoolYearId = @syId
+              AND s.Id = @studentId";
+
+                var studentProfile = await _connection.QueryFirstOrDefaultAsync<StudentForEnroll>(baseSql, new
+                {
+                    schoolId,
+                    syId,
+                    studentId = student.Id
+                });
+
+                if (studentProfile != null)
+                {
+                    callResult.IsSuccess = true;
+                    callResult.Data = studentProfile;
+                }
+                else
+                {
+                    callResult.IsSuccess = false;
+                    callResult.Message = "Student profile not found";
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log the exception or handle it as needed
+                callResult.IsSuccess = false;
+                callResult.Data = null;
+                callResult.Message = $"Fetching student profile failed: {ex.Message}";
+            }
+
+            return callResult;
+        }
+        public async Task<CallResultDto<object>> AddNotes(int studentId, string notes, CancellationToken ct)
+        {
+            var callResult = new CallResultDto<object>();
+            try
+            {
+                var student = await _payrollcontext.Students.FirstOrDefaultAsync(x => x.Id == studentId);
+                if (student != null)
+                {
+                    student.Notes = notes;
+                    await _payrollcontext.SaveChangesAsync(ct);
+                }
+                callResult.IsSuccess = true;
+                callResult.Message = "Added notes to student successfully.";
+            }
+            catch (Exception ex)
+            {
+                callResult.IsSuccess = false;
+                callResult.Message = "Failed to add notes on student.";
+            }
+
+            return callResult;
+        }
+
+        public async Task<CallResultDto<string>> GetStudentNotes(int studentId, CancellationToken ct)
+        {
+            var callResult = new CallResultDto<string>();
+            try
+            {
+                var sql = @"
+                SELECT notes from student where id = @studentId";
+
+                var notes = await _connection.QuerySingleOrDefaultAsync<string>(sql, new
+                {
+                    studentId
+                });
+
+                if (notes != null)
+                {
+                    callResult.IsSuccess = true;
+                    callResult.Data = notes;
+                }
+                else
+                {
+                    callResult.IsSuccess = false;
+                    callResult.Message = "Student not found.";
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log the exception or handle it as needed
+                callResult.IsSuccess = false;
+                callResult.Data = null;
+                callResult.Message = "Fetching student details failed.";
+            }
+
+            return callResult;
+        }
+        public async Task<CallResultDto<List<ConsolidatedReports>>> GetSchoolConsolidatedReport(int syId, CancellationToken ct)
+        {
+            var callResult = new CallResultDto<List<ConsolidatedReports>>(); // Correctly initialize the callResult with List<Models.School>
+
+            try
+            {
+                var sql = @"
+                    SELECT 
+                        s.schoolName,
+                        SUM(CASE WHEN ss.gradeLevelId = 1 THEN 1 ELSE 0 END) AS Nursery,
+                        SUM(CASE WHEN ss.gradeLevelId = 2 THEN 1 ELSE 0 END) AS Kinder,
+                        SUM(CASE WHEN ss.gradeLevelId = 3 THEN 1 ELSE 0 END) AS Kinder2,
+                        SUM(CASE WHEN ss.gradeLevelId = 4 THEN 1 ELSE 0 END) AS Grade1,
+                        SUM(CASE WHEN ss.gradeLevelId = 5 THEN 1 ELSE 0 END) AS Grade2,
+                        SUM(CASE WHEN ss.gradeLevelId = 6 THEN 1 ELSE 0 END) AS Grade3,
+                        SUM(CASE WHEN ss.gradeLevelId = 7 THEN 1 ELSE 0 END) AS Grade4,
+                        SUM(CASE WHEN ss.gradeLevelId = 8 THEN 1 ELSE 0 END) AS Grade5,
+                        SUM(CASE WHEN ss.gradeLevelId = 9 THEN 1 ELSE 0 END) AS Grade6,
+                        SUM(CASE WHEN ss.gradeLevelId = 10 THEN 1 ELSE 0 END) AS Grade7,
+                        SUM(CASE WHEN ss.gradeLevelId = 11 THEN 1 ELSE 0 END) AS Grade8,
+                        SUM(CASE WHEN ss.gradeLevelId = 12 THEN 1 ELSE 0 END) AS Grade9,
+                        SUM(CASE WHEN ss.gradeLevelId = 13 THEN 1 ELSE 0 END) AS Grade10,
+                        SUM(CASE WHEN ss.gradeLevelId = 14 THEN 1 ELSE 0 END) AS Grade11,
+                        SUM(CASE WHEN ss.gradeLevelId = 15 THEN 1 ELSE 0 END) AS Grade12
+                    FROM 
+                        school s
+                    LEFT JOIN 
+                        enrollstudent e ON s.id = e.schoolId AND e.schoolyearId = @syId
+                    LEFT JOIN 
+                        schoolsection ss ON ss.id = e.sectionId
+                    GROUP BY 
+                        s.schoolName
+                    ORDER BY 
+                        s.schoolName;
+                    ";
+
+                var schools = await _connection.QueryAsync<ConsolidatedReports>(sql, new { syId});
+
+                var schoolList = schools.ToList();
+                if (schoolList != null && schoolList.Count > 0)
+                {
+                    callResult.IsSuccess = true;
+                    callResult.Data = schoolList;
+                    callResult.Message = "Schools fetched successfully.";
+                }
+                else
+                {
+                    callResult.IsSuccess = false;
+                    callResult.Message = "Schools not found.";
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log the exception or handle it as needed
+                callResult.IsSuccess = false;
+                callResult.Message = $"Fetching Schools failed. Error: {ex.Message}";
+            }
+
+            return callResult;
+        }
+
     }
 
 }

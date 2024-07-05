@@ -13,5 +13,6 @@
         public string UserTypeName { get; set; }
         public string SchoolName { get; set; }
         public int? AssignedSchoolId { get; set; }
+        public bool IsLockedOut { get; set; }
     }
 }

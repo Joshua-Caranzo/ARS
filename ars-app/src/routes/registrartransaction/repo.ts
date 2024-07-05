@@ -22,8 +22,8 @@ export async function getSchoolYearList() {
 	return await get<CallResultDto<SchoolYear[]>>(`/SchoolYear/GetSchoolYearActive`);
 }
 
-export async function getSection(id:number, strandId :number | null) {
-	return await get<CallResultDto<SchoolSection[]>>(`/Section/GetSchoolSectionbyGrade`,{id,strandId});
+export async function getSection(userId:number, id:number, strandId:number|null) {
+	return await get<CallResultDto<SchoolSection[]>>(`/Section/GetSchoolSectionbyGrade`,{userId, id,strandId});
 }
 
 export async function enrollStudent(userId:number, studentId: number, sectionId:number, syId:number, semId:number|null) {

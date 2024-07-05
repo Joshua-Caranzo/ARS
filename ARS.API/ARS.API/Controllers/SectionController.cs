@@ -40,9 +40,9 @@ namespace ARS.API.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetSchoolSectionbyGrade(int id, int? strandId, CancellationToken ct)
+        public async Task<IActionResult> GetSchoolSectionbyGrade(int userId, int id, int? strandId, CancellationToken ct)
         {
-            var strandList = await _sectionService.GetSchoolSectionbyGrade(id, strandId, ct);
+            var strandList = await _sectionService.GetSchoolSectionbyGrade(userId, id, strandId, ct);
             return Ok(strandList);
         }
 
@@ -88,11 +88,53 @@ namespace ARS.API.Controllers
             return Ok(section);
         }
 
-        [HttpGet]
+        [HttpGet] 
         public async Task<IActionResult> GetStudentMasterList(int userId, int syId, int gradeLevelId,  int strandId, string? searchString, CancellationToken ct)
         {
             var moveUpstatus = await _sectionService.GetStudentMasterList(userId, syId, gradeLevelId, strandId, searchString, ct);
             return Ok(moveUpstatus);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetTotalByLevelSuperAdmin(int schoolId, int syId, CancellationToken ct)
+        {
+            var section = await _sectionService.GetTotalByLevelSuperAdmin(schoolId, syId, ct);
+            return Ok(section);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetTotalBySchoolSuperAdmin(int schoolId, int syId, CancellationToken ct)
+        {
+            var section = await _sectionService.GetTotalBySchoolSuperAdmin(schoolId, syId, ct);
+            return Ok(section);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetCurrentSection(int studentId, int syId, CancellationToken ct)
+        {
+            var section = await _sectionService.GetCurrentSection(studentId, syId, ct);
+            return Ok(section);
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> ChangeSection(int studentId, int syId, int sectionId,CancellationToken ct)
+        {
+            var section = await _sectionService.ChangeSection(studentId, syId, sectionId, ct);
+            return Ok(section);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetCurrentStrand(int studentId, int syId, CancellationToken ct)
+        {
+            var section = await _sectionService.GetCurrentStrand(studentId, syId, ct);
+            return Ok(section);
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> ChangeStrand(int studentId, int sectionId, int strandId, int syId, CancellationToken ct)
+        {
+            var section = await _sectionService.ChangeStrand(studentId, sectionId, strandId, syId, ct);
+            return Ok(section);
         }
     }
 }

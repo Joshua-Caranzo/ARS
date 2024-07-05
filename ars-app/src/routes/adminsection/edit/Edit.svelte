@@ -4,9 +4,7 @@
     import type { EditSchoolSectionDto, GradeLevel, SchoolSection, SchoolSectionDto, StrandDto } from "../type";
     import Icon from "$lib/components/Icon.svelte";
     import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-    /* import { editUser, getSchool, getUserById, getUserType } from '../repo'; */
     import Notification from "$lib/components/Notification.svelte";
-    import { goto } from "$app/navigation";
 	import { editSection, getGradeLevels, getSectionById, getStrands } from "../repo";
 
     const dispatch = createEventDispatcher();
@@ -96,7 +94,7 @@
 <div class="container is-narrow">
     {#if result?.isSuccess}
         <div class="is-flex is-align-items-center mb-3">
-            <button class="button is-link" on:click={handleClose}>
+            <button class="button button-blue" on:click={handleClose}>
                 <Icon icon={faArrowLeft}/>
             </button>
             <h1 class="subtitle ml-2 has-text-black">Edit Section</h1>
@@ -137,7 +135,7 @@
                 {/if}
                     <div class="field">
                         <div class="control">
-                        <button class="button is-link" >Save</button>
+                        <button class="button button-blue is-pulled-right" >Save</button>
                         </div>
                     </div>
             </fieldset>
@@ -174,4 +172,10 @@
         font-weight: bold;
         margin-bottom: 5px;
     }
+
+    .button-blue
+	{
+		background-color: #063F78;
+        color:white;
+	}
 </style>

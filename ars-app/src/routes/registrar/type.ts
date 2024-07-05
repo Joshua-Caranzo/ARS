@@ -33,6 +33,7 @@ export type StudentFormData = {
     motherOccupation : string|null;
     fatherOccupation:string|null;
     guardianRelationship:string;
+    studentAddress:string;
 };
 
 export type StrandDto =  {

@@ -45,39 +45,3 @@ export type LevelDto =  {
     totalFemales:number,
     totalStudents:number
 }
-
-export type StudentInfo = {
-    studentIdNumber: string;
-    lastName: string;
-    firstName: string;
-    middleName: string | null;
-    sex: string;
-    birthDate: Date;
-    lrn: string | null;
-    contactNumber: string;
-    religion: string;
-    fatherName: string | null;
-    fatherOccupation: string | null;
-    motherName: string | null;
-    motherOccupation: string | null;
-}
-
-
-export type SchoolSectionDto =  {
-    id: number;
-    gradeLevelId: number;
-    sectionName: string;
-    schoolId: number;
-    strandId?: number | null;
-    level: string;
-    strandName: string | null;
-}
-
-export type StrandDto =  {
-    id: number;
-    strandName: string;
-    strandAbbrev?: string | null;
-    trackId: number;
-    trackName: string;
-}
-

@@ -30,7 +30,48 @@ export type Student = {
     fatherEmailAddress: string | null;
     guardianEmailAddress: string | null;
     sex: string;
+    gradeLevelForSy:string;
+    studentAddress:string
 };
+
+export type StudentFormData = {
+    id: number;
+    lastName: string;
+    firstName: string;
+    suffix:string |  null;
+    middleName?: string | null;
+    email: string;
+    contactNumber?: string | null;
+    lrn: string | null;
+    birthdate: Date; 
+    birthplace: string;
+    civilStatus: string;
+    religion: string;
+    sex: string;
+    mothersName?: string | null;
+    mothersAddress?: string | null;
+    mothersContactNumber?: string | null;
+    mothersEmailAddress?: string | null;
+    fathersName?: string | null;
+    fathersAddress?: string | null;
+    fathersContactNumber?: string | null;
+    fathersEmailAddress?: string | null;
+    guardiansName: string;
+    guardiansAddress: string;
+    guardiansContactNumber?: string | null;
+    guardiansEmailAddress?: string | null;
+    lastSchoolAttended: string | null;
+    lastSchoolAttendedYear: string | null; 
+    gradeLevelId: number;
+    strandId: number | null;
+    isMotherDeceased:boolean | null;
+    isFatherDeceased:boolean|null;
+    motherOccupation : string|null;
+    fatherOccupation:string|null;
+    guardianRelationship:string;
+    studentAddress:string;
+};
+
 
 export type SchoolSection =  {
     id: number;
@@ -68,4 +109,17 @@ export type EnrollmentHistory =
     dateEnrolled:Date,
     level:string,
     sectionName:string
+}
+
+export type CurrentSection = 
+{
+    sectionId:number;
+    gradeLevelId:number;
+    sectionName:string;
+}
+
+export type CurrentStrand = 
+{
+    strandId:number;
+    gradeLevelId:number;
 }

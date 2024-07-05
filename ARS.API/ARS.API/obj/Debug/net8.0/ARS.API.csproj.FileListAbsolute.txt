@@ -116,4 +116,4 @@ C:\work files\ars - parent\ARS\ARS.API\ARS.API\obj\Debug\net8.0\refint\ARS.API.d
 C:\work files\ars - parent\ARS\ARS.API\ARS.API\obj\Debug\net8.0\ARS.API.pdb
 C:\work files\ars - parent\ARS\ARS.API\ARS.API\obj\Debug\net8.0\ARS.API.genruntimeconfig.cache
 C:\work files\ars - parent\ARS\ARS.API\ARS.API\obj\Debug\net8.0\ref\ARS.API.dll
-C:\Users\Joshua\Documents\ARS\ArsSystem\ARS\ARS.API\ARS.API\bin\Debug\net8.0\appsettings.dev.json
+C:\Users\Joshua\Documents\ARS\ArsSystem\ARS\ARS.API\ARS.API\bin\Debug\net8.0\appsettings.Development.json

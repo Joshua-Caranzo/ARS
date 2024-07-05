@@ -12,8 +12,6 @@
 	const unprotectedRoutes = ['/', '/signin-callback', '/successfulregister'];
 
 	$: needsLogin = !unprotectedRoutes.includes($page.url.pathname);
-
-	console.log(!unprotectedRoutes.includes($page.url.pathname));
 	function login() {
 		signIn();
 	}

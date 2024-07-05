@@ -16,5 +16,11 @@ namespace ARS.API.Services.Student
         Task<CallResultDto<bool>> GetMoveUpStatus(int studentId, CancellationToken ct);
         Task<CallResultDto<object>> RequestToMoveUp(int studentId, CancellationToken ct);
         Task<CallResultDto<List<StudentReport>>> GetStudentListReport(int userId, int gradeLevelId, int syId, CancellationToken ct);
+        Task<CallResultDto<List<StudentAdminDto>>> GetStudentListSuperAdmin(string? searchQuery, int pageNumber, int pageSize, CancellationToken ct);
+        Task<CallResultDto<object>> DenyStudent(int studentId, CancellationToken cancellationToken);
+        Task<CallResultDto<StudentForEnroll>> GetStudentProfile(int userId, int syId, CancellationToken ct);
+        Task<CallResultDto<string>> GetStudentNotes(int studentId, CancellationToken ct);
+        Task<CallResultDto<object>> AddNotes(int studentId, string notes, CancellationToken ct);
+        Task<CallResultDto<List<ConsolidatedReports>>> GetSchoolConsolidatedReport(int syId, CancellationToken ct);
     }
 }

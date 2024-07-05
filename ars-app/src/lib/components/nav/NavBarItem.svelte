@@ -29,7 +29,7 @@
 <svelte:element
 	this={tag}
 	{href}
-	class="navbar-item"
+	class="navbar-item has-text-white"
 	class:has-dropdown={hasDropdown}
 	class:is-hoverable={isHoverable}
 	class:show-dropdown={showDropdown}
@@ -50,12 +50,18 @@
 </svelte:element>
 
 <style lang="scss">
-	.show-dropdown {
-		:global(.navbar-dropdown) {
-			display: block;
-		}
-		:global(.navbar-item) {
-			display: block;
-		}
+	.is-active {
+		background-color: #0c2340 !important;
+		color: white !important;
 	}
+	.navbar-item {
+        transition: background-color 0.3s, color 0.3s;
+		background-color: #063F78;
+        /* Apply other common styles as needed */
+    }
+
+    .navbar-item:hover {
+        background-color: #1a4167;
+        color: #fff; 
+    }
 </style>

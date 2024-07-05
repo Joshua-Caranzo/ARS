@@ -3,21 +3,28 @@
 	import { faArrowRight, faArrowUp, faUser } from "@fortawesome/free-solid-svg-icons";
 	import { onMount } from "svelte";
 	import { loggedInUser, shortcuts } from '$lib/store';
-	import { getMoveUpStatus, getStudentById, requestToMoveUp } from "../repo";
-	import type { StudentFormData } from "../type";
+	import { getCurrentSchoolTerm, getMoveUpStatus, getStudentById, requestToMoveUp } from "../repo";
+	import type { Student } from "../type";
 	import Icon from "$lib/components/Icon.svelte";
 	import type { CallResultDto } from "../../../types/types";
 	import { getGradeLevels, getSchool } from "../../repo";
 
-	let studentinfo: StudentFormData | null = null; // Initialize as null
-	let studentinfoCallResult: CallResultDto<StudentFormData>;
+	let studentinfo: Student | null = null; // Initialize as null
+	let studentinfoCallResult: CallResultDto<Student>;
 	let errorMessage: string | undefined;
     let gradeLevel: string;
     let nextGradeLevel:string;
     let moveUp:boolean;
     let moveUpMessage : string |undefined;
+    let sy: number | null = null;
 
 	onMount(async () => {
+    const currentsyCallResult = await getCurrentSchoolTerm();
+        if (currentsyCallResult.isSuccess) {
+            sy = currentsyCallResult.data;
+        } else {
+            errorMessage = currentsyCallResult.message;
+        }
 		await fetchStudentData();
 	});
 
@@ -25,9 +32,8 @@
 	async function fetchStudentData() {
 		try {
 			if ($loggedInUser) {
-				studentinfoCallResult = await getStudentById(parseInt($loggedInUser.uid), true);
+				studentinfoCallResult = await getStudentById(parseInt($loggedInUser.uid), sy);
 				studentinfo = studentinfoCallResult.data;
-				console.log(studentinfo);
 				errorMessage = studentinfoCallResult.message || '';
                 const glListCallResult = await getGradeLevels();
                 const gradeLevlels = glListCallResult.data;

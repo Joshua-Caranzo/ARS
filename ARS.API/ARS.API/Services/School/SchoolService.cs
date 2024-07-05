@@ -242,5 +242,42 @@ namespace ARS.API.Services.School
             return callResult;
 
         }
+
+        public async Task<CallResultDto<List<Models.School>>> GetAllSchools(CancellationToken ct)
+        {
+            var callResult = new CallResultDto<List<Models.School>>(); // Correctly initialize the callResult with List<Models.School>
+
+            try
+            {
+                var sql = @"
+        SELECT s.* FROM school s WHERE s.IsActive = 1";
+
+                // Execute the query using Dapper
+                var schools = await _connection.QueryAsync<Models.School>(sql);
+
+                // Convert to a list and check if any schools were found
+                var schoolList = schools.ToList();
+                if (schoolList != null && schoolList.Count > 0)
+                {
+                    callResult.IsSuccess = true;
+                    callResult.Data = schoolList;
+                    callResult.Message = "Schools fetched successfully.";
+                }
+                else
+                {
+                    callResult.IsSuccess = false;
+                    callResult.Message = "Schools not found.";
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log the exception or handle it as needed
+                callResult.IsSuccess = false;
+                callResult.Message = $"Fetching Schools failed. Error: {ex.Message}";
+            }
+
+            return callResult;
+        }
+
     }
 }

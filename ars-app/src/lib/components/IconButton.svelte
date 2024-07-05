@@ -64,4 +64,8 @@
 	{
 		background-color: #063F78;
 	}
+	.button-red
+	{
+		background-color: #b22222;
+	}
 </style>

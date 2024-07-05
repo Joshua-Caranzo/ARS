@@ -13,6 +13,8 @@ namespace Payroll.API.Services.User
         Task<CallResultDto<UserDto>> GetUserById (int id, CancellationToken ct);
         Task<CallResultDto<object>> EditUser(EditUserDTO user, CancellationToken ct);
         Task<CallResultDto<List<UserDto>>> GetUserListAdmin(string? searchQuery, int pageNumber, int pageSize, int userId, CancellationToken ct);
+        Task<CallResultDto<object>> UnlockAccount(int userId, CancellationToken ct);
+        Task<CallResultDto<object>> UnlockStudentAccount(int studentId, CancellationToken ct);
 
         //Temporary Password Updated Method
         Task<CallResultDto<object>> PasswordUpdater(string username, string password, CancellationToken ct);

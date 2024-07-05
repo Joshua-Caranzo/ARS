@@ -35,6 +35,9 @@
         public string? GuardianEmailAddress { get; set; }
         public string Sex { get; set; }
         public bool IsEnrolled { get; set; }
+        public string StudentAddress { get; set; }
+        public string GradeLevelForSy { get; set; }
+        public bool IsLockedOut { get; set; }
     }
 
 }

@@ -28,10 +28,10 @@ namespace ARS.API.Services.SchoolYear
                 if (!string.IsNullOrEmpty(searchQuery))
                 {
                     var searchCondition = @"
-            AND (
+            WHERE (
                 s.FromSchoolTerm LIKE @SearchQuery OR
                 s.ToSchoolTerm LIKE @SearchQuery OR
-                s.IsActive LIKE @SearchQuery OR
+                s.IsActive LIKE @SearchQuery
             )";
 
                     baseSql += searchCondition;

@@ -65,7 +65,7 @@
 <div class="container is-narrow">
     {#if result?.isSuccess}
         <div class="is-flex is-align-items-center mb-3">
-            <button class="button is-link" on:click={handleClose}>
+            <button class="button button-blue" on:click={handleClose}>
                 <Icon icon={faArrowLeft}/>
             </button>
             <h1 class="subtitle ml-2 has-text-black">Edit School Term</h1>        
@@ -104,7 +104,7 @@
 
                 <div class="field">
                     <div class="control">
-                        <button class="button is-link">Save</button>
+                        <button class="button button-blue is-pulled-right">Save</button>
                     </div>
                 </div>
             </fieldset>
@@ -144,5 +144,12 @@
         font-weight: bold;
         margin-bottom: 5px;
     }
+
+    .button-blue
+	{
+		background-color: #063F78;
+        color:white;
+	}
+
 </style>
 

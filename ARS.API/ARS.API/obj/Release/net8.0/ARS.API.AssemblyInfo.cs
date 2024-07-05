@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ARS.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dae478caaa022f00566b3811ee76017adc972562")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+62d990cbc625780adbd9baf7b9aecdd5a36ebc36")]
 [assembly: System.Reflection.AssemblyProductAttribute("ARS.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ARS.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

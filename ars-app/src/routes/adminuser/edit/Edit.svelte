@@ -70,6 +70,7 @@
         e.preventDefault();
         user = { ...user, id: u.id };
         user.assignedSchoolId = assignedId;
+        user.userName = user.email;
         try {
             const callResult: CallResultDto<object> = await editUser(user);
 
@@ -94,7 +95,7 @@
 <div class="container is-narrow">
     {#if result?.isSuccess}
         <div class="is-flex is-align-items-center mb-3">
-            <button class="button is-link" on:click={handleClose}>
+            <button class="button button-blue" on:click={handleClose}>
                 <Icon icon={faArrowLeft}/>
             </button>
             <h1 class="subtitle ml-2 has-text-black">Edit User</h1>
@@ -107,7 +108,7 @@
                     <div class="column is-half">
                         <label class="label has-text-black">User Name</label>
                         <div class="control">
-                            <input class="input has-background-white  has-text-black" type="text" bind:value={user.userName} required>
+                            <input class="input has-background-white  has-text-black" type="text" bind:value={user.email} disabled>
                         </div>
                     </div>
                     <div class="column is-half">
@@ -150,7 +151,7 @@
                 </div>
                 <div class="field">
                     <div class="control">
-                        <button class="button is-link">Save</button>
+                        <button class="button button-blue is-pulled-right">Save</button>
                     </div>
                 </div>
             </fieldset>
@@ -187,4 +188,9 @@
         font-weight: bold;
         margin-bottom: 5px;
     }
+    .button-blue
+	{
+		background-color: #063F78;
+        color:white;
+	}
 </style>

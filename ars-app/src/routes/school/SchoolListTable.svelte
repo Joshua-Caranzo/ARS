@@ -30,8 +30,8 @@
                 <td class="has-text-black">{school.schoolAddress}</td>
                 <td class="has-text-black">{school.schoolContactNum}</td>
                 <td class="has-text-black">{school.schoolEmail}</td>
-                <td class="has-text-centered has-text-black">
-                    <IconButton icon={faEdit} on:click={() => goEdit(school)} label="Edit"/>
+                <td class="has-text-centered">
+                    <IconButton icon={faEdit} class= " button-blue has-text-white" on:click={() => goEdit(school)} label="Edit"/>
                 </td>
             </tr>
             {/each}

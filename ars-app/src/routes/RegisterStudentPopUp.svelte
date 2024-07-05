@@ -41,7 +41,8 @@
       isFatherDeceased:false,
       guardianRelationship:"",
       motherOccupation:null,
-      fatherOccupation:null
+      fatherOccupation:null,
+      studentAddress:""
   };
 
   let errorMessage: string | undefined;
@@ -70,11 +71,12 @@
   let selectSchool:boolean = true;
   let schoolId:number;
   let selectedSchool:string;
+  let privacy:boolean = false;
 
   const dispatch = createEventDispatcher();
 
   const handleClose = () => {
-      dispatch('close');
+    dispatch('close');
   };
 
   onMount(async () => {
@@ -86,7 +88,6 @@
           strands = strandListCallResult.data;
           const schoolListCallResult = await getSchool();
           schools = schoolListCallResult.data;
-          console.log(schools);
           errorMessage = strandListCallResult?.message || '';
       } catch (err: any) {
           errorMessage = err.message;
@@ -122,6 +123,7 @@
           student.guardiansContactNumber = s.fathersContactNumber ?? "";
           student.guardiansEmailAddress = s.fathersEmailAddress ?? "";
           student.guardianRelationship = "Father";
+          sameMother=false;
       }
       else {
           student.guardiansName = "";
@@ -139,7 +141,7 @@
           student.guardiansContactNumber = s.mothersContactNumber ?? "";
           student.guardianRelationship ="Mother";
           student.guardiansEmailAddress = s.mothersEmailAddress ?? "";
-
+          sameFather = false;
       }
       else {
           student.guardiansName = "";
@@ -189,7 +191,7 @@
                       </div>
                           <div class="columns is-multiline">
                               <!-- Row 1 -->
-                              <div class="column is-one-third">
+                              <div class="column is-4">
                                 <div class="field mb-4">
                                   <div class="control">
                                     <div class="is-flex"><label class="label has-text-black">Last Name</label>    <label class="label has-text-danger"> *</label></div>
@@ -197,7 +199,7 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="column is-one-third">
+                              <div class="column is-4">
                                 <div class="field mb-4">
                                   <div class="control">
                                     <div class="is-flex"><label class="label has-text-black">First Name</label>    <label class="label has-text-danger"> *</label></div>
@@ -205,7 +207,7 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="column is-one-quarter">
+                              <div class="column is-3">
                                 <div class="field mb-4">
                                   <div class="control">
                                     <label class="label has-text-black">Middle Name</label>
@@ -214,7 +216,7 @@
                                 </div>
                               </div>
 
-                              <div class="column auto">
+                              <div class="column is-1">
                                 <div class="field mb-4">
                                   <div class="control">
                                     <label class="label has-text-black">Suffix</label>
@@ -224,7 +226,7 @@
                               </div>
                         
                               <!-- Row 2 -->
-                              <div class="column is-one-quarter">
+                              <div class="column is-3">
                                 <div class="field mb-4">
                                   <div class="control">
                                     <div class="is-flex"><label class="label has-text-black">Email</label>    <label class="label has-text-danger"> *</label></div>
@@ -232,7 +234,7 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="column is-one-quarter">
+                              <div class="column is-3">
                                 <div class="field mb-4">
                                   <div class="control">
                                     <div class="is-flex"><label class="label has-text-black">Contact Number</label>    <label class="label has-text-danger"> *</label></div>
@@ -240,7 +242,7 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="column is-one-quarter">
+                              <div class="column is-3">
                                 <div class="field ">
                                   <div class="control">
                                   
@@ -254,7 +256,7 @@
                                     </div>
                                     </div>
                                     </div>
-                                    <div class="column is-one-quarter">
+                                    <div class="column is-3">
                                       <div class="field ">
                                         <div class="control">
                                         <label class="label has-text-black">Strand</label>
@@ -268,7 +270,24 @@
                                 </div>
                               </div>
                                <!-- Row 3 -->
-                               <div class="column is-one-quarter">
+                               <div class="column is-3">
+                                <div class="field mb-4">
+                                  <div class="control">
+                                    <div class="is-flex"><label class="label has-text-black">Student Address</label>    <label class="label has-text-danger"> *</label></div>
+                                    <input class="input has-background-white has-text-black"  type="text" bind:value={student.studentAddress}>
+                                  </div>
+                                </div>
+                              </div>
+
+                               <div class="column is-3">
+                                <div class="field mb-4">
+                                  <div class="control">
+                                    <label class="label has-text-black">LRN</label>
+                                    <input class="input has-background-white has-text-black"  disabled={student.gradeLevelId <= 3} type="text" bind:value={student.lrn}>
+                                  </div>
+                                </div>
+                              </div>
+                               <div class="column is-2">
                                 <div class="field mb-4">
                                   <div class="control">
                         
@@ -278,7 +297,7 @@
 
                                         </div>
                                         </div>
-                                        <div class="column is-one-quarter">
+                                        <div class="column is-2">
                                           <div class="field mb-4">
                                             <div class="control">
                                   
@@ -292,29 +311,31 @@
                                             </div>
                                         </div>
                                     </div>  
-                                   
-                                
-                              </div>
-                              <div class="column is-one-quarter">
-                                <div class="field mb-4">
-                                  <div class="control">
-                                    <div class="is-flex"><label class="label has-text-black">Birth Place</label>    <label class="label has-text-danger"> *</label></div>
-                                    <input class="input has-background-white has-text-black" type="text" bind:value={student.birthplace} required>
+                                  </div>    
+                                  <div class="column is-2">
+                      
+                                    <div class="field mb-4">
+                                    <div class="is-flex"><label class="label has-text-black">Sex</label>    <label class="label has-text-danger"> *</label></div>
+                                      <div class="select">
+                                          <select class="has-background-white has-text-black" bind:value={student.sex} required>
+                                              <option value="" disabled>Select Sex</option>
+                                              <option value="Male">Male</option>
+                                              <option value="Female">Female</option>
+                                          </select>
+                                      </div>
                                   </div>
-                                </div>
-                              </div>
-                              <div class="column is-one-quarter">
-                                <div class="field mb-4">
-                                  <div class="control">
-                                    <label class="label has-text-black">LRN</label>
-                                    <input class="input has-background-white has-text-black"  disabled={student.gradeLevelId <= 3} type="text" bind:value={student.lrn}>
+                                </div>   
+                                  <div class="column is-3">
+                                    <div class="field mb-4">
+                                      <div class="control">
+                                        <div class="is-flex"><label class="label has-text-black">Birth Place</label>    <label class="label has-text-danger"> *</label></div>
+                                        <input class="input has-background-white has-text-black" type="text" bind:value={student.birthplace} required>
+                                      </div>
+                                    </div>
                                   </div>
-                                </div>
-                              </div>
-                            
-                        
+                       
                               <!-- Row 4 -->
-                              <div class="column is-one-quarter">
+                              <div class="column is-3">
                       
                                 <div class="field mb-4">
                                   <div class="control">
@@ -323,21 +344,7 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="column is-one-quarter">
-                      
-                                <div class="field mb-4">
-                                <div class="is-flex"><label class="label has-text-black">Sex</label>    <label class="label has-text-danger"> *</label></div>
-                                  <div class="select">
-                                      <select class="has-background-white has-text-black" bind:value={student.sex} required>
-                                          <option value="" disabled>Select Sex</option>
-                                          <option value="Male">Male</option>
-                                          <option value="Female">Female</option>
-                                      </select>
-                                  </div>
-                              </div>
-                            </div>
-                            
-                              <div class="column is-one-quarter">
+                              <div class="column is-3">
                                 <div class="field mb-4">
                                   <div class="control">
                                     <label class="label has-text-black">Last School Attended</label>
@@ -488,44 +495,55 @@
                               <div class="column  is-one-third">
                                 <div class="field mb-4">
                                   <div class="control">
-                                    <label class="label has-text-black">Guardian's Name</label>
-                                    <input class="input has-background-white has-text-black" type="text" bind:value={student.guardiansName}>
+                                    <div class="is-flex"><label class="label has-text-black">Guardian's Name</label>    <label class="label has-text-danger"> *</label></div>
+                                    <input class="input has-background-white has-text-black" type="text" bind:value={student.guardiansName} required>
                                   </div>
                                 </div>
                               </div>
                               <div class="column is-half">
                                 <div class="field mb-4">
                                   <div class="control">
-                                    <label class="label has-text-black">Guardian's Address</label>
-                                    <input class="input has-background-white has-text-black" type="text" bind:value={student.guardiansAddress}>
+                                    <div class="is-flex"><label class="label has-text-black">Guardian's Address</label>    <label class="label has-text-danger"> *</label></div>
+                                    <input class="input has-background-white has-text-black" type="text" bind:value={student.guardiansAddress} required>
                                   </div>
                                 </div>
                               </div>
                               <div class="column  is-one-quarter">
                                 <div class="field mb-4">
                                   <div class="control">
-                                    <label class="label has-text-black">Guardian's Contact</label>
-                                    <input class="input has-background-white has-text-black" type="text" bind:value={student.guardiansContactNumber}>
+                                    <div class="is-flex"><label class="label has-text-black">Guardian's Contact</label>    <label class="label has-text-danger"> *</label></div>
+                                    <input class="input has-background-white has-text-black" type="text" bind:value={student.guardiansContactNumber} required>
                                   </div>
                                 </div>
                               </div>
                               <div class="column  is-one-quarter">
                                 <div class="field mb-4">
                                   <div class="control">
-                                    <label class="label has-text-black">Guardian's Relationship</label>
-                                    <input class="input has-background-white has-text-black" type="text" bind:value={student.guardianRelationship}>
+                                    <div class="is-flex"><label class="label has-text-black">Guardian's Relationship</label>    <label class="label has-text-danger"> *</label></div>
+                                    <input class="input has-background-white has-text-black" type="text" bind:value={student.guardianRelationship} required>
                                   </div>
                                 </div>
                               </div>
                               <div class="column is-half">
                                 <div class="field mb-4">
                                   <div class="control">
-                                    <label class="label has-text-black">Guardian's Email</label>
-                                    <input class="input has-background-white has-text-black" type="text" bind:value={student.guardiansEmailAddress}>
+                                    <div class="is-flex"><label class="label has-text-black">Guardian's Email</label>    <label class="label has-text-danger"> *</label></div>
+                                    <input class="input has-background-white has-text-black" type="text" bind:value={student.guardiansEmailAddress} required>
                                   </div>
                                 </div>
                               </div>
                       </fieldset>
+                      <div class="field mb-4 mt-4">
+                        <div class="is-flex">
+                          <div class="control">
+                            <label class="checkbox has-background-light has-text-black p-4 ">
+                              <input type="checkbox" class= "mr-2" bind:checked={privacy}>DATA PRIVACY SECTION - 
+                              I understand that my personal data collected here maybe disclosed with {selectedSchool} or third parties for any legitimate purposes that it may serve. It's confidentiality shall be ensured and the use of which shall be governed by Republic Act 10173 otherwise known as "Data Privacy Act of 2012"
+
+                          </label>
+                          </div>
+                          </div>
+                          </div>
                       {#if errorMessage}
                           <div class="notification is-danger">
                               {errorMessage}
@@ -537,8 +555,8 @@
                           </div>
                       {/if}
                       <div class="buttons is-right">
-                          <button type="button" class="button is-danger" on:click={handleClose}>Cancel</button>
-                          <button type="submit" class="button button-blue">Submit</button>
+                          <button type="button" class="button has-text-white button-red" on:click={handleClose}>Cancel</button>
+                          <button type="submit" class="button button-blue has-text-white" disabled = {privacy == false}>Submit</button>
                       </div>
                   </form>
               </div>
@@ -556,7 +574,7 @@
                 <p class="modal-card-title has-text-black mb-4">Select School</p>
                 <button class="delete" aria-label="close" on:click={handleClose}></button>
                 </div>
-                <div class = "field">
+                <div class = "select">
                   <select class="input has-background-white has-text-black" on:change= {handleSchoolChange} bind:value={schoolId}>
                       <option disabled value={0}>-- SELECT --</option>
                       {#each schools as school}
@@ -594,5 +612,10 @@
 .button-blue
 {
   background-color: #063F78;
+}
+
+.button-red
+{
+  background-color: #b22222;;
 }
 </style>

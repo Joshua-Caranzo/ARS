@@ -41,6 +41,9 @@
 		"bulma-switch": "^2.0.4",
 		"cookie-storage": "^6.1.0",
 		"date-fns": "^3.6.0",
+		"html2canvas": "^1.4.1",
+		"html2pdf.js": "^0.10.1",
+		"jspdf": "^2.5.1",
 		"jwt-decode": "^4.0.0",
 		"oidc-client-ts": "^2.4.0",
 		"svelte-fa": "^4.0.1"

@@ -53,8 +53,9 @@
 
     const refresh = async () => {
         try {
-       
-            schoolSectionListCallResult = await getSection(gradeId, selectedStrand);
+            if($loggedInUser)
+            {
+            schoolSectionListCallResult = await getSection(parseInt($loggedInUser.uid), gradeId, selectedStrand);
             schoolSections = schoolSectionListCallResult.data;
             errorMessage = schoolSectionListCallResult?.message || '';
             schoolYearCallResult = await getSchoolYearList();
@@ -64,11 +65,10 @@
             gradeLevels = gradeLevelCallResult.data;
             const strandsCallResult = await getStrands();
             strands = strandsCallResult.data;
-            console.log(strands);
             errorMessage = gradeLevelCallResult?.message || '';
           
             newGradelevel = gradeLevels.find(grade => grade.id === gradeId) || null;
-            
+            } 
         } catch (err:any ) {
             errorMessage = err.message;
         }
@@ -161,9 +161,9 @@
             </div>
           </div>
         {/if}
-        <div class="field">
+        <div class="field is-flex is-justify-content-flex-end">
           <div class="control">
-            <button class="button is-link" on:click={handleSubmit}>Enroll</button>
+            <button class="button button-blue" on:click={handleSubmit}>Enroll</button>
           </div>
         </div>
       </div>
@@ -176,4 +176,10 @@
       align-items: center;
       justify-content: center;
     }
+
+    .button-blue
+	{
+		background-color: #063F78;
+        color:white;
+	}
   </style>
