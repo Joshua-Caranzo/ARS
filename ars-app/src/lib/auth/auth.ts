@@ -16,18 +16,19 @@ export async function initAuth(cookies?: Cookies, refreshIfExpired: boolean = tr
 		settings.userStore = cookieStore as unknown as WebStorageStateStore;
 	}
 
+	//todo: refactor this it always expire
 	// Fetch logged in user & access token
 	let user = await getUser();
-	if (user && user.expires_at && user.expires_at < Math.floor(Date.now() / 1000)) {
-		// Token expired - for now, just clear token and make user sign in again
-		// TODO: Refresh token
-		console.log('Token expired', user.expires_at, Math.floor(Date.now() / 1000));
-		if (browser && refreshIfExpired) {
-			await signIn();
-		}
-		oidcClient.removeUser();
-		user = null;
-	}
+	// if (user && user.expires_at && user.expires_at < Math.floor(Date.now() / 1000)) {
+	// 	// Token expired - for now, just clear token and make user sign in again
+	// 	// TODO: Refresh token
+	// 	console.log('Token expired', user.expires_at, Math.floor(Date.now() / 1000));
+	// 	if (browser && refreshIfExpired) {
+	// 		await signIn();
+	// 	}
+	// 	oidcClient.removeUser();
+	// 	user = null;
+	// }
 	accessToken.set(user?.access_token || undefined);
 
 	/* const obj = await getMyIP();

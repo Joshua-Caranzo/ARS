@@ -8,6 +8,7 @@
 	import { loggedInUser, isLocal } from '$lib/store';
 
 	import { page } from '$app/stores';
+	import { onMount } from 'svelte';
 	
 	const unprotectedRoutes = ['/', '/signin-callback', '/successfulregister'];
 
@@ -15,6 +16,13 @@
 	function login() {
 		signIn();
 	}
+
+	onMount(()=>{
+		if(needsLogin && !loggedInUser)
+	{
+		signIn();
+	}
+	});
 
 async function waitForLogin(): Promise<void> {
     return new Promise<void>((resolve) => {
